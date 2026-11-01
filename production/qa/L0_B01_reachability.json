@@ -1,6 +1,6 @@
 {
  "kind": "OFFLINE_GEOMETRY_CHECK_NOT_ENGINE",
- "layout": "L0_B01 v0.5.0",
+ "layout": "L0_B01 v0.5.1",
  "capsule_radius_m": 0.35,
  "checks_total": 41,
  "failures": [],
@@ -44,7 +44,7 @@
   {
    "check": "op5_use_Door_Entrance_01_distance",
    "ok": true,
-   "detail": "1.37 m (limit 2.6)"
+   "detail": "1.44 m (limit 2.6)"
   },
   {
    "check": "op5_use_Door_Entrance_01_line_of_sight",
@@ -54,7 +54,7 @@
   {
    "check": "op7_use_Door_Entrance_01_distance",
    "ok": true,
-   "detail": "1.37 m (limit 2.6)"
+   "detail": "1.44 m (limit 2.6)"
   },
   {
    "check": "op7_use_Door_Entrance_01_line_of_sight",
@@ -84,7 +84,7 @@
   {
    "check": "op12_use_Pickup_AccessCard_21_distance",
    "ok": true,
-   "detail": "1.54 m (limit 2.6)"
+   "detail": "1.55 m (limit 2.6)"
   },
   {
    "check": "op12_use_Pickup_AccessCard_21_line_of_sight",
@@ -134,22 +134,22 @@
   {
    "check": "door_clear_width_Door_Entrance_01",
    "ok": true,
-   "detail": "1.16 m free with leaf open (need 1.13)"
+   "detail": "1.94 m free with leaf open (need 1.13)"
   },
   {
    "check": "door_leaf_fits_opening_Door_Entrance_01",
    "ok": true,
-   "detail": "leaf 1.20 m, opening 1.19 m"
+   "detail": "leaf 1.18 m, opening 2.78 m"
   },
   {
    "check": "door_clear_width_Door_Basement_01",
    "ok": true,
-   "detail": "1.21 m free with leaf open (need 1.13)"
+   "detail": "1.20 m free with leaf open (need 1.13)"
   },
   {
    "check": "door_leaf_fits_opening_Door_Basement_01",
    "ok": true,
-   "detail": "leaf 1.20 m, opening 1.29 m"
+   "detail": "leaf 1.20 m, opening 1.27 m"
   },
   {
    "check": "flood_start_cell_free",

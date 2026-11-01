@@ -5,7 +5,7 @@
   "en": "Rain Arcade / Receipt Office Lobby"
  },
  "schema": 1,
- "layout_version": "0.5.0",
+ "layout_version": "0.5.1",
  "units": "metres",
  "axes": "Blender: +X east, +Y north (toward Door_Basement_01), +Z up. UE: X=x*100, Y=-y*100, Z=z*100.",
  "canon_sources": [
@@ -20,6 +20,7 @@
   "v0.4 Frame_Empty_01 (x=6.3,y=1.0) was hidden behind archive shelf bay j=3: shelf bay removed, frame moved into the free wall bay at y=1.6.",
   "Spec scene_01_entrance.yaml lists exit at x=3.7 but blockout mesh places the basement door at x=0: geometry (x=0) kept, spec flagged in production/change_requests/CR-0001.",
   "Added the canonical rain arcade (L0_B01 '雨廊入口') south of the lobby; v0.4 blockout had only the lobby.",
+  "v0.5.1 (Blender review LAYOUT_ISSUES.md): shutter moved in front of frame; landing ceiling end hidden in wall; shelves grounded with uprights; hanging details touch ceiling; counter props rest on top; real card-slot housing; entrance hinge moved off mullion; coplanar faces offset; door lamp made brightest cue; exposure bias -1 EV (lighting proposal).",
   "Added service landing behind Door_Basement_01 so the second checkpoint is reachable and the door is not a wall texture."
  ],
  "player": {
@@ -179,7 +180,7 @@
    0.21,
    0.26
   ],
-  "exposure_bias": 0.0,
+  "exposure_bias": -1.0,
   "auto_exposure_min_ev100": -1.5,
   "auto_exposure_max_ev100": 2.0,
   "time_of_day": "pre-dawn, after rain (Act 0 precedes Act I '拂晓')"
@@ -446,12 +447,12 @@
    "id": "SM_DoorFrame_Basement_W",
    "kind": "box",
    "center": [
-    -0.675,
+    -0.66,
     9.5,
     1.1
    ],
    "size": [
-    0.05,
+    0.04,
     0.3,
     2.2
    ],
@@ -463,12 +464,12 @@
    "id": "SM_DoorFrame_Basement_E",
    "kind": "box",
    "center": [
-    0.675,
+    0.66,
     9.5,
     1.1
    ],
    "size": [
-    0.05,
+    0.04,
     0.3,
     2.2
    ],
@@ -602,7 +603,7 @@
    "center": [
     -3.4,
     -0.955,
-    1.2
+    1.14
    ],
    "size": [
     0.65,
@@ -619,7 +620,7 @@
    "center": [
     -4.75,
     0.04,
-    1.14
+    1.145
    ],
    "size": [
     0.6,
@@ -636,7 +637,7 @@
    "center": [
     -4.75,
     0.04,
-    1.3
+    1.255
    ],
    "size": [
     0.6,
@@ -646,6 +647,24 @@
    "material": "iron_dark",
    "group": "prop",
    "collision": true
+  },
+  {
+   "id": "SM_CardSlot_Housing",
+   "kind": "box",
+   "center": [
+    -4.35,
+    -0.905,
+    1.24
+   ],
+   "size": [
+    0.3,
+    0.06,
+    0.2
+   ],
+   "material": "iron_dark",
+   "group": "prop",
+   "collision": true,
+   "note": "CardSlot_01 housing on the counter front; the card protrudes from it"
   },
   {
    "id": "SM_Desk_Clock",
@@ -671,12 +690,12 @@
    "center": [
     6.0,
     -5.5,
-    1.85
+    1.8
    ],
    "size": [
     0.1,
     1.82,
-    3.45
+    3.6
    ],
    "material": "iron_dark",
    "group": "prop",
@@ -692,7 +711,7 @@
    ],
    "size": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "material": "iron_dark",
@@ -709,7 +728,7 @@
    ],
    "size": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "material": "iron_dark",
@@ -726,7 +745,7 @@
    ],
    "size": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "material": "iron_dark",
@@ -743,7 +762,7 @@
    ],
    "size": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "material": "iron_dark",
@@ -760,7 +779,7 @@
    ],
    "size": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "material": "iron_dark",
@@ -836,6 +855,40 @@
    "collision": false
   },
   {
+   "id": "SM_Shelf_0_Upright_S",
+   "kind": "box",
+   "center": [
+    5.2,
+    -6.4,
+    1.8
+   ],
+   "size": [
+    0.04,
+    0.04,
+    3.6
+   ],
+   "material": "iron_dark",
+   "group": "prop",
+   "collision": false
+  },
+  {
+   "id": "SM_Shelf_0_Upright_N",
+   "kind": "box",
+   "center": [
+    5.2,
+    -4.6,
+    1.8
+   ],
+   "size": [
+    0.04,
+    0.04,
+    3.6
+   ],
+   "material": "iron_dark",
+   "group": "prop",
+   "collision": false
+  },
+  {
    "id": "SM_Shelf_0_Collision",
    "kind": "box",
    "center": [
@@ -859,12 +912,12 @@
    "center": [
     6.0,
     -3.3,
-    1.85
+    1.8
    ],
    "size": [
     0.1,
     1.82,
-    3.45
+    3.6
    ],
    "material": "iron_dark",
    "group": "prop",
@@ -880,7 +933,7 @@
    ],
    "size": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "material": "iron_dark",
@@ -897,7 +950,7 @@
    ],
    "size": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "material": "iron_dark",
@@ -914,7 +967,7 @@
    ],
    "size": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "material": "iron_dark",
@@ -931,7 +984,7 @@
    ],
    "size": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "material": "iron_dark",
@@ -948,7 +1001,7 @@
    ],
    "size": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "material": "iron_dark",
@@ -1024,6 +1077,40 @@
    "collision": false
   },
   {
+   "id": "SM_Shelf_1_Upright_S",
+   "kind": "box",
+   "center": [
+    5.2,
+    -4.2,
+    1.8
+   ],
+   "size": [
+    0.04,
+    0.04,
+    3.6
+   ],
+   "material": "iron_dark",
+   "group": "prop",
+   "collision": false
+  },
+  {
+   "id": "SM_Shelf_1_Upright_N",
+   "kind": "box",
+   "center": [
+    5.2,
+    -2.4,
+    1.8
+   ],
+   "size": [
+    0.04,
+    0.04,
+    3.6
+   ],
+   "material": "iron_dark",
+   "group": "prop",
+   "collision": false
+  },
+  {
    "id": "SM_Shelf_1_Collision",
    "kind": "box",
    "center": [
@@ -1047,12 +1134,12 @@
    "center": [
     6.0,
     -1.1,
-    1.85
+    1.8
    ],
    "size": [
     0.1,
     1.82,
-    3.45
+    3.6
    ],
    "material": "iron_dark",
    "group": "prop",
@@ -1068,7 +1155,7 @@
    ],
    "size": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "material": "iron_dark",
@@ -1085,7 +1172,7 @@
    ],
    "size": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "material": "iron_dark",
@@ -1102,7 +1189,7 @@
    ],
    "size": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "material": "iron_dark",
@@ -1119,7 +1206,7 @@
    ],
    "size": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "material": "iron_dark",
@@ -1136,7 +1223,7 @@
    ],
    "size": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "material": "iron_dark",
@@ -1212,6 +1299,40 @@
    "collision": false
   },
   {
+   "id": "SM_Shelf_2_Upright_S",
+   "kind": "box",
+   "center": [
+    5.2,
+    -2.0,
+    1.8
+   ],
+   "size": [
+    0.04,
+    0.04,
+    3.6
+   ],
+   "material": "iron_dark",
+   "group": "prop",
+   "collision": false
+  },
+  {
+   "id": "SM_Shelf_2_Upright_N",
+   "kind": "box",
+   "center": [
+    5.2,
+    -0.2,
+    1.8
+   ],
+   "size": [
+    0.04,
+    0.04,
+    3.6
+   ],
+   "material": "iron_dark",
+   "group": "prop",
+   "collision": false
+  },
+  {
    "id": "SM_Shelf_2_Collision",
    "kind": "box",
    "center": [
@@ -1235,12 +1356,12 @@
    "center": [
     6.0,
     4.4,
-    1.85
+    1.8
    ],
    "size": [
     0.1,
     1.82,
-    3.45
+    3.6
    ],
    "material": "iron_dark",
    "group": "prop",
@@ -1256,7 +1377,7 @@
    ],
    "size": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "material": "iron_dark",
@@ -1273,7 +1394,7 @@
    ],
    "size": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "material": "iron_dark",
@@ -1290,7 +1411,7 @@
    ],
    "size": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "material": "iron_dark",
@@ -1307,7 +1428,7 @@
    ],
    "size": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "material": "iron_dark",
@@ -1324,7 +1445,7 @@
    ],
    "size": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "material": "iron_dark",
@@ -1396,6 +1517,40 @@
     0.42
    ],
    "material": "cardboard",
+   "group": "prop",
+   "collision": false
+  },
+  {
+   "id": "SM_Shelf_3_Upright_S",
+   "kind": "box",
+   "center": [
+    5.2,
+    3.5,
+    1.8
+   ],
+   "size": [
+    0.04,
+    0.04,
+    3.6
+   ],
+   "material": "iron_dark",
+   "group": "prop",
+   "collision": false
+  },
+  {
+   "id": "SM_Shelf_3_Upright_N",
+   "kind": "box",
+   "center": [
+    5.2,
+    5.3,
+    1.8
+   ],
+   "size": [
+    0.04,
+    0.04,
+    3.6
+   ],
+   "material": "iron_dark",
    "group": "prop",
    "collision": false
   },
@@ -1610,7 +1765,7 @@
    "center": [
     -0.8,
     -5.9,
-    4.09
+    4.12
    ],
    "size": [
     1.2,
@@ -1627,7 +1782,7 @@
    "center": [
     -0.8,
     -2.6,
-    4.09
+    4.12
    ],
    "size": [
     1.2,
@@ -1644,7 +1799,7 @@
    "center": [
     -0.8,
     0.7,
-    4.09
+    4.12
    ],
    "size": [
     1.2,
@@ -1661,7 +1816,7 @@
    "center": [
     -0.8,
     4.0,
-    4.09
+    4.12
    ],
    "size": [
     1.2,
@@ -1678,7 +1833,7 @@
    "center": [
     2.2,
     -7.2,
-    4.03
+    4.13
    ],
    "size": [
     0.12,
@@ -1695,7 +1850,7 @@
    "center": [
     2.2,
     -4.2,
-    4.03
+    4.13
    ],
    "size": [
     0.12,
@@ -1712,7 +1867,7 @@
    "center": [
     2.2,
     -1.2,
-    4.03
+    4.13
    ],
    "size": [
     0.12,
@@ -1729,7 +1884,7 @@
    "center": [
     2.2,
     1.8,
-    4.03
+    4.13
    ],
    "size": [
     0.12,
@@ -1746,7 +1901,7 @@
    "center": [
     2.2,
     4.8,
-    4.03
+    4.13
    ],
    "size": [
     0.12,
@@ -1763,7 +1918,7 @@
    "center": [
     2.2,
     7.8,
-    4.03
+    4.13
    ],
    "size": [
     0.12,
@@ -1783,9 +1938,9 @@
     1.75
    ],
    "size": [
-    1.55,
+    1.65,
     0.05,
-    0.9
+    1.0
    ],
    "material": "paper_aged",
    "group": "detail",
@@ -1882,12 +2037,12 @@
    "kind": "box",
    "center": [
     0.3,
-    -13.4,
+    -13.46,
     3.35
    ],
    "size": [
     7.4,
-    7.8,
+    7.68,
     0.2
    ],
    "material": "concrete_wall",
@@ -1899,12 +2054,12 @@
    "kind": "box",
    "center": [
     -3.32,
-    -13.4,
+    -13.46,
     2.1
    ],
    "size": [
     0.24,
-    7.8,
+    7.68,
     4.2
    ],
    "material": "concrete_wall",
@@ -1934,12 +2089,12 @@
    "kind": "box",
    "center": [
     3.48,
-    -13.4,
+    -13.46,
     0.55
    ],
    "size": [
     0.25,
-    7.8,
+    7.68,
     1.1
    ],
    "material": "concrete_wall",
@@ -1951,12 +2106,12 @@
    "kind": "box",
    "center": [
     3.48,
-    -13.4,
+    -13.46,
     1.12
    ],
    "size": [
     0.06,
-    7.8,
+    7.68,
     0.05
    ],
    "material": "iron_dark",
@@ -2052,12 +2207,12 @@
    "id": "SM_ServiceWindow_Shutter",
    "kind": "box",
    "center": [
-    -3.13,
+    -3.1,
     -12.8,
     1.5
    ],
    "size": [
-    0.04,
+    0.02,
     1.5,
     1.05
    ],
@@ -2122,12 +2277,12 @@
    "center": [
     8.5,
     -12.5,
-    3.0
+    2.9
    ],
    "size": [
     0.16,
     0.16,
-    6.0
+    6.2
    ],
    "material": "iron_dark",
    "group": "exterior",
@@ -2155,12 +2310,12 @@
    "kind": "box",
    "center": [
     0,
-    11.35,
+    11.47,
     2.75
    ],
    "size": [
     2.6,
-    3.7,
+    3.46,
     0.2
    ],
    "material": "concrete_wall",
@@ -2265,12 +2420,12 @@
    "id": "Door_Entrance_01",
    "type": "door",
    "hinge": [
-    -0.6,
-    -9.62,
+    -0.59,
+    -9.55,
     0.0
    ],
    "leaf_size": [
-    1.2,
+    1.18,
     0.06,
     2.3
    ],
@@ -2331,14 +2486,14 @@
    "center": [
     -4.35,
     -0.955,
-    1.35
+    1.27
    ],
    "size": [
-    0.45,
     0.1,
-    0.29
+    0.04,
+    0.07
    ],
-   "material": "brass_aged",
+   "material": "paper_aged",
    "label": {
     "zh": "从卡槽取出工号卡",
     "en": "Take staff card from slot"
@@ -2349,8 +2504,8 @@
    "on_pickup_event": "phone_ring_once",
    "pilot_light": [
     -4.35,
-    -1.12,
-    1.45
+    -1.05,
+    1.38
    ]
   },
   {
@@ -2542,6 +2697,7 @@
    ],
    "lumens": 5000,
    "cone_deg": 55,
+   "cone_deg_meaning": "full cone angle",
    "radius_m": 18.0,
    "shadows": true,
    "intent": "cold street spill across parapet; silhouettes columns"
@@ -2564,7 +2720,7 @@
     0.9,
     0.78
    ],
-   "lumens": 1500,
+   "lumens": 900,
    "size_m": [
     1.05,
     0.22
@@ -2590,7 +2746,7 @@
     0.9,
     0.78
    ],
-   "lumens": 1100,
+   "lumens": 700,
    "size_m": [
     1.05,
     0.22
@@ -2611,7 +2767,7 @@
     0.86,
     0.66
    ],
-   "lumens": 750,
+   "lumens": 1600,
    "radius_m": 6.0,
    "shadows": true,
    "intent": "focal anchor: brightest navigation cue in the lobby"
@@ -2621,8 +2777,8 @@
    "type": "point",
    "pos": [
     -4.35,
-    -1.15,
-    1.45
+    -1.05,
+    1.38
    ],
    "color": [
     1.0,
