@@ -1,0 +1,890 @@
+{
+  "schema": "confession.audio_report/1",
+  "tool": "tools/audio/analyze_sfx.py",
+  "audio_dir": "ue58/Content/Confession/Audio",
+  "loudness_method": "ITU-R BS.1770-4 K-weighting (48 kHz coefficients), 400 ms blocks, 75% overlap, -70 LUFS absolute / -10 LU relative gate, mono G=1. Clips < 400 ms zero-padded to one block. Loops: filters primed by one extra loop pass. True peak: 4x resample_poly oversampling (approximation of BS.1770 Annex 2).",
+  "bs1770_selftest": {
+    "signal": "997 Hz sine, 10 s, peak -20 dBFS, mono",
+    "expected_lufs": -23.01,
+    "measured_lufs": -23.01,
+    "pass": true
+  },
+  "limits": {
+    "peak_max_db": -1.0,
+    "dc_max": 0.001,
+    "edge_max_db": -60.0,
+    "category_lufs": {
+      "ambience_bed": [
+        -30.0,
+        -26.0
+      ],
+      "one_shot": [
+        -24.0,
+        -18.0
+      ],
+      "footstep": [
+        -28.0,
+        -22.0
+      ]
+    },
+    "duration_windows": {
+      "rain_loop": [
+        12.0,
+        20.0
+      ],
+      "hum_electrical": [
+        6.0,
+        10.0
+      ],
+      "clock_tick": [
+        8.0,
+        8.0
+      ],
+      "queue_chime": [
+        2.0,
+        3.5
+      ],
+      "paper_pickup": [
+        0.0,
+        1.0
+      ],
+      "card_slot": [
+        0.0,
+        1.0
+      ],
+      "door_reject": [
+        0.5,
+        0.7
+      ],
+      "door_release": [
+        0.7,
+        0.9
+      ],
+      "door_open": [
+        1.5,
+        2.2
+      ],
+      "phone_ring": [
+        2.3,
+        2.7
+      ],
+      "phone_pickup": [
+        0.0,
+        0.6
+      ],
+      "dial_tone": [
+        3.0,
+        3.0
+      ],
+      "checkpoint_soft": [
+        0.0,
+        1.2
+      ],
+      "footstep_concrete_01": [
+        0.18,
+        0.35
+      ],
+      "footstep_concrete_02": [
+        0.18,
+        0.35
+      ],
+      "footstep_concrete_03": [
+        0.18,
+        0.35
+      ],
+      "footstep_concrete_04": [
+        0.18,
+        0.35
+      ],
+      "footstep_concrete_05": [
+        0.18,
+        0.35
+      ],
+      "footstep_concrete_06": [
+        0.18,
+        0.35
+      ]
+    }
+  },
+  "missing": [],
+  "unexpected": [],
+  "non_wav_files_in_dir": [],
+  "files": [
+    {
+      "id": "rain_loop",
+      "file": "ue58/Content/Confession/Audio/rain_loop.wav",
+      "bytes": 1536044,
+      "header_problems": [],
+      "category": "ambience_bed",
+      "loop": true,
+      "samples": 768000,
+      "duration_s": 16.0,
+      "sample_peak_dbfs": -12.28,
+      "true_peak_dbtp_approx": -12.21,
+      "rms_dbfs": -28.57,
+      "integrated_lufs": -27.0,
+      "max_momentary_lufs": -25.56,
+      "category_lufs_range": [
+        -30.0,
+        -26.0
+      ],
+      "dc_offset": 0.0,
+      "clipped_samples": 0,
+      "sha256": "ae0bbf7832b283dae7c38403e39925c9deb39bdefc8ead5d260a15bf9541d822",
+      "loop_seam": {
+        "seam_abs_delta": 0.016357,
+        "seam_abs_delta_lsb": 536,
+        "in_file_abs_delta_p99_9": 0.043854,
+        "seam_delta_ok": true,
+        "seam_hf_energy": 0.009208,
+        "hf_energy_p99": 0.017763,
+        "hf_energy_median": 0.009959,
+        "seam_hf_ratio_to_median": 0.924671,
+        "seam_hf_percentile_rank": 36.479036,
+        "seam_click_ok": true,
+        "first_sample": -1225,
+        "last_sample": -689
+      },
+      "checks": {
+        "header_canonical": true,
+        "duration_in_window": true,
+        "filename_matches_id": true,
+        "sha256_matches_manifest": true,
+        "sample_peak_le_-1dBFS": true,
+        "true_peak_le_-1dBTP": true,
+        "no_clipping": true,
+        "dc_offset_ok": true,
+        "loudness_in_category": true,
+        "loop_seam_delta": true,
+        "loop_seam_no_click": true
+      },
+      "pass": true
+    },
+    {
+      "id": "hum_electrical",
+      "file": "ue58/Content/Confession/Audio/hum_electrical.wav",
+      "bytes": 768044,
+      "header_problems": [],
+      "category": "ambience_bed",
+      "loop": true,
+      "samples": 384000,
+      "duration_s": 8.0,
+      "sample_peak_dbfs": -19.81,
+      "true_peak_dbtp_approx": -19.81,
+      "rms_dbfs": -27.24,
+      "integrated_lufs": -29.0,
+      "max_momentary_lufs": -28.15,
+      "category_lufs_range": [
+        -30.0,
+        -26.0
+      ],
+      "dc_offset": 0.0,
+      "clipped_samples": 0,
+      "sha256": "7bc6158f629993bdaf31ed7db7ccfaf2c8db281fd9c120b4cda45323f19f52dc",
+      "loop_seam": {
+        "seam_abs_delta": 0.000519,
+        "seam_abs_delta_lsb": 17,
+        "in_file_abs_delta_p99_9": 0.002228,
+        "seam_delta_ok": true,
+        "seam_hf_energy": 2e-06,
+        "hf_energy_p99": 3e-06,
+        "hf_energy_median": 2e-06,
+        "seam_hf_ratio_to_median": 0.731739,
+        "seam_hf_percentile_rank": 0.923177,
+        "seam_click_ok": true,
+        "first_sample": -1300,
+        "last_sample": -1317
+      },
+      "checks": {
+        "header_canonical": true,
+        "duration_in_window": true,
+        "filename_matches_id": true,
+        "sha256_matches_manifest": true,
+        "sample_peak_le_-1dBFS": true,
+        "true_peak_le_-1dBTP": true,
+        "no_clipping": true,
+        "dc_offset_ok": true,
+        "loudness_in_category": true,
+        "loop_seam_delta": true,
+        "loop_seam_no_click": true
+      },
+      "pass": true
+    },
+    {
+      "id": "clock_tick",
+      "file": "ue58/Content/Confession/Audio/clock_tick.wav",
+      "bytes": 768044,
+      "header_problems": [],
+      "category": "ambience_bed",
+      "loop": true,
+      "samples": 384000,
+      "duration_s": 8.0,
+      "sample_peak_dbfs": -1.67,
+      "true_peak_dbtp_approx": -1.5,
+      "rms_dbfs": -32.84,
+      "integrated_lufs": -29.36,
+      "max_momentary_lufs": -25.75,
+      "category_lufs_range": [
+        -30.0,
+        -26.0
+      ],
+      "dc_offset": 0.0,
+      "clipped_samples": 0,
+      "sha256": "6fdc0937d22f82a65dc557c77b9b4685bf60219e4c2093b265bd13e9db31848d",
+      "loop_seam": {
+        "seam_abs_delta": 0.0,
+        "seam_abs_delta_lsb": 0,
+        "in_file_abs_delta_p99_9": 0.106659,
+        "seam_delta_ok": true,
+        "seam_hf_energy": 0.0,
+        "hf_energy_p99": 0.063528,
+        "hf_energy_median": 0.0,
+        "seam_hf_ratio_to_median": 0.882416,
+        "seam_hf_percentile_rank": 20.226823,
+        "seam_click_ok": true,
+        "first_sample": 0,
+        "last_sample": 0
+      },
+      "checks": {
+        "header_canonical": true,
+        "duration_in_window": true,
+        "filename_matches_id": true,
+        "sha256_matches_manifest": true,
+        "sample_peak_le_-1dBFS": true,
+        "true_peak_le_-1dBTP": true,
+        "no_clipping": true,
+        "dc_offset_ok": true,
+        "loudness_in_category": true,
+        "loop_seam_delta": true,
+        "loop_seam_no_click": true
+      },
+      "pass": true
+    },
+    {
+      "id": "queue_chime",
+      "file": "ue58/Content/Confession/Audio/queue_chime.wav",
+      "bytes": 288044,
+      "header_problems": [],
+      "category": "one_shot",
+      "loop": false,
+      "samples": 144000,
+      "duration_s": 3.0,
+      "sample_peak_dbfs": -10.32,
+      "true_peak_dbtp_approx": -10.31,
+      "rms_dbfs": -24.07,
+      "integrated_lufs": -22.0,
+      "max_momentary_lufs": -20.03,
+      "category_lufs_range": [
+        -24.0,
+        -18.0
+      ],
+      "dc_offset": -0.0,
+      "clipped_samples": 0,
+      "sha256": "be9be7ef0572961537fb3ba807e6a6f0e167b2f05208fa0ebb1296f277014474",
+      "edge_samples": [
+        0,
+        0
+      ],
+      "checks": {
+        "header_canonical": true,
+        "duration_in_window": true,
+        "filename_matches_id": true,
+        "sha256_matches_manifest": true,
+        "sample_peak_le_-1dBFS": true,
+        "true_peak_le_-1dBTP": true,
+        "no_clipping": true,
+        "dc_offset_ok": true,
+        "loudness_in_category": true,
+        "edges_silent": true
+      },
+      "pass": true
+    },
+    {
+      "id": "paper_pickup",
+      "file": "ue58/Content/Confession/Audio/paper_pickup.wav",
+      "bytes": 67244,
+      "header_problems": [],
+      "category": "one_shot",
+      "loop": false,
+      "samples": 33600,
+      "duration_s": 0.7,
+      "sample_peak_dbfs": -3.37,
+      "true_peak_dbtp_approx": -3.33,
+      "rms_dbfs": -24.22,
+      "integrated_lufs": -21.0,
+      "max_momentary_lufs": -19.46,
+      "category_lufs_range": [
+        -24.0,
+        -18.0
+      ],
+      "dc_offset": 0.0,
+      "clipped_samples": 0,
+      "sha256": "4d6c958edb14db23f560140e0d37965b7e1c1a477ddba039fd7e1293c1a310ee",
+      "edge_samples": [
+        0,
+        0
+      ],
+      "checks": {
+        "header_canonical": true,
+        "duration_in_window": true,
+        "filename_matches_id": true,
+        "sha256_matches_manifest": true,
+        "sample_peak_le_-1dBFS": true,
+        "true_peak_le_-1dBTP": true,
+        "no_clipping": true,
+        "dc_offset_ok": true,
+        "loudness_in_category": true,
+        "edges_silent": true
+      },
+      "pass": true
+    },
+    {
+      "id": "card_slot",
+      "file": "ue58/Content/Confession/Audio/card_slot.wav",
+      "bytes": 57644,
+      "header_problems": [],
+      "category": "one_shot",
+      "loop": false,
+      "samples": 28800,
+      "duration_s": 0.6,
+      "sample_peak_dbfs": -4.75,
+      "true_peak_dbtp_approx": -4.62,
+      "rms_dbfs": -23.0,
+      "integrated_lufs": -21.0,
+      "max_momentary_lufs": -18.74,
+      "category_lufs_range": [
+        -24.0,
+        -18.0
+      ],
+      "dc_offset": -0.0,
+      "clipped_samples": 0,
+      "sha256": "05953f0cb84a0ea5379c7e4d88066f9646b370370418d3a5d6dc393c74257adc",
+      "edge_samples": [
+        0,
+        0
+      ],
+      "checks": {
+        "header_canonical": true,
+        "duration_in_window": true,
+        "filename_matches_id": true,
+        "sha256_matches_manifest": true,
+        "sample_peak_le_-1dBFS": true,
+        "true_peak_le_-1dBTP": true,
+        "no_clipping": true,
+        "dc_offset_ok": true,
+        "loudness_in_category": true,
+        "edges_silent": true
+      },
+      "pass": true
+    },
+    {
+      "id": "door_reject",
+      "file": "ue58/Content/Confession/Audio/door_reject.wav",
+      "bytes": 57644,
+      "header_problems": [],
+      "category": "one_shot",
+      "loop": false,
+      "samples": 28800,
+      "duration_s": 0.6,
+      "sample_peak_dbfs": -15.22,
+      "true_peak_dbtp_approx": -15.13,
+      "rms_dbfs": -23.38,
+      "integrated_lufs": -20.0,
+      "max_momentary_lufs": -18.63,
+      "category_lufs_range": [
+        -24.0,
+        -18.0
+      ],
+      "dc_offset": -0.0,
+      "clipped_samples": 0,
+      "sha256": "a285379d2f4e48131ed03c23485d431e8565b7c3e3ce92bdb6f09a2deb78bdc5",
+      "edge_samples": [
+        0,
+        0
+      ],
+      "checks": {
+        "header_canonical": true,
+        "duration_in_window": true,
+        "filename_matches_id": true,
+        "sha256_matches_manifest": true,
+        "sample_peak_le_-1dBFS": true,
+        "true_peak_le_-1dBTP": true,
+        "no_clipping": true,
+        "dc_offset_ok": true,
+        "loudness_in_category": true,
+        "edges_silent": true
+      },
+      "pass": true
+    },
+    {
+      "id": "door_release",
+      "file": "ue58/Content/Confession/Audio/door_release.wav",
+      "bytes": 76844,
+      "header_problems": [],
+      "category": "one_shot",
+      "loop": false,
+      "samples": 38400,
+      "duration_s": 0.8,
+      "sample_peak_dbfs": -1.65,
+      "true_peak_dbtp_approx": -1.61,
+      "rms_dbfs": -21.97,
+      "integrated_lufs": -20.0,
+      "max_momentary_lufs": -17.62,
+      "category_lufs_range": [
+        -24.0,
+        -18.0
+      ],
+      "dc_offset": -0.0,
+      "clipped_samples": 0,
+      "sha256": "aaeebcdd4156d1a2aec17462d6047a4b6ed24b46c82ef4b4dbbcc852fc447ad0",
+      "edge_samples": [
+        1,
+        0
+      ],
+      "checks": {
+        "header_canonical": true,
+        "duration_in_window": true,
+        "filename_matches_id": true,
+        "sha256_matches_manifest": true,
+        "sample_peak_le_-1dBFS": true,
+        "true_peak_le_-1dBTP": true,
+        "no_clipping": true,
+        "dc_offset_ok": true,
+        "loudness_in_category": true,
+        "edges_silent": true
+      },
+      "pass": true
+    },
+    {
+      "id": "door_open",
+      "file": "ue58/Content/Confession/Audio/door_open.wav",
+      "bytes": 192044,
+      "header_problems": [],
+      "category": "one_shot",
+      "loop": false,
+      "samples": 96000,
+      "duration_s": 2.0,
+      "sample_peak_dbfs": -6.03,
+      "true_peak_dbtp_approx": -6.01,
+      "rms_dbfs": -22.18,
+      "integrated_lufs": -21.0,
+      "max_momentary_lufs": -17.77,
+      "category_lufs_range": [
+        -24.0,
+        -18.0
+      ],
+      "dc_offset": -0.0,
+      "clipped_samples": 0,
+      "sha256": "14a6b7bf89bc322b31b4f81704a76dccd9501e6d258afab13226c3a3a80ccf18",
+      "edge_samples": [
+        0,
+        1
+      ],
+      "checks": {
+        "header_canonical": true,
+        "duration_in_window": true,
+        "filename_matches_id": true,
+        "sha256_matches_manifest": true,
+        "sample_peak_le_-1dBFS": true,
+        "true_peak_le_-1dBTP": true,
+        "no_clipping": true,
+        "dc_offset_ok": true,
+        "loudness_in_category": true,
+        "edges_silent": true
+      },
+      "pass": true
+    },
+    {
+      "id": "phone_ring",
+      "file": "ue58/Content/Confession/Audio/phone_ring.wav",
+      "bytes": 240044,
+      "header_problems": [],
+      "category": "one_shot",
+      "loop": false,
+      "samples": 120000,
+      "duration_s": 2.5,
+      "sample_peak_dbfs": -10.38,
+      "true_peak_dbtp_approx": -10.38,
+      "rms_dbfs": -24.91,
+      "integrated_lufs": -20.0,
+      "max_momentary_lufs": -18.6,
+      "category_lufs_range": [
+        -24.0,
+        -18.0
+      ],
+      "dc_offset": 0.0,
+      "clipped_samples": 0,
+      "sha256": "ae69fb549b18d9a1ad750f5d26578c35208188f25b55bb6b7bab819170c44c90",
+      "edge_samples": [
+        0,
+        0
+      ],
+      "checks": {
+        "header_canonical": true,
+        "duration_in_window": true,
+        "filename_matches_id": true,
+        "sha256_matches_manifest": true,
+        "sample_peak_le_-1dBFS": true,
+        "true_peak_le_-1dBTP": true,
+        "no_clipping": true,
+        "dc_offset_ok": true,
+        "loudness_in_category": true,
+        "edges_silent": true
+      },
+      "pass": true
+    },
+    {
+      "id": "phone_pickup",
+      "file": "ue58/Content/Confession/Audio/phone_pickup.wav",
+      "bytes": 48044,
+      "header_problems": [],
+      "category": "one_shot",
+      "loop": false,
+      "samples": 24000,
+      "duration_s": 0.5,
+      "sample_peak_dbfs": -4.75,
+      "true_peak_dbtp_approx": -4.6,
+      "rms_dbfs": -22.65,
+      "integrated_lufs": -22.0,
+      "max_momentary_lufs": -20.99,
+      "category_lufs_range": [
+        -24.0,
+        -18.0
+      ],
+      "dc_offset": -0.0,
+      "clipped_samples": 0,
+      "sha256": "8837d060ec1c8473aebb07c0be2ab46b3f133de2d4fa6ecbe7459454945cb2dd",
+      "edge_samples": [
+        -1,
+        1
+      ],
+      "checks": {
+        "header_canonical": true,
+        "duration_in_window": true,
+        "filename_matches_id": true,
+        "sha256_matches_manifest": true,
+        "sample_peak_le_-1dBFS": true,
+        "true_peak_le_-1dBTP": true,
+        "no_clipping": true,
+        "dc_offset_ok": true,
+        "loudness_in_category": true,
+        "edges_silent": true
+      },
+      "pass": true
+    },
+    {
+      "id": "dial_tone",
+      "file": "ue58/Content/Confession/Audio/dial_tone.wav",
+      "bytes": 288044,
+      "header_problems": [],
+      "category": "one_shot",
+      "loop": false,
+      "samples": 144000,
+      "duration_s": 3.0,
+      "sample_peak_dbfs": -18.8,
+      "true_peak_dbtp_approx": -18.8,
+      "rms_dbfs": -22.36,
+      "integrated_lufs": -23.0,
+      "max_momentary_lufs": -22.98,
+      "category_lufs_range": [
+        -24.0,
+        -18.0
+      ],
+      "dc_offset": 0.0,
+      "clipped_samples": 0,
+      "sha256": "16fc0c0023c24fb60b502fd11b12586e4899fb95e954473a0eff917ba298bb0a",
+      "edge_samples": [
+        0,
+        0
+      ],
+      "checks": {
+        "header_canonical": true,
+        "duration_in_window": true,
+        "filename_matches_id": true,
+        "sha256_matches_manifest": true,
+        "sample_peak_le_-1dBFS": true,
+        "true_peak_le_-1dBTP": true,
+        "no_clipping": true,
+        "dc_offset_ok": true,
+        "loudness_in_category": true,
+        "edges_silent": true
+      },
+      "pass": true
+    },
+    {
+      "id": "checkpoint_soft",
+      "file": "ue58/Content/Confession/Audio/checkpoint_soft.wav",
+      "bytes": 96044,
+      "header_problems": [],
+      "category": "one_shot",
+      "loop": false,
+      "samples": 48000,
+      "duration_s": 1.0,
+      "sample_peak_dbfs": -1.97,
+      "true_peak_dbtp_approx": -1.96,
+      "rms_dbfs": -26.52,
+      "integrated_lufs": -23.5,
+      "max_momentary_lufs": -23.5,
+      "category_lufs_range": [
+        -24.0,
+        -18.0
+      ],
+      "dc_offset": 0.0,
+      "clipped_samples": 0,
+      "sha256": "463c1456ac236cac7b62ad0b15db9a12aed9433ddcc8eb6b2e56c2084c13b4fb",
+      "edge_samples": [
+        0,
+        1
+      ],
+      "checks": {
+        "header_canonical": true,
+        "duration_in_window": true,
+        "filename_matches_id": true,
+        "sha256_matches_manifest": true,
+        "sample_peak_le_-1dBFS": true,
+        "true_peak_le_-1dBTP": true,
+        "no_clipping": true,
+        "dc_offset_ok": true,
+        "loudness_in_category": true,
+        "edges_silent": true
+      },
+      "pass": true
+    },
+    {
+      "id": "footstep_concrete_01",
+      "file": "ue58/Content/Confession/Audio/footstep_concrete_01.wav",
+      "bytes": 29458,
+      "header_problems": [],
+      "category": "footstep",
+      "loop": false,
+      "samples": 14707,
+      "duration_s": 0.3064,
+      "sample_peak_dbfs": -1.66,
+      "true_peak_dbtp_approx": -1.5,
+      "rms_dbfs": -24.56,
+      "integrated_lufs": -25.88,
+      "max_momentary_lufs": -25.88,
+      "category_lufs_range": [
+        -28.0,
+        -22.0
+      ],
+      "dc_offset": 0.0,
+      "clipped_samples": 0,
+      "sha256": "79228b5bad45d6bae38b58841c14be14dd11392a2c6f781b5ecc530b9bba545c",
+      "edge_samples": [
+        -1,
+        -1
+      ],
+      "checks": {
+        "header_canonical": true,
+        "duration_in_window": true,
+        "filename_matches_id": true,
+        "sha256_matches_manifest": true,
+        "sample_peak_le_-1dBFS": true,
+        "true_peak_le_-1dBTP": true,
+        "no_clipping": true,
+        "dc_offset_ok": true,
+        "loudness_in_category": true,
+        "edges_silent": true
+      },
+      "pass": true
+    },
+    {
+      "id": "footstep_concrete_02",
+      "file": "ue58/Content/Confession/Audio/footstep_concrete_02.wav",
+      "bytes": 25538,
+      "header_problems": [],
+      "category": "footstep",
+      "loop": false,
+      "samples": 12747,
+      "duration_s": 0.2656,
+      "sample_peak_dbfs": -2.32,
+      "true_peak_dbtp_approx": -2.31,
+      "rms_dbfs": -22.82,
+      "integrated_lufs": -24.5,
+      "max_momentary_lufs": -24.5,
+      "category_lufs_range": [
+        -28.0,
+        -22.0
+      ],
+      "dc_offset": 0.0,
+      "clipped_samples": 0,
+      "sha256": "4aa654ca0cca9a679d8a1995525a6958dab62eedb291a6e09f146571a06d7fa8",
+      "edge_samples": [
+        0,
+        0
+      ],
+      "checks": {
+        "header_canonical": true,
+        "duration_in_window": true,
+        "filename_matches_id": true,
+        "sha256_matches_manifest": true,
+        "sample_peak_le_-1dBFS": true,
+        "true_peak_le_-1dBTP": true,
+        "no_clipping": true,
+        "dc_offset_ok": true,
+        "loudness_in_category": true,
+        "edges_silent": true
+      },
+      "pass": true
+    },
+    {
+      "id": "footstep_concrete_03",
+      "file": "ue58/Content/Confession/Audio/footstep_concrete_03.wav",
+      "bytes": 21538,
+      "header_problems": [],
+      "category": "footstep",
+      "loop": false,
+      "samples": 10747,
+      "duration_s": 0.2239,
+      "sample_peak_dbfs": -2.51,
+      "true_peak_dbtp_approx": -2.44,
+      "rms_dbfs": -22.98,
+      "integrated_lufs": -25.5,
+      "max_momentary_lufs": -25.5,
+      "category_lufs_range": [
+        -28.0,
+        -22.0
+      ],
+      "dc_offset": -0.0,
+      "clipped_samples": 0,
+      "sha256": "161ca33221d4d76bd3dfecb2531f32243b75346bcf2d2e69b4b008ac1f0b66d5",
+      "edge_samples": [
+        0,
+        0
+      ],
+      "checks": {
+        "header_canonical": true,
+        "duration_in_window": true,
+        "filename_matches_id": true,
+        "sha256_matches_manifest": true,
+        "sample_peak_le_-1dBFS": true,
+        "true_peak_le_-1dBTP": true,
+        "no_clipping": true,
+        "dc_offset_ok": true,
+        "loudness_in_category": true,
+        "edges_silent": true
+      },
+      "pass": true
+    },
+    {
+      "id": "footstep_concrete_04",
+      "file": "ue58/Content/Confession/Audio/footstep_concrete_04.wav",
+      "bytes": 26170,
+      "header_problems": [],
+      "category": "footstep",
+      "loop": false,
+      "samples": 13063,
+      "duration_s": 0.2721,
+      "sample_peak_dbfs": -2.14,
+      "true_peak_dbtp_approx": -1.98,
+      "rms_dbfs": -22.79,
+      "integrated_lufs": -24.8,
+      "max_momentary_lufs": -24.8,
+      "category_lufs_range": [
+        -28.0,
+        -22.0
+      ],
+      "dc_offset": -0.0,
+      "clipped_samples": 0,
+      "sha256": "2a895bb18cbacffd8e9e1989dfea13fa74621a7c5ce5b00e49ae81344865f09e",
+      "edge_samples": [
+        1,
+        0
+      ],
+      "checks": {
+        "header_canonical": true,
+        "duration_in_window": true,
+        "filename_matches_id": true,
+        "sha256_matches_manifest": true,
+        "sample_peak_le_-1dBFS": true,
+        "true_peak_le_-1dBTP": true,
+        "no_clipping": true,
+        "dc_offset_ok": true,
+        "loudness_in_category": true,
+        "edges_silent": true
+      },
+      "pass": true
+    },
+    {
+      "id": "footstep_concrete_05",
+      "file": "ue58/Content/Confession/Audio/footstep_concrete_05.wav",
+      "bytes": 27300,
+      "header_problems": [],
+      "category": "footstep",
+      "loop": false,
+      "samples": 13628,
+      "duration_s": 0.2839,
+      "sample_peak_dbfs": -1.55,
+      "true_peak_dbtp_approx": -1.5,
+      "rms_dbfs": -24.2,
+      "integrated_lufs": -25.32,
+      "max_momentary_lufs": -25.32,
+      "category_lufs_range": [
+        -28.0,
+        -22.0
+      ],
+      "dc_offset": 0.0,
+      "clipped_samples": 0,
+      "sha256": "a2acf17fa90b7c33589c0a8501fdc16e4cd570477e76ba31b21d3cc84f41f601",
+      "edge_samples": [
+        0,
+        0
+      ],
+      "checks": {
+        "header_canonical": true,
+        "duration_in_window": true,
+        "filename_matches_id": true,
+        "sha256_matches_manifest": true,
+        "sample_peak_le_-1dBFS": true,
+        "true_peak_le_-1dBTP": true,
+        "no_clipping": true,
+        "dc_offset_ok": true,
+        "loudness_in_category": true,
+        "edges_silent": true
+      },
+      "pass": true
+    },
+    {
+      "id": "footstep_concrete_06",
+      "file": "ue58/Content/Confession/Audio/footstep_concrete_06.wav",
+      "bytes": 24242,
+      "header_problems": [],
+      "category": "footstep",
+      "loop": false,
+      "samples": 12099,
+      "duration_s": 0.2521,
+      "sample_peak_dbfs": -2.29,
+      "true_peak_dbtp_approx": -2.26,
+      "rms_dbfs": -22.33,
+      "integrated_lufs": -24.6,
+      "max_momentary_lufs": -24.6,
+      "category_lufs_range": [
+        -28.0,
+        -22.0
+      ],
+      "dc_offset": 0.0,
+      "clipped_samples": 0,
+      "sha256": "23b8204e2a0f182509dc92ac7ecb3711a7a08abd82228897a7d60fe17d6cfdfb",
+      "edge_samples": [
+        0,
+        0
+      ],
+      "checks": {
+        "header_canonical": true,
+        "duration_in_window": true,
+        "filename_matches_id": true,
+        "sha256_matches_manifest": true,
+        "sample_peak_le_-1dBFS": true,
+        "true_peak_le_-1dBTP": true,
+        "no_clipping": true,
+        "dc_offset_ok": true,
+        "loudness_in_category": true,
+        "edges_silent": true
+      },
+      "pass": true
+    }
+  ],
+  "failures": [],
+  "pass": true
+}
