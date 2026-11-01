@@ -1,0 +1,215 @@
+{
+ "kind": "OFFLINE_GEOMETRY_CHECK_NOT_ENGINE",
+ "layout": "L0_B01 v0.5.0",
+ "capsule_radius_m": 0.35,
+ "checks_total": 41,
+ "failures": [],
+ "result": "PASS",
+ "checks": [
+  {
+   "check": "start_clear",
+   "ok": true,
+   "detail": "start [0.3, -16.2] hits []"
+  },
+  {
+   "check": "op0_goto_0.3_-14.4",
+   "ok": true,
+   "detail": "1.80 m clear"
+  },
+  {
+   "check": "op1_goto_-2.15_-12.65",
+   "ok": true,
+   "detail": "3.01 m clear"
+  },
+  {
+   "check": "op2_use_Pickup_JobOrder_2147_distance",
+   "ok": true,
+   "detail": "0.93 m (limit 2.6)"
+  },
+  {
+   "check": "op2_use_Pickup_JobOrder_2147_line_of_sight",
+   "ok": true,
+   "detail": "clear"
+  },
+  {
+   "check": "op2_flag_has_job_order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "op4_goto_0.0_-10.9",
+   "ok": true,
+   "detail": "2.77 m clear"
+  },
+  {
+   "check": "op5_use_Door_Entrance_01_distance",
+   "ok": true,
+   "detail": "1.37 m (limit 2.6)"
+  },
+  {
+   "check": "op5_use_Door_Entrance_01_line_of_sight",
+   "ok": true,
+   "detail": "clear"
+  },
+  {
+   "check": "op7_use_Door_Entrance_01_distance",
+   "ok": true,
+   "detail": "1.37 m (limit 2.6)"
+  },
+  {
+   "check": "op7_use_Door_Entrance_01_line_of_sight",
+   "ok": true,
+   "detail": "clear"
+  },
+  {
+   "check": "op7_flag_entrance_open",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "op9_goto_0.0_-8.0",
+   "ok": true,
+   "detail": "2.90 m clear"
+  },
+  {
+   "check": "op9_flag_cp_lobby",
+   "ok": true,
+   "detail": "checkpoint volume overlapped"
+  },
+  {
+   "check": "op11_goto_-3.5_-2.2",
+   "ok": true,
+   "detail": "6.77 m clear"
+  },
+  {
+   "check": "op12_use_Pickup_AccessCard_21_distance",
+   "ok": true,
+   "detail": "1.54 m (limit 2.6)"
+  },
+  {
+   "check": "op12_use_Pickup_AccessCard_21_line_of_sight",
+   "ok": true,
+   "detail": "clear"
+  },
+  {
+   "check": "op12_flag_has_access_card",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "op14_goto_0.0_-2.2",
+   "ok": true,
+   "detail": "3.50 m clear"
+  },
+  {
+   "check": "op15_goto_0.0_8.3",
+   "ok": true,
+   "detail": "10.50 m clear"
+  },
+  {
+   "check": "op16_use_Door_Basement_01_distance",
+   "ok": true,
+   "detail": "1.44 m (limit 2.6)"
+  },
+  {
+   "check": "op16_use_Door_Basement_01_line_of_sight",
+   "ok": true,
+   "detail": "clear"
+  },
+  {
+   "check": "op16_flag_basement_open",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "op18_goto_0.15_11.0",
+   "ok": true,
+   "detail": "2.70 m clear"
+  },
+  {
+   "check": "op18_flag_cp_service",
+   "ok": true,
+   "detail": "checkpoint volume overlapped"
+  },
+  {
+   "check": "door_clear_width_Door_Entrance_01",
+   "ok": true,
+   "detail": "1.16 m free with leaf open (need 1.13)"
+  },
+  {
+   "check": "door_leaf_fits_opening_Door_Entrance_01",
+   "ok": true,
+   "detail": "leaf 1.20 m, opening 1.19 m"
+  },
+  {
+   "check": "door_clear_width_Door_Basement_01",
+   "ok": true,
+   "detail": "1.21 m free with leaf open (need 1.13)"
+  },
+  {
+   "check": "door_leaf_fits_opening_Door_Basement_01",
+   "ok": true,
+   "detail": "leaf 1.20 m, opening 1.29 m"
+  },
+  {
+   "check": "flood_start_cell_free",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "reachable_Pickup_JobOrder_2147",
+   "ok": true,
+   "detail": "a reachable cell lies within use distance"
+  },
+  {
+   "check": "reachable_Door_Entrance_01",
+   "ok": true,
+   "detail": "a reachable cell lies within use distance"
+  },
+  {
+   "check": "reachable_Checkpoint_Lobby",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "reachable_Pickup_AccessCard_21",
+   "ok": true,
+   "detail": "a reachable cell lies within use distance"
+  },
+  {
+   "check": "reachable_Phone_Counter_01",
+   "ok": true,
+   "detail": "a reachable cell lies within use distance"
+  },
+  {
+   "check": "reachable_Phone_Wall_01",
+   "ok": true,
+   "detail": "a reachable cell lies within use distance"
+  },
+  {
+   "check": "reachable_Door_Basement_01",
+   "ok": true,
+   "detail": "a reachable cell lies within use distance"
+  },
+  {
+   "check": "reachable_Checkpoint_ServiceDoor",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "reachable_Readable_Notice_01",
+   "ok": true,
+   "detail": "a reachable cell lies within use distance"
+  },
+  {
+   "check": "closed_entrance_blocks_lobby",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "job_order_reachable_from_start",
+   "ok": true,
+   "detail": ""
+  }
+ ]
+}
