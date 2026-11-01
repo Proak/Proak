@@ -1176,6 +1176,106 @@
       "detail": ""
     },
     {
+      "name": "asset-rights-field:AUDIO_RAIN_LOOP",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "asset-rights-field:AUDIO_HUM_ELECTRICAL",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "asset-rights-field:AUDIO_CLOCK_TICK",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "asset-rights-field:AUDIO_QUEUE_CHIME",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "asset-rights-field:AUDIO_PAPER_PICKUP",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "asset-rights-field:AUDIO_CARD_SLOT",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "asset-rights-field:AUDIO_DOOR_REJECT",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "asset-rights-field:AUDIO_DOOR_RELEASE",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "asset-rights-field:AUDIO_DOOR_OPEN",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "asset-rights-field:AUDIO_PHONE_RING",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "asset-rights-field:AUDIO_PHONE_PICKUP",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "asset-rights-field:AUDIO_DIAL_TONE",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "asset-rights-field:AUDIO_CHECKPOINT_SOFT",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "asset-rights-field:AUDIO_FOOTSTEP_CONCRETE_01",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "asset-rights-field:AUDIO_FOOTSTEP_CONCRETE_02",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "asset-rights-field:AUDIO_FOOTSTEP_CONCRETE_03",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "asset-rights-field:AUDIO_FOOTSTEP_CONCRETE_04",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "asset-rights-field:AUDIO_FOOTSTEP_CONCRETE_05",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "asset-rights-field:AUDIO_FOOTSTEP_CONCRETE_06",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "asset-rights-field:L0_B01_LAYOUT",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
       "name": "nonempty prompt:ENVIRONMENT_PRODUCTION.md",
       "status": "PASS",
       "detail": ""
@@ -1222,7 +1322,7 @@
     }
   ],
   "summary": {
-    "pass": 243,
+    "pass": 263,
     "fail": 0
   },
   "warnings": [

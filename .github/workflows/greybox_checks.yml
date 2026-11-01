@@ -1,0 +1,27 @@
+name: Greybox checks (no engine)
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install numpy scipy pillow
+      - name: Layout JSON in sync with generator
+        run: make layout-check
+      - name: Rules core (g++, -Werror, no exceptions/RTTI)
+        run: make rules
+      - name: Offline reachability / soft-lock check
+        run: make reachability
+      - name: Audio format + loudness contract
+        run: make audio-check
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: greybox-qa
+          path: production/qa/L0_B01_reachability.*

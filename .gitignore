@@ -20,3 +20,4 @@ __pycache__/
 .env
 private_raw/
 .claude/worktrees/
+build/
