@@ -1,0 +1,32 @@
+{
+  "task_id": "L0_B01_G2_EXAMPLE",
+  "commit": "REPLACE_WITH_SHA",
+  "reviewer": "runtime-qa",
+  "author": "level-designer",
+  "type": "runtime",
+  "status": "NOT_RUN",
+  "scores": {
+    "clarity": null,
+    "mechanics": null,
+    "pacing": null,
+    "visual": null,
+    "narrative": null,
+    "reliability": null
+  },
+  "p0_issues": [],
+  "p1_issues": [],
+  "p2_issues": [],
+  "test_results": [
+    {
+      "name": "UE_PIE_flow",
+      "status": "NOT_RUN",
+      "evidence": "",
+      "machine": "",
+      "notes": "No runtime in this environment"
+    }
+  ],
+  "evidence_files": [],
+  "version": "v0.3",
+  "gate": "G2",
+  "remarks": "TEMPLATE ONLY; NOT PROOF OF PASS"
+}

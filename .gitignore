@@ -1,0 +1,21 @@
+# Unreal generated / compiled
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vs/
+*.sln
+*.suo
+# Godot cache
+.godot/
+# Python
+__pycache__/
+*.pyc
+# Blender backup / caches
+*.blend1
+*.blend2
+*.blend@*
+*.tmp
+# Secrets / private raw user materials
+.env
+private_raw/

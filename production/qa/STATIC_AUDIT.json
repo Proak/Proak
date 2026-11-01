@@ -1,0 +1,115 @@
+{
+  "build": "2026-11-01/v0.2",
+  "static_status": "PASS",
+  "static_pass": 20,
+  "static_fail": 0,
+  "unreal_compiled": false,
+  "unreal_run_tested": false,
+  "blender_rendered": false,
+  "godot_runtime_tested": false,
+  "gameplay_playtested": false,
+  "flags": "These are UNTESTED; no claim of playable FPS or final visuals.",
+  "checks": [
+    {
+      "check": "GDD theme and game pillars",
+      "state": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Six-act level progression",
+      "state": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Stage YAML physical clearance",
+      "state": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Source and licensing policy",
+      "state": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Blender authored script compiles",
+      "state": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Python syntax build_scene01_blockout.py",
+      "state": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Python syntax upgrade_godot.py",
+      "state": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Python syntax quality_gate.py",
+      "state": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Python syntax unreal_import_validate.py",
+      "state": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Valid JSON ue58/Confession.uproject",
+      "state": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Valid JSON production/reference/scene_01_sources.json",
+      "state": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Real glB opens in trimesh",
+      "state": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Triangle budget for prototype",
+      "state": "PASS",
+      "details": "faces: 1440"
+    },
+    {
+      "check": "Geometry all watertight proxies",
+      "state": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Godot resource/static asset preflight",
+      "state": "PASS",
+      "details": "{\"status\": \"STATIC PASS — NOT RUNTIME TESTED\", \"pass\": 26, \"failed\": 0} "
+    },
+    {
+      "check": "Gameplay code contains _turn_valve",
+      "state": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Gameplay code contains _collect_evidence",
+      "state": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Gameplay code contains _begin_chase",
+      "state": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Gameplay code contains _advance_chase",
+      "state": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Audio originates in project",
+      "state": "PASS",
+      "details": ""
+    }
+  ],
+  "blocking": []
+}

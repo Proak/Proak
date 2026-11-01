@@ -1,0 +1,24 @@
+{
+  "scene": "L0_B01",
+  "blockout_only": true,
+  "actual_ue_render": false,
+  "actual_blender_render": false,
+  "object_count": 120,
+  "triangle_count": 1440,
+  "bounds_m": [
+    [
+      -6.64,
+      -9.625,
+      -0.22
+    ],
+    [
+      6.64,
+      9.62,
+      4.41
+    ]
+  ],
+  "check_nonfinite": true,
+  "check_positive_dimensions": true,
+  "check_unique_names": true,
+  "geometry_note": "glb is real mesh data but blockout, not a cinematic screenshot or finished art"
+}

@@ -1,0 +1,1231 @@
+{
+  "kind": "STATIC_ONLY",
+  "overall": "PASS",
+  "unreal_runtime": "BLOCKED",
+  "blender_runtime": "BLOCKED",
+  "player_testing": "NOT_RUN",
+  "checks": [
+    {
+      "name": "exists:CLAUDE.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "exists:docs/STUDIO_BLUEPRINT_v03.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "exists:docs/SCENE_OUTLINE_24_BEATS.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "exists:docs/PRODUCTION_RUNBOOK.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "exists:docs/QUALITY_GATES_AND_DEAI.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "exists:docs/PROMPTS/MASTER_ORCHESTRATOR.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "exists:docs/UE_BLENDER_MCP_SETUP.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "exists:production/asset_ledger.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "24 scene beats",
+      "status": "PASS",
+      "detail": "24"
+    },
+    {
+      "name": "unique scene IDs",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "four beats act 0",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "four beats act I",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "four beats act II",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "four beats act III",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "four beats act IV",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "four beats act V",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B01:name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B01:objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B01:player_verb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B01:foreshadow",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B01:reveal_or_feedback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B01:exit_condition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B01:threat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B01:optional_reward",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B01:nonfiction QA status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B02:name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B02:objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B02:player_verb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B02:foreshadow",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B02:reveal_or_feedback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B02:exit_condition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B02:threat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B02:optional_reward",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B02:nonfiction QA status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B03:name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B03:objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B03:player_verb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B03:foreshadow",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B03:reveal_or_feedback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B03:exit_condition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B03:threat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B03:optional_reward",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B03:nonfiction QA status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B04:name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B04:objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B04:player_verb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B04:foreshadow",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B04:reveal_or_feedback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B04:exit_condition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B04:threat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B04:optional_reward",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "L0_B04:nonfiction QA status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B05:name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B05:objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B05:player_verb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B05:foreshadow",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B05:reveal_or_feedback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B05:exit_condition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B05:threat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B05:optional_reward",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B05:nonfiction QA status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B06:name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B06:objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B06:player_verb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B06:foreshadow",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B06:reveal_or_feedback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B06:exit_condition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B06:threat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B06:optional_reward",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B06:nonfiction QA status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B07:name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B07:objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B07:player_verb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B07:foreshadow",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B07:reveal_or_feedback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B07:exit_condition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B07:threat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B07:optional_reward",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B07:nonfiction QA status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B08:name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B08:objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B08:player_verb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B08:foreshadow",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B08:reveal_or_feedback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B08:exit_condition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B08:threat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B08:optional_reward",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LI_B08:nonfiction QA status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B09:name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B09:objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B09:player_verb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B09:foreshadow",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B09:reveal_or_feedback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B09:exit_condition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B09:threat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B09:optional_reward",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B09:nonfiction QA status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B10:name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B10:objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B10:player_verb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B10:foreshadow",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B10:reveal_or_feedback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B10:exit_condition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B10:threat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B10:optional_reward",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B10:nonfiction QA status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B11:name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B11:objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B11:player_verb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B11:foreshadow",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B11:reveal_or_feedback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B11:exit_condition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B11:threat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B11:optional_reward",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B11:nonfiction QA status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B12:name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B12:objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B12:player_verb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B12:foreshadow",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B12:reveal_or_feedback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B12:exit_condition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B12:threat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B12:optional_reward",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LII_B12:nonfiction QA status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B13:name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B13:objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B13:player_verb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B13:foreshadow",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B13:reveal_or_feedback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B13:exit_condition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B13:threat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B13:optional_reward",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B13:nonfiction QA status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B14:name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B14:objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B14:player_verb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B14:foreshadow",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B14:reveal_or_feedback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B14:exit_condition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B14:threat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B14:optional_reward",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B14:nonfiction QA status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B15:name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B15:objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B15:player_verb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B15:foreshadow",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B15:reveal_or_feedback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B15:exit_condition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B15:threat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B15:optional_reward",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B15:nonfiction QA status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B16:name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B16:objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B16:player_verb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B16:foreshadow",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B16:reveal_or_feedback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B16:exit_condition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B16:threat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B16:optional_reward",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIII_B16:nonfiction QA status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B17:name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B17:objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B17:player_verb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B17:foreshadow",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B17:reveal_or_feedback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B17:exit_condition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B17:threat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B17:optional_reward",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B17:nonfiction QA status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B18:name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B18:objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B18:player_verb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B18:foreshadow",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B18:reveal_or_feedback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B18:exit_condition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B18:threat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B18:optional_reward",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B18:nonfiction QA status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B19:name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B19:objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B19:player_verb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B19:foreshadow",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B19:reveal_or_feedback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B19:exit_condition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B19:threat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B19:optional_reward",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B19:nonfiction QA status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B20:name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B20:objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B20:player_verb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B20:foreshadow",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B20:reveal_or_feedback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B20:exit_condition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B20:threat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B20:optional_reward",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIV_B20:nonfiction QA status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B21:name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B21:objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B21:player_verb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B21:foreshadow",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B21:reveal_or_feedback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B21:exit_condition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B21:threat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B21:optional_reward",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B21:nonfiction QA status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B22:name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B22:objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B22:player_verb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B22:foreshadow",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B22:reveal_or_feedback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B22:exit_condition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B22:threat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B22:optional_reward",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B22:nonfiction QA status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B23:name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B23:objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B23:player_verb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B23:foreshadow",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B23:reveal_or_feedback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B23:exit_condition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B23:threat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B23:optional_reward",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B23:nonfiction QA status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B24:name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B24:objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B24:player_verb",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B24:foreshadow",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B24:reveal_or_feedback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B24:exit_condition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B24:threat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B24:optional_reward",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LV_B24:nonfiction QA status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "at least 11 independent agents",
+      "status": "PASS",
+      "detail": "11"
+    },
+    {
+      "name": "asset-rights-field:SCENE01_BLOCKOUT",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "nonempty prompt:ENVIRONMENT_PRODUCTION.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "nonempty prompt:MASTER_ORCHESTRATOR.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "nonempty prompt:INDEPENDENT_REVIEWER.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "nonempty prompt:DIRECTOR_FINAL_PASS.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "nonempty prompt:SCENE_BUILDER.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "nonempty prompt:CANON_AND_CONSISTENCY_REVIEW.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "nonempty prompt:PLAYTEST_RED_TEAM.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "nonempty prompt:PRODUCER_FIRST_WEEK.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "no UE sample mislabeled as packaged",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "summary": {
+    "pass": 243,
+    "fail": 0
+  },
+  "warnings": [
+    "Static PASS does not mean any playable Unreal build, Blender mesh render, game-feel, or lighting quality was verified."
+  ]
+}

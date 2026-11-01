@@ -1,0 +1,69 @@
+{
+  "version": "0.4",
+  "role": "isolated playable demonstration, not full canonical plot",
+  "duration_target_minutes": [
+    14,
+    17
+  ],
+  "duration_status": "DESIGN_ESTIMATE_NOT_TESTED",
+  "notes": "Original B01-B08 add to ~28 min; instead combine 4 early beats and 2 sampled threat beats into an intentionally abridged slice, clearly marked demo-only.",
+  "parts": [
+    {
+      "id": "VS01",
+      "source": "L0_B01",
+      "target_minutes": 2,
+      "objective": "Reach lobby and find job order",
+      "mechanic": "WASD look E pickup; one spatial objective",
+      "required_evidence": "UE PIE move, pick up and exit trigger video"
+    },
+    {
+      "id": "VS02",
+      "source": "L0_B02",
+      "target_minutes": 2,
+      "objective": "Find access pass behind counter",
+      "mechanic": "Drawer interaction and one plausible return anomaly",
+      "required_evidence": "interaction and lighting/continuity footage"
+    },
+    {
+      "id": "VS03",
+      "source": "L0_B03",
+      "target_minutes": 3,
+      "objective": "Restore power and follow cable",
+      "mechanic": "Physical cable routing, sound source, safe retry",
+      "required_evidence": "test incorrect branch then recovery"
+    },
+    {
+      "id": "VS04",
+      "source": "L0_B04",
+      "target_minutes": 3,
+      "objective": "Operate twin pressure valves and open gate",
+      "mechanic": "Cue-based mechanical puzzle with 2 non-text hints",
+      "required_evidence": "blind player solves without optional documents"
+    },
+    {
+      "id": "VS05",
+      "source": "LI_B07",
+      "target_minutes": 2,
+      "objective": "Hide from the patrol near lower reception",
+      "mechanic": "Single learnable sight/audio patrol, safe hiding area",
+      "required_evidence": "enemy patrol recognition and loss-of-target video"
+    },
+    {
+      "id": "VS06",
+      "source": "LI_B08",
+      "target_minutes": 3,
+      "objective": "Take seal tag and reach safe room",
+      "mechanic": "Short telegraphed chase, fail recovery checkpoint and close",
+      "required_evidence": "success and death-retry evidence"
+    }
+  ],
+  "required_signature_features": [
+    "one recoverable physical puzzle",
+    "one readable stealth rule",
+    "one telegraphed chase",
+    "one optional evidence item",
+    "one safe room",
+    "a concrete protagonist objective"
+  ],
+  "dont_confuse_with_mainline": "VS05–VS06 are gameplay excerpts stitched for evaluation; full canonical act I is not bypassed in shipped story."
+}

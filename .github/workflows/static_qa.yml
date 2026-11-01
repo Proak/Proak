@@ -1,0 +1,26 @@
+name: Static QA - Original Horror Game
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install static test dependencies
+        run: python -m pip install Pillow
+      - name: Python script syntax
+        run: python -m py_compile blender/scene_generator.py tools/audit_project.py
+      - name: Asset and content audit
+        run: python tools/audit_project.py
+      - name: Upload static audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: static-qa-report
+          path: qa_report.json
+          if-no-files-found: warn

@@ -1,0 +1,13 @@
+{
+  "version": "0.2",
+  "today": "2026-11-01",
+  "deliverables": [
+    {"id":"DESIGN-001","owner":"ChatGPT","task":"Six-act GDD, worldbuilding and first 18-min beat sheet","status":"done_offline","file":"docs/GDD_v02_DIRECTORS_CUT.md"},
+    {"id":"PROTO-002","owner":"ChatGPT","task":"Godot puzzle/evidence/chase mechanism code","status":"written_not_runtime_tested","file":"game/scripts/main.gd"},
+    {"id":"UE-001","owner":"ChatGPT","task":"UE5.8 starter C++ character/interactable","status":"written_not_compiled","file":"ue58/Confession.uproject"},
+    {"id":"ART-001","owner":"ChatGPT","task":"Original entrance lobby GLB geometric blockout","status":"exported_and_reloaded","file":"production/blockout/scene_01_entrance_BLOCKOUT.glb"},
+    {"id":"ART-002","owner":"Claude Code","task":"Scene01 complete Blender high-fidelity geometry, PBR and first Unreal art pass","status":"ready_for_external_agent","file":"docs/CLAUDE_PARALLEL_MASTER_PROMPT.md"},
+    {"id":"QA-001","owner":"ChatGPT","task":"Static preflight and asset licensing review","status":"static_pass_not_runtime","file":"production/qa/STATIC_AUDIT.json"},
+    {"id":"QA-002","owner":"Human+Claude","task":"Run Unreal build, Blender render, actual performance/profile and 3-user playtest","status":"blocked_external_software","file":"docs/PLAYTEST_AND_QA_GATES.md"}
+  ]
+}

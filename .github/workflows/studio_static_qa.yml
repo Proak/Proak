@@ -1,0 +1,19 @@
+name: Studio v0.3 static audit
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  static-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m py_compile tools/studio_static_audit.py tools/review_gate.py tools/text_redflag_lint.py tools/blender_mesh_audit.py
+      - run: python tools/studio_static_audit.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: studio-static-report
+          path: production/qa/studio_static_report.json
+      # Engine build: separately configure a LOCAL/SELF-HOSTED UE5.8 runner.
+      # Do not mark Unreal tests as passed from this Linux static job.

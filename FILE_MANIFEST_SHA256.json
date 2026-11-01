@@ -1,0 +1,567 @@
+{
+  "title": "THE UNFINISHED CONFESSION / Claude handoff v0.4",
+  "file_count": 112,
+  "archive_role": "source + production prompts, not a playable game",
+  "files": [
+    {
+      "path": ".claude/agents/anti-ai-red-team.md",
+      "sha256": "0bad12643b1eed2c709126ddf99989349a7e234226c7f91b5fd1559a592d24d1",
+      "bytes": 1034
+    },
+    {
+      "path": ".claude/agents/art-critic.md",
+      "sha256": "c0460d9f6fa2397dff5e8ef7bf01014ad4f50e1648ad3bd6dc448046ffe838d1",
+      "bytes": 1018
+    },
+    {
+      "path": ".claude/agents/audio-director.md",
+      "sha256": "82218309aa9066a4303cf1f7867d44e42f5930f0d0214a2bd41dacaeb2c31b27",
+      "bytes": 1037
+    },
+    {
+      "path": ".claude/agents/environment-artist.md",
+      "sha256": "0c014cded08347725e8a2713d9a39b34bc7ff4505bd5d52670d020caf3d45f52",
+      "bytes": 1034
+    },
+    {
+      "path": ".claude/agents/gameplay-engineer.md",
+      "sha256": "82a881df183858e74307e8918caf0233297d41f9ddd7ebcc3d6f4732cd2513b1",
+      "bytes": 1038
+    },
+    {
+      "path": ".claude/agents/level-designer.md",
+      "sha256": "2a045b356af1525704606356c87172f4e4cd2b45573766365295b70e314c2794",
+      "bytes": 1042
+    },
+    {
+      "path": ".claude/agents/lighting-director.md",
+      "sha256": "a9af95d266d0233f1e840b6b20a07872a943432c36aa8a01f53bc2412211e3d1",
+      "bytes": 1047
+    },
+    {
+      "path": ".claude/agents/narrative-designer.md",
+      "sha256": "a3caec16cc3e20329401cff2768b1f4c277dddeb543487aed6c2cfddd9fd970d",
+      "bytes": 1044
+    },
+    {
+      "path": ".claude/agents/producer.md",
+      "sha256": "dae152470cf42d7af8700552cc0d29451d91c97a84266dead0c92aa170f43da7",
+      "bytes": 1054
+    },
+    {
+      "path": ".claude/agents/runtime-qa.md",
+      "sha256": "8ec97e63b5a320176fe10cf335041ccccec56a2f883d1f3a023a9c7172c0edcd",
+      "bytes": 1015
+    },
+    {
+      "path": ".claude/agents/ux-designer.md",
+      "sha256": "62a9b8130cd01b6ac369001c6b405d05038129ac47d5e4b449603f183722a5bf",
+      "bytes": 1017
+    },
+    {
+      "path": ".github/workflows/static_qa.yml",
+      "sha256": "4a6b5efddbdb7c35af22c705099354346e711c74b339a9423464c730bd0a2048",
+      "bytes": 757
+    },
+    {
+      "path": ".github/workflows/studio_static_qa.yml",
+      "sha256": "dc8bed0e0b03c7ea920b5f3261c2fa4e73b599ea870c26de28d39c8e18ac8ccd",
+      "bytes": 759
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "2c0be2b00b9837be517421c6419477597ec56d50daacba0ae6c7d0a335730cda",
+      "bytes": 263
+    },
+    {
+      "path": "00_READ_ME_FIRST.md",
+      "sha256": "41bb4d054a9437eb6fbc70c73cb139a27b6a8c981931a6791558aa7779ea36b1",
+      "bytes": 1652
+    },
+    {
+      "path": "01_CLAUDE_HANDOFF_PROMPT.txt",
+      "sha256": "5bbb04f5d23236024bf2d76b429b64ac1b82c623c427f0ceba8da4bb89fd1d60",
+      "bytes": 4970
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "9b256cc733dbfb874ed14cdcf21df34fe845539e5b5831dad45bb73937fc6672",
+      "bytes": 1072
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "fb99138fa8559214b4aac85b4c4ab21361e0dc25ba7467cad75cc8fe746f1f0c",
+      "bytes": 2767
+    },
+    {
+      "path": "CLAUDE_APP_SINGLE_FILE.txt",
+      "sha256": "b4d1c5b4b4c40c300a7c83bf06b8ab92106977830e0d63b68c89c99658c85ff1",
+      "bytes": 63382
+    },
+    {
+      "path": "Makefile",
+      "sha256": "204d730605f7bc422eb5e410a738c2e921d161ff9d529b879447dfe5daa990d3",
+      "bytes": 137
+    },
+    {
+      "path": "README_开始这里.md",
+      "sha256": "d032069228c657f8ceb3a410fbeb5697ef78f32221030ab7681f592e78ab7c1f",
+      "bytes": 1598
+    },
+    {
+      "path": "blender/scene01_art_pass.py",
+      "sha256": "8bd41f5a9e3d914ce448ee404ed02bca3fe6dec5d178bd1bafc434249536cafc",
+      "bytes": 3332
+    },
+    {
+      "path": "blender/scene_generator.py",
+      "sha256": "288cdcf7a8f702c0dd0b1fe7e42269d7bcf62dec652e4c074f2e588f0e2a1ee5",
+      "bytes": 6937
+    },
+    {
+      "path": "docs/ASSET_LICENSE_AND_RELEASE.md",
+      "sha256": "cefabc39b6cb5d2e68414af13430683da3b8ff7bc5f0c2d1b973a780a1492650",
+      "bytes": 943
+    },
+    {
+      "path": "docs/AUDIT_REPORT_v04.md",
+      "sha256": "75f0c713a792b2f7520eef671b173fc4a07eacf8a46677594643703014aa1049",
+      "bytes": 4419
+    },
+    {
+      "path": "docs/CHANGELOG_v03.md",
+      "sha256": "ca2446667ab465c5b86f0fb27e7196307c9ae321908372767a3e98409b7d4127",
+      "bytes": 625
+    },
+    {
+      "path": "docs/CHATGPT_START_HERE.md",
+      "sha256": "e69cf1b0cce88209201249f63c2f910134e73884ce2b23f758e9693c96e018af",
+      "bytes": 1653
+    },
+    {
+      "path": "docs/CLAUDE_APP_EXECUTION.md",
+      "sha256": "f39eabbb6ecdd34b4a256863ab764f85ec2e1652794f0703d7e5bfa3d2b51970",
+      "bytes": 1287
+    },
+    {
+      "path": "docs/CLAUDE_PARALLEL_MASTER_PROMPT.md",
+      "sha256": "bbabb46fef817d9ab87d6d00b29d1fe61adb7728810643bf43c187114613fbcb",
+      "bytes": 3385
+    },
+    {
+      "path": "docs/CLAUDE_START_HERE.md",
+      "sha256": "576719f5b4d8883353a3d04afdcc33ef3abb3ec8e57a6bf268c51178e1e1cb01",
+      "bytes": 2829
+    },
+    {
+      "path": "docs/DIRECTOR_BEAT_SHEET.md",
+      "sha256": "113077140de811f1eb3791e3238650bbc2d4d100fbda5c69cf0262af49daa277",
+      "bytes": 3735
+    },
+    {
+      "path": "docs/GDD_v02_DIRECTORS_CUT.md",
+      "sha256": "f74ab6218801ed0a1cab7c11529e6547d41baef7d9361e2e59a969e3d97cca98",
+      "bytes": 9572
+    },
+    {
+      "path": "docs/GDD_游戏设计.md",
+      "sha256": "386a247e806c7a658867aa2f83e88d9beb69980ecb848f80ebc2fb6b37205652",
+      "bytes": 4860
+    },
+    {
+      "path": "docs/PIPELINE_UE58_BLENDER.md",
+      "sha256": "8e6a2d501db807e33ddad67b064451195d1bf90742c0540c41b077d469987e21",
+      "bytes": 6159
+    },
+    {
+      "path": "docs/PLAYTEST_AND_QA_GATES.md",
+      "sha256": "96687547b8ac802c8caa9d2bbcd3dc463060cd83011e798d2f19afbfc7cad0b8",
+      "bytes": 2218
+    },
+    {
+      "path": "docs/PRIVATE_MOTIFS_ABSTRACTION.md",
+      "sha256": "506356f9e7959b8943294b377ee798e8e2fcfc93ad33c288bac3748964d7706e",
+      "bytes": 1649
+    },
+    {
+      "path": "docs/PRODUCTION_RUNBOOK.md",
+      "sha256": "c9525bb7b6f646889f26d7dbae5cc85ac77f91d6d5c8d442a4f3eff4b6ff920e",
+      "bytes": 3736
+    },
+    {
+      "path": "docs/PROMPTS/CANON_AND_CONSISTENCY_REVIEW.md",
+      "sha256": "059e07c4044e91054f2779f587544d238f32221cf739c1b3d1deb6abfb84b5fa",
+      "bytes": 510
+    },
+    {
+      "path": "docs/PROMPTS/DIRECTOR_FINAL_PASS.md",
+      "sha256": "1d728f7ec232b222694f9c20bf80d2b97514d3caf7bb793c291a27c0cf650bea",
+      "bytes": 748
+    },
+    {
+      "path": "docs/PROMPTS/ENVIRONMENT_PRODUCTION.md",
+      "sha256": "23b93818b41172b6c405048610b3d20b546fc61f9eb50014844086537ebea9a6",
+      "bytes": 1327
+    },
+    {
+      "path": "docs/PROMPTS/INDEPENDENT_REVIEWER.md",
+      "sha256": "a94d6f904c46441b676fcccbe65d260d105794d2f4144067a1db692326bd58b6",
+      "bytes": 1018
+    },
+    {
+      "path": "docs/PROMPTS/MASTER_ORCHESTRATOR.md",
+      "sha256": "dce5a99f191f87555721a7751c3656ca729bacadf312c27ec06145b7d218a332",
+      "bytes": 5002
+    },
+    {
+      "path": "docs/PROMPTS/PLAYTEST_RED_TEAM.md",
+      "sha256": "193e4eae4cd073b2e056ca3f32b6814d1e8bf070d50a07cc7b3dd2d56fcf51e9",
+      "bytes": 1017
+    },
+    {
+      "path": "docs/PROMPTS/PRODUCER_FIRST_WEEK.md",
+      "sha256": "cdbc1da0c2fa1d8a5f68646a485701aa6698514a2392841f0355170387c3c3f3",
+      "bytes": 632
+    },
+    {
+      "path": "docs/PROMPTS/SCENE_BUILDER.md",
+      "sha256": "9458b59deb12feac35db70b75add031817a3fd76095b4dd521ccfe5357538c10",
+      "bytes": 945
+    },
+    {
+      "path": "docs/QA.md",
+      "sha256": "2509d075564f7f4ed07575b556837e174decaabb258293047abc5b50d3e24d0e",
+      "bytes": 2320
+    },
+    {
+      "path": "docs/QUALITY_GATES_AND_DEAI.md",
+      "sha256": "e42182e69e7bfdc66dd0b5bebe7911c8e0ffb5b3350b7d3aaf8e6c4af5de7eeb",
+      "bytes": 3444
+    },
+    {
+      "path": "docs/RESEARCH_FINDINGS.md",
+      "sha256": "7eee950d5a8c0f3a61a7fe765b52fc56bb3e6952391c906bdaf2af5d46303d12",
+      "bytes": 3284
+    },
+    {
+      "path": "docs/SCENE01_REAL_REFERENCE_NOTES.md",
+      "sha256": "7d771b994b36cb92fe253be8e602acedb07055d153ca10a52613ab8dffe80b58",
+      "bytes": 1734
+    },
+    {
+      "path": "docs/SCENE_OUTLINE_24_BEATS.md",
+      "sha256": "9cd8ade02277912d0978e4ea416bb3be0c3e1ef9a37a40b113613706b6a2fa90",
+      "bytes": 11783
+    },
+    {
+      "path": "docs/SCRIPT_完整剧本与分镜.md",
+      "sha256": "a421d5d299ae53f45b47939103237b738a633d1b7667c939df5e09359e65728f",
+      "bytes": 7313
+    },
+    {
+      "path": "docs/START_GATES_v04.md",
+      "sha256": "5689ab957ab352fe3fdfabf62a459e0068bc9525c626a1e330700bbbe336f2d5",
+      "bytes": 1265
+    },
+    {
+      "path": "docs/STUDIO_BLUEPRINT_v03.md",
+      "sha256": "f424d28c7dc71a21a437bd0dbda45e7fd67164b4c5e98d60a74bc81d7cf93cfb",
+      "bytes": 3490
+    },
+    {
+      "path": "docs/UE58_LOCAL_START.md",
+      "sha256": "a1883df836454e7366d98666570a14d5ce2baf5244c4bdcaa25f3abca77a973d",
+      "bytes": 1664
+    },
+    {
+      "path": "docs/UE_BLENDER_MCP_SETUP.md",
+      "sha256": "522128357575df0c8130b768862376e9b68343abd1d2a708feef3af64838a507",
+      "bytes": 2202
+    },
+    {
+      "path": "docs/WORKSPACE_SAFETY.md",
+      "sha256": "ec6567b8da4101b7c21998ac1e423d9f397a14da3a7779a40436f27384d70383",
+      "bytes": 527
+    },
+    {
+      "path": "docs/WORLD_BIBLE_AND_SCRIPT.md",
+      "sha256": "6b8567d877f431443f13988002005ce9af5ddd48dd807d4ca1da9d83e8b1010e",
+      "bytes": 5682
+    },
+    {
+      "path": "docs/原创性与伦理.md",
+      "sha256": "bde53a88d73a662ced8579f8ef687af759ee7e6fd80092ffed3046c80a7b2417",
+      "bytes": 687
+    },
+    {
+      "path": "docs/并行协作流程.md",
+      "sha256": "9d9ccf89e2e10d8670150e11287bffb0f92987b2cb803ac2c90e07c85d6d7595",
+      "bytes": 1690
+    },
+    {
+      "path": "game/assets/audio/click.wav",
+      "sha256": "3c794a20719bf9a3e2c86fa1f413ea587a5bf0231842e2e0ffa1b58850f82dbc",
+      "bytes": 24298
+    },
+    {
+      "path": "game/assets/audio/closing.wav",
+      "sha256": "c9285755e09fa168527e60ebdfd64bc0542bf1f65352d5ea50804a251a27abf0",
+      "bytes": 220544
+    },
+    {
+      "path": "game/assets/audio/low_drone.wav",
+      "sha256": "f0041c09e9734d178d221b354a538f79752eeb8db1c0687a1f4c817511da92c0",
+      "bytes": 793844
+    },
+    {
+      "path": "game/assets/audio/reveal.wav",
+      "sha256": "fc5b5b3f6a03765a0ae7091f912d11d5803eba570b7a2460934475af53e19571",
+      "bytes": 123522
+    },
+    {
+      "path": "game/assets/audio/soft_hum.wav",
+      "sha256": "d1ea2df234babcf2e0dc8c004c457ebaf9e08cca688a7515c1167c06d74f0549",
+      "bytes": 573344
+    },
+    {
+      "path": "game/assets/textures/concrete.png",
+      "sha256": "521d7ab3e7704a6e361163ee3f5e0ba21f5268fe60dd3dc83c1690a786675051",
+      "bytes": 303229
+    },
+    {
+      "path": "game/assets/textures/dark_stone.png",
+      "sha256": "646c75e5220d2abd177d86b30c79bc0c67c0422ca0f9a08d4e513bc4b73b32f2",
+      "bytes": 252200
+    },
+    {
+      "path": "game/assets/textures/paper.png",
+      "sha256": "110417233961c2f4d417e9001dba4d090969b2605c1b8afc5e073b5fe5c632fb",
+      "bytes": 344337
+    },
+    {
+      "path": "game/assets/textures/rust.png",
+      "sha256": "bd08aca00d0e4982a0021afb27da31b3c2fa94d94c66217205f0004d5899c481",
+      "bytes": 444008
+    },
+    {
+      "path": "game/project.godot",
+      "sha256": "199e0bc440bed748c44177c70922d0fb78d745bd4100610de67ccee17e9a66f9",
+      "bytes": 506
+    },
+    {
+      "path": "game/scenes/main.tscn",
+      "sha256": "d47e8b5e48ae33fe7004fa749878ff6f200acc6b08fc24e6d539c1c5dbca7eb1",
+      "bytes": 169
+    },
+    {
+      "path": "game/scripts/main.gd",
+      "sha256": "4c5188d878457e71733979659584ee2645c70a8ff526b2b6dc647ec0b3a9ca8b",
+      "bytes": 24663
+    },
+    {
+      "path": "game/scripts/player.gd",
+      "sha256": "b0f365aead78e816b5121b235cb610707432927f26f8041f49b1f0e5ef9f85a5",
+      "bytes": 1397
+    },
+    {
+      "path": "production/asset_ledger.csv",
+      "sha256": "862ae56e127c81c1f34a3fd1b3be5134ba8503742e09cf83431e462c1dda7922",
+      "bytes": 228
+    },
+    {
+      "path": "production/blockout/scene_01_entrance_BLOCKOUT.glb",
+      "sha256": "83bcef75c9010cd79e952d7789fdeb2998d4bae3a866e6ca90bd5a90cf6740ae",
+      "bytes": 67804
+    },
+    {
+      "path": "production/blockout/scene_01_geometry_qa.json",
+      "sha256": "b4102328ee7d67ccb94d57183a0d0679623e98be71329e6e9bfd3428579d1cf7",
+      "bytes": 475
+    },
+    {
+      "path": "production/blockout/scene_01_layout.png",
+      "sha256": "8d17cdcfe92eb027bc8e36f0f6b7ef3267656eb3ddbc6dfdeff9b954395bfa62",
+      "bytes": 29501
+    },
+    {
+      "path": "production/blockout/scene_01_object_manifest.json",
+      "sha256": "cb652c87fcc7f90c4911c6275b4b97c31211611ddf9722a50564b0167ba36117",
+      "bytes": 24544
+    },
+    {
+      "path": "production/qa/STATIC_AUDIT.json",
+      "sha256": "1c59273478a88b25f779d97b47ea04aa32af4907c70456729bc67756c0ee4550",
+      "bytes": 2617
+    },
+    {
+      "path": "production/qa/review_template.json",
+      "sha256": "f03f0335dfeeb9fd1a7a7b6bf14069e21e9fd08a962ce52b3e8ba4dca1333914",
+      "bytes": 672
+    },
+    {
+      "path": "production/qa/studio_static_report.json",
+      "sha256": "342284d5dbd01c0573a5e3d29728228973a099afb5611fe71e710bc3b4ea1c3b",
+      "bytes": 23375
+    },
+    {
+      "path": "production/reference/scene_01_sources.json",
+      "sha256": "a7852de7e17cdea6e2871f42b2a54f17214853f612ea12a95fab677f99f7f6fd",
+      "bytes": 3050
+    },
+    {
+      "path": "production/scene_plan.json",
+      "sha256": "1a0ed9f332b1dfc32b764b1fc1c4dee1955ba8c24462d72de51c48b2c321f601",
+      "bytes": 12644
+    },
+    {
+      "path": "production/scene_specs/scene_01_entrance.yaml",
+      "sha256": "6db0719269322d52bc0e1439b472c72ac2d0d1de69d9c35938bfb7fcd17c129b",
+      "bytes": 2120
+    },
+    {
+      "path": "production/scripts/build_scene01_blockout.py",
+      "sha256": "4e35e6ee340d144171280c371cfd0746e7ec2c5115f7dfa337e06fced24f8aaf",
+      "bytes": 6599
+    },
+    {
+      "path": "production/scripts/quality_gate.py",
+      "sha256": "3e0ae197d5d3290ebfcae591b92d732834e855c9a1b2fd9c4a2dd75d3d531dd5",
+      "bytes": 3036
+    },
+    {
+      "path": "production/scripts/unreal_import_validate.py",
+      "sha256": "51907c185e6d7e2bbe2eb861ff8ca1090b149678b34632d0068374ece4fdbe98",
+      "bytes": 1282
+    },
+    {
+      "path": "production/scripts/upgrade_godot.py",
+      "sha256": "10f0da3eaa714de4a623ba90ee1c36854d5505d281d21d541a2b5056b8171550",
+      "bytes": 8362
+    },
+    {
+      "path": "production/taskboard.json",
+      "sha256": "5d6378b482d56e103b55071dc3e2f564cf0e5f961ab092c1dfbfc8affabb32ce",
+      "bytes": 1341
+    },
+    {
+      "path": "production/vertical_slice_plan.json",
+      "sha256": "fe82d997fc8e97bba036742e0937bb0459b6cc16366ab3cc1ec2f10965f32a0d",
+      "bytes": 2485
+    },
+    {
+      "path": "qa_report.json",
+      "sha256": "35716f07ef670edbc4959c1091ad459d049b231d8b9c30c56696d964f343af4a",
+      "bytes": 2916
+    },
+    {
+      "path": "reference/scene_references.md",
+      "sha256": "51a1dd2c1d404b042affa0fddcf657d8d513f8076009d2fdb0fe445705ce6e4f",
+      "bytes": 1651
+    },
+    {
+      "path": "tests/test_gate_rules.py",
+      "sha256": "519d354afac5ee8535c88396b788fa39a353677462a0b210ba7d15eacad58168",
+      "bytes": 1546
+    },
+    {
+      "path": "tools/audit_project.py",
+      "sha256": "86d2b6a9f9ac3d3da221ccd865293373459d4071464e828fe47634048a67a4db",
+      "bytes": 2022
+    },
+    {
+      "path": "tools/blender_mesh_audit.py",
+      "sha256": "aa65735bd7b4c49a66abf3a9875d8b2b1e628b7eb765edbcdd2ac34429a77dc5",
+      "bytes": 1566
+    },
+    {
+      "path": "tools/build_scene.sh",
+      "sha256": "ede7710c27bb037b61f9f30d70758691ed8cb5a229d3fdfba88872a5d0ae5f0c",
+      "bytes": 685
+    },
+    {
+      "path": "tools/handoff_preflight.py",
+      "sha256": "3a34f34e44956ca4dc019dd98ff2360f501f664fda9b5ced22acc421132b9ba7",
+      "bytes": 1905
+    },
+    {
+      "path": "tools/review_gate.py",
+      "sha256": "e434b7831741971b420c930d3168e2765fcafdf7628a73b81efaabc39b0bd793",
+      "bytes": 2064
+    },
+    {
+      "path": "tools/studio_static_audit.py",
+      "sha256": "02113b961d727692315f86ec0b7c3b90726896d52f88566a11081b877c871759",
+      "bytes": 2832
+    },
+    {
+      "path": "tools/text_redflag_lint.py",
+      "sha256": "ae352d9481b33bb12bc1ff75bd4cce3ded11af537cb93d616b9d693920e08a55",
+      "bytes": 882
+    },
+    {
+      "path": "ue58/Confession.uproject",
+      "sha256": "0bddcae2c84a2f085692aa790fde0279cf2fd6d6fd63d2957e515f1b0043fa96",
+      "bytes": 369
+    },
+    {
+      "path": "ue58/Config/DefaultEngine.ini",
+      "sha256": "22cdc12d31c965af2b19f34c4a3ef4b8a89ab12a4dbc212a8d7030fc6e595901",
+      "bytes": 394
+    },
+    {
+      "path": "ue58/Config/DefaultInput.ini",
+      "sha256": "5186493a7582f35a4362255e27612ca912f947fd5aea6e56a9ce0256ce31a1e5",
+      "bytes": 511
+    },
+    {
+      "path": "ue58/Source/Confession/Confession.Build.cs",
+      "sha256": "0065d242376c5970f115bb7dc3a149b0407e0b30d7ae878463ca9f7088e57c54",
+      "bytes": 390
+    },
+    {
+      "path": "ue58/Source/Confession/Private/Confession.cpp",
+      "sha256": "f19c3958c7332bea5d786307849c09299c66aeae792758236f532095386f82b7",
+      "bytes": 116
+    },
+    {
+      "path": "ue58/Source/Confession/Private/ConfessionCharacter.cpp",
+      "sha256": "855e85d418d3652583037e893579ea64c1d825deb5a8a38ee32186a20476869b",
+      "bytes": 1997
+    },
+    {
+      "path": "ue58/Source/Confession/Private/ConfessionGameMode.cpp",
+      "sha256": "705998fca3e97cebdca714c422ad2c8479bc4be32a08b4035202dec25fb5636b",
+      "bytes": 163
+    },
+    {
+      "path": "ue58/Source/Confession/Private/ConfessionInteractable.cpp",
+      "sha256": "5a05a45ffa9a9aa9450cfa2caa03b52f0cd506b9c3e34292bb1809c1e41d40e6",
+      "bytes": 479
+    },
+    {
+      "path": "ue58/Source/Confession/Public/ConfessionCharacter.h",
+      "sha256": "5bc403b99ecd2320ba1dd2e5a5b8bdee24b05087f7560ab011fe539b6a7ee43d",
+      "bytes": 637
+    },
+    {
+      "path": "ue58/Source/Confession/Public/ConfessionGameMode.h",
+      "sha256": "adf83c15dc309483a702f0fa4ce273cf4606275e967884cdab70818ab99375a0",
+      "bytes": 243
+    },
+    {
+      "path": "ue58/Source/Confession/Public/ConfessionInteractable.h",
+      "sha256": "1df291730b42cf212188f45944fb152404c370726533f697f9f6790ac2aed527",
+      "bytes": 891
+    },
+    {
+      "path": "ue58/Source/Confession.Target.cs",
+      "sha256": "85dd917ba426cdbe5d521295ce22922e18581cbea4f1818f92881cee43ef2bc8",
+      "bytes": 307
+    },
+    {
+      "path": "ue58/Source/ConfessionEditor.Target.cs",
+      "sha256": "5ba1dd272543ddf2ed8adf507ae84ec4208424c86d38474683b50ed072b35c9b",
+      "bytes": 321
+    }
+  ]
+}

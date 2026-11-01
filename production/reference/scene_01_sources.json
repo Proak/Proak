@@ -1,0 +1,57 @@
+{
+  "scene": "L0_B01",
+  "research_date": "2026-11-01",
+  "references": [
+    {
+      "url": "https://www.arbonia.com/de/blog/die-tuer-im-film/",
+      "usage": "Architecture-only mood: cold side-lit corridor with heavily worn lower wall and clear converging lines. Do not reproduce exact composition or copy image into textures.",
+      "type": "visual-reference-only",
+      "rights": "unknown / third-party reference: not for redistribution"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2300840/Subliminal/",
+      "usage": "Gameplay readability comparison: repeating concrete posts and fluorescents; explicitly do NOT duplicate layout, framing or design.",
+      "type": "visual-reference-only",
+      "rights": "game screenshot copyright retained by rights holders"
+    },
+    {
+      "url": "https://polyhaven.com/license",
+      "usage": "Find CC0 PBR concrete / worn metal / paper materials only; select specific asset and capture link before importing.",
+      "type": "license-source",
+      "rights": "CC0 for assets"
+    },
+    {
+      "url": "https://ambientcg.com/",
+      "usage": "Supplemental CC0 PBR materials for concrete and metal when selected, with per-asset attribution record.",
+      "type": "license-source",
+      "rights": "check per asset"
+    },
+    {
+      "url": "https://www.utiledesign.com/work/boston-city-hall-lobby-renovation/",
+      "usage": "Public civic hall logic: functional information counter, security lane, durable tile/concrete; do not copy exact floor plan/desk silhouette.",
+      "type": "visual-reference-only",
+      "rights": "Architectural practice photograph copyrighted; visual reference only; do not redistribute or derive textures."
+    },
+    {
+      "url": "https://www.bfbag.ch/blog/2023/oberwil-gemeindehaus",
+      "usage": "Low-key civic service reception with clean concrete vs aged wood contrast; reinterpret for fictional archive hall; no 1:1 structure.",
+      "type": "visual-reference-only",
+      "rights": "Third-party architecture photography; visual reference only."
+    },
+    {
+      "url": "https://www.wsp.com/en-au/projects/national-archives",
+      "usage": "Movable archive shelving mechanical handles and practical aisle clearance; use to verify function not replicate exact collection room.",
+      "type": "visual-reference-only",
+      "rights": "Third-party WSP photograph; visual reference only."
+    },
+    {
+      "url": "https://siarchives.si.edu/collections/siris_arc_388196",
+      "usage": "Historic real archive pigeon-hole shelving logic and dimensions, creative re-interpretation of boxes, labels, retrieval practice.",
+      "type": "source-study",
+      "rights": "CC0 public domain photograph reported by Smithsonian; still avoid copying an exact historic setting."
+    }
+  ],
+  "licensed_third_party_assets_included": [],
+  "reviewed_scene": "L0_B01, front hall working reference library (not downloaded or included)",
+  "source_qa": "Four additional verified references. Third party photos remain external; no imagery packaged."
+}

@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "SM_Floor_00",
+    "center": [
+      0,
+      0,
+      -0.11
+    ],
+    "size": [
+      13,
+      19,
+      0.22
+    ],
+    "material": "floor",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Ceiling_00",
+    "center": [
+      0,
+      0,
+      4.3
+    ],
+    "size": [
+      13,
+      19,
+      0.22
+    ],
+    "material": "concrete",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Wall_Left",
+    "center": [
+      -6.52,
+      2.0,
+      2.1
+    ],
+    "size": [
+      0.24,
+      15.0,
+      4.2
+    ],
+    "material": "concrete",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Wall_Left_Entry",
+    "center": [
+      -6.52,
+      -7.5,
+      2.1
+    ],
+    "size": [
+      0.24,
+      4,
+      4.2
+    ],
+    "material": "concrete",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Wall_Right",
+    "center": [
+      6.52,
+      0,
+      2.1
+    ],
+    "size": [
+      0.24,
+      19,
+      4.2
+    ],
+    "material": "concrete",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Wall_Entrance_Side_-1",
+    "center": [
+      -4.05,
+      -9.5,
+      2.1
+    ],
+    "size": [
+      4.95,
+      0.25,
+      4.2
+    ],
+    "material": "concrete",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Wall_Entrance_Side_1",
+    "center": [
+      4.05,
+      -9.5,
+      2.1
+    ],
+    "size": [
+      4.95,
+      0.25,
+      4.2
+    ],
+    "material": "concrete",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Wall_Entrance_Header",
+    "center": [
+      0,
+      -9.5,
+      3.75
+    ],
+    "size": [
+      3.1,
+      0.25,
+      0.9
+    ],
+    "material": "concrete",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Wall_Rear_Side_-1",
+    "center": [
+      -3.5,
+      9.5,
+      2.1
+    ],
+    "size": [
+      6.1,
+      0.24,
+      4.2
+    ],
+    "material": "concrete",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Wall_Rear_Side_1",
+    "center": [
+      3.5,
+      9.5,
+      2.1
+    ],
+    "size": [
+      6.1,
+      0.24,
+      4.2
+    ],
+    "material": "concrete",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Wall_Rear_Header",
+    "center": [
+      0,
+      9.5,
+      3.65
+    ],
+    "size": [
+      1.08,
+      0.24,
+      1.1
+    ],
+    "material": "concrete",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Basement_Door",
+    "center": [
+      0,
+      9.32,
+      1.05
+    ],
+    "size": [
+      1.15,
+      0.1,
+      2.12
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Basement_Door_Handle",
+    "center": [
+      0.43,
+      9.13,
+      1.06
+    ],
+    "size": [
+      0.12,
+      0.13,
+      0.03
+    ],
+    "material": "brass",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Basement_Door_Plate",
+    "center": [
+      0.0,
+      9.16,
+      1.75
+    ],
+    "size": [
+      0.6,
+      0.025,
+      0.28
+    ],
+    "material": "brass",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Counter_Base",
+    "center": [
+      -3.45,
+      -0.35,
+      0.5
+    ],
+    "size": [
+      4.25,
+      1.05,
+      1.0
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Counter_Top",
+    "center": [
+      -3.45,
+      -0.35,
+      1.06
+    ],
+    "size": [
+      4.5,
+      1.2,
+      0.09
+    ],
+    "material": "brass",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Counter_Window_Frame",
+    "center": [
+      -3.5,
+      0.25,
+      2.0
+    ],
+    "size": [
+      4.45,
+      0.13,
+      0.11
+    ],
+    "material": "dark",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Counter_Window_Post_-1",
+    "center": [
+      -5.68,
+      0.25,
+      2.45
+    ],
+    "size": [
+      0.1,
+      0.12,
+      2.9
+    ],
+    "material": "dark",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Counter_Window_Post_1",
+    "center": [
+      -1.3199999999999998,
+      0.25,
+      2.45
+    ],
+    "size": [
+      0.1,
+      0.12,
+      2.9
+    ],
+    "material": "dark",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Counter_Slot",
+    "center": [
+      -3.4,
+      -0.955,
+      1.25
+    ],
+    "size": [
+      0.65,
+      0.11,
+      0.1
+    ],
+    "material": "paper",
+    "triangles": 12
+  },
+  {
+    "id": "SM_CardSlot_01",
+    "center": [
+      -4.35,
+      -0.955,
+      1.35
+    ],
+    "size": [
+      0.45,
+      0.1,
+      0.29
+    ],
+    "material": "brass",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_Back_0",
+    "center": [
+      5.85,
+      -5.5,
+      1.85
+    ],
+    "size": [
+      0.1,
+      1.82,
+      3.45
+    ],
+    "material": "dark",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_0_55",
+    "center": [
+      5.45,
+      -5.5,
+      0.55
+    ],
+    "size": [
+      0.84,
+      1.82,
+      0.07
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_0_114",
+    "center": [
+      5.45,
+      -5.5,
+      1.15
+    ],
+    "size": [
+      0.84,
+      1.82,
+      0.07
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_0_180",
+    "center": [
+      5.45,
+      -5.5,
+      1.8
+    ],
+    "size": [
+      0.84,
+      1.82,
+      0.07
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_0_245",
+    "center": [
+      5.45,
+      -5.5,
+      2.45
+    ],
+    "size": [
+      0.84,
+      1.82,
+      0.07
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_0_315",
+    "center": [
+      5.45,
+      -5.5,
+      3.15
+    ],
+    "size": [
+      0.84,
+      1.82,
+      0.07
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_FileBox_0_0",
+    "center": [
+      5.42,
+      -6.15,
+      1.43
+    ],
+    "size": [
+      0.35,
+      0.29,
+      0.42
+    ],
+    "material": "paper",
+    "triangles": 12
+  },
+  {
+    "id": "SM_FileBox_0_1",
+    "center": [
+      5.42,
+      -5.73,
+      1.43
+    ],
+    "size": [
+      0.35,
+      0.29,
+      0.42
+    ],
+    "material": "paper",
+    "triangles": 12
+  },
+  {
+    "id": "SM_FileBox_0_2",
+    "center": [
+      5.42,
+      -5.3100000000000005,
+      1.43
+    ],
+    "size": [
+      0.35,
+      0.29,
+      0.42
+    ],
+    "material": "paper",
+    "triangles": 12
+  },
+  {
+    "id": "SM_FileBox_0_3",
+    "center": [
+      5.42,
+      -4.890000000000001,
+      1.43
+    ],
+    "size": [
+      0.35,
+      0.29,
+      0.42
+    ],
+    "material": "paper",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_Back_1",
+    "center": [
+      5.85,
+      -3.3,
+      1.85
+    ],
+    "size": [
+      0.1,
+      1.82,
+      3.45
+    ],
+    "material": "dark",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_1_55",
+    "center": [
+      5.45,
+      -3.3,
+      0.55
+    ],
+    "size": [
+      0.84,
+      1.82,
+      0.07
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_1_114",
+    "center": [
+      5.45,
+      -3.3,
+      1.15
+    ],
+    "size": [
+      0.84,
+      1.82,
+      0.07
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_1_180",
+    "center": [
+      5.45,
+      -3.3,
+      1.8
+    ],
+    "size": [
+      0.84,
+      1.82,
+      0.07
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_1_245",
+    "center": [
+      5.45,
+      -3.3,
+      2.45
+    ],
+    "size": [
+      0.84,
+      1.82,
+      0.07
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_1_315",
+    "center": [
+      5.45,
+      -3.3,
+      3.15
+    ],
+    "size": [
+      0.84,
+      1.82,
+      0.07
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_FileBox_1_0",
+    "center": [
+      5.42,
+      -3.9499999999999997,
+      1.43
+    ],
+    "size": [
+      0.35,
+      0.29,
+      0.42
+    ],
+    "material": "paper",
+    "triangles": 12
+  },
+  {
+    "id": "SM_FileBox_1_1",
+    "center": [
+      5.42,
+      -3.53,
+      1.43
+    ],
+    "size": [
+      0.35,
+      0.29,
+      0.42
+    ],
+    "material": "paper",
+    "triangles": 12
+  },
+  {
+    "id": "SM_FileBox_1_2",
+    "center": [
+      5.42,
+      -3.11,
+      1.43
+    ],
+    "size": [
+      0.35,
+      0.29,
+      0.42
+    ],
+    "material": "paper",
+    "triangles": 12
+  },
+  {
+    "id": "SM_FileBox_1_3",
+    "center": [
+      5.42,
+      -2.6899999999999995,
+      1.43
+    ],
+    "size": [
+      0.35,
+      0.29,
+      0.42
+    ],
+    "material": "paper",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_Back_2",
+    "center": [
+      5.85,
+      -1.0999999999999996,
+      1.85
+    ],
+    "size": [
+      0.1,
+      1.82,
+      3.45
+    ],
+    "material": "dark",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_2_55",
+    "center": [
+      5.45,
+      -1.0999999999999996,
+      0.55
+    ],
+    "size": [
+      0.84,
+      1.82,
+      0.07
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_2_114",
+    "center": [
+      5.45,
+      -1.0999999999999996,
+      1.15
+    ],
+    "size": [
+      0.84,
+      1.82,
+      0.07
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_2_180",
+    "center": [
+      5.45,
+      -1.0999999999999996,
+      1.8
+    ],
+    "size": [
+      0.84,
+      1.82,
+      0.07
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_2_245",
+    "center": [
+      5.45,
+      -1.0999999999999996,
+      2.45
+    ],
+    "size": [
+      0.84,
+      1.82,
+      0.07
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_2_315",
+    "center": [
+      5.45,
+      -1.0999999999999996,
+      3.15
+    ],
+    "size": [
+      0.84,
+      1.82,
+      0.07
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_FileBox_2_0",
+    "center": [
+      5.42,
+      -1.7499999999999996,
+      1.43
+    ],
+    "size": [
+      0.35,
+      0.29,
+      0.42
+    ],
+    "material": "paper",
+    "triangles": 12
+  },
+  {
+    "id": "SM_FileBox_2_1",
+    "center": [
+      5.42,
+      -1.3299999999999996,
+      1.43
+    ],
+    "size": [
+      0.35,
+      0.29,
+      0.42
+    ],
+    "material": "paper",
+    "triangles": 12
+  },
+  {
+    "id": "SM_FileBox_2_2",
+    "center": [
+      5.42,
+      -0.9099999999999996,
+      1.43
+    ],
+    "size": [
+      0.35,
+      0.29,
+      0.42
+    ],
+    "material": "paper",
+    "triangles": 12
+  },
+  {
+    "id": "SM_FileBox_2_3",
+    "center": [
+      5.42,
+      -0.48999999999999955,
+      1.43
+    ],
+    "size": [
+      0.35,
+      0.29,
+      0.42
+    ],
+    "material": "paper",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_Back_3",
+    "center": [
+      5.85,
+      1.1000000000000005,
+      1.85
+    ],
+    "size": [
+      0.1,
+      1.82,
+      3.45
+    ],
+    "material": "dark",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_3_55",
+    "center": [
+      5.45,
+      1.1000000000000005,
+      0.55
+    ],
+    "size": [
+      0.84,
+      1.82,
+      0.07
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_3_114",
+    "center": [
+      5.45,
+      1.1000000000000005,
+      1.15
+    ],
+    "size": [
+      0.84,
+      1.82,
+      0.07
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_3_180",
+    "center": [
+      5.45,
+      1.1000000000000005,
+      1.8
+    ],
+    "size": [
+      0.84,
+      1.82,
+      0.07
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_3_245",
+    "center": [
+      5.45,
+      1.1000000000000005,
+      2.45
+    ],
+    "size": [
+      0.84,
+      1.82,
+      0.07
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_3_315",
+    "center": [
+      5.45,
+      1.1000000000000005,
+      3.15
+    ],
+    "size": [
+      0.84,
+      1.82,
+      0.07
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_FileBox_3_0",
+    "center": [
+      5.42,
+      0.4500000000000005,
+      1.43
+    ],
+    "size": [
+      0.35,
+      0.29,
+      0.42
+    ],
+    "material": "paper",
+    "triangles": 12
+  },
+  {
+    "id": "SM_FileBox_3_1",
+    "center": [
+      5.42,
+      0.8700000000000006,
+      1.43
+    ],
+    "size": [
+      0.35,
+      0.29,
+      0.42
+    ],
+    "material": "paper",
+    "triangles": 12
+  },
+  {
+    "id": "SM_FileBox_3_2",
+    "center": [
+      5.42,
+      1.2900000000000005,
+      1.43
+    ],
+    "size": [
+      0.35,
+      0.29,
+      0.42
+    ],
+    "material": "paper",
+    "triangles": 12
+  },
+  {
+    "id": "SM_FileBox_3_3",
+    "center": [
+      5.42,
+      1.7100000000000004,
+      1.43
+    ],
+    "size": [
+      0.35,
+      0.29,
+      0.42
+    ],
+    "material": "paper",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_Back_4",
+    "center": [
+      5.85,
+      3.3000000000000007,
+      1.85
+    ],
+    "size": [
+      0.1,
+      1.82,
+      3.45
+    ],
+    "material": "dark",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_4_55",
+    "center": [
+      5.45,
+      3.3000000000000007,
+      0.55
+    ],
+    "size": [
+      0.84,
+      1.82,
+      0.07
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_4_114",
+    "center": [
+      5.45,
+      3.3000000000000007,
+      1.15
+    ],
+    "size": [
+      0.84,
+      1.82,
+      0.07
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_4_180",
+    "center": [
+      5.45,
+      3.3000000000000007,
+      1.8
+    ],
+    "size": [
+      0.84,
+      1.82,
+      0.07
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_4_245",
+    "center": [
+      5.45,
+      3.3000000000000007,
+      2.45
+    ],
+    "size": [
+      0.84,
+      1.82,
+      0.07
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_ShelfRight_4_315",
+    "center": [
+      5.45,
+      3.3000000000000007,
+      3.15
+    ],
+    "size": [
+      0.84,
+      1.82,
+      0.07
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_FileBox_4_0",
+    "center": [
+      5.42,
+      2.650000000000001,
+      1.43
+    ],
+    "size": [
+      0.35,
+      0.29,
+      0.42
+    ],
+    "material": "paper",
+    "triangles": 12
+  },
+  {
+    "id": "SM_FileBox_4_1",
+    "center": [
+      5.42,
+      3.0700000000000007,
+      1.43
+    ],
+    "size": [
+      0.35,
+      0.29,
+      0.42
+    ],
+    "material": "paper",
+    "triangles": 12
+  },
+  {
+    "id": "SM_FileBox_4_2",
+    "center": [
+      5.42,
+      3.4900000000000007,
+      1.43
+    ],
+    "size": [
+      0.35,
+      0.29,
+      0.42
+    ],
+    "material": "paper",
+    "triangles": 12
+  },
+  {
+    "id": "SM_FileBox_4_3",
+    "center": [
+      5.42,
+      3.910000000000001,
+      1.43
+    ],
+    "size": [
+      0.35,
+      0.29,
+      0.42
+    ],
+    "material": "paper",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Floor_Seam_0",
+    "center": [
+      0,
+      -8,
+      0.008
+    ],
+    "size": [
+      12.7,
+      0.02,
+      0.008
+    ],
+    "material": "dark",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Floor_Seam_1",
+    "center": [
+      0,
+      -6,
+      0.008
+    ],
+    "size": [
+      12.7,
+      0.02,
+      0.008
+    ],
+    "material": "dark",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Floor_Seam_2",
+    "center": [
+      0,
+      -4,
+      0.008
+    ],
+    "size": [
+      12.7,
+      0.02,
+      0.008
+    ],
+    "material": "dark",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Floor_Seam_3",
+    "center": [
+      0,
+      -2,
+      0.008
+    ],
+    "size": [
+      12.7,
+      0.02,
+      0.008
+    ],
+    "material": "dark",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Floor_Seam_4",
+    "center": [
+      0,
+      0,
+      0.008
+    ],
+    "size": [
+      12.7,
+      0.02,
+      0.008
+    ],
+    "material": "dark",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Floor_Seam_5",
+    "center": [
+      0,
+      2,
+      0.008
+    ],
+    "size": [
+      12.7,
+      0.02,
+      0.008
+    ],
+    "material": "dark",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Floor_Seam_6",
+    "center": [
+      0,
+      4,
+      0.008
+    ],
+    "size": [
+      12.7,
+      0.02,
+      0.008
+    ],
+    "material": "dark",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Floor_Seam_7",
+    "center": [
+      0,
+      6,
+      0.008
+    ],
+    "size": [
+      12.7,
+      0.02,
+      0.008
+    ],
+    "material": "dark",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Floor_Seam_8",
+    "center": [
+      0,
+      8,
+      0.008
+    ],
+    "size": [
+      12.7,
+      0.02,
+      0.008
+    ],
+    "material": "dark",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Left_Pillar_1",
+    "center": [
+      -6.2,
+      -4.6000000000000005,
+      2.06
+    ],
+    "size": [
+      0.53,
+      0.55,
+      4.11
+    ],
+    "material": "concrete",
+    "triangles": 12
+  },
+  {
+    "id": "SM_High_Window_Frame_1",
+    "center": [
+      -6.06,
+      -4.6000000000000005,
+      3.35
+    ],
+    "size": [
+      0.12,
+      1.1,
+      0.9
+    ],
+    "material": "dark",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Window_Glass_1",
+    "center": [
+      -6.015,
+      -4.6000000000000005,
+      3.35
+    ],
+    "size": [
+      0.02,
+      0.9,
+      0.6
+    ],
+    "material": "glass",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Left_Pillar_2",
+    "center": [
+      -6.2,
+      -1.8000000000000007,
+      2.06
+    ],
+    "size": [
+      0.53,
+      0.55,
+      4.11
+    ],
+    "material": "concrete",
+    "triangles": 12
+  },
+  {
+    "id": "SM_High_Window_Frame_2",
+    "center": [
+      -6.06,
+      -1.8000000000000007,
+      3.35
+    ],
+    "size": [
+      0.12,
+      1.1,
+      0.9
+    ],
+    "material": "dark",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Window_Glass_2",
+    "center": [
+      -6.015,
+      -1.8000000000000007,
+      3.35
+    ],
+    "size": [
+      0.02,
+      0.9,
+      0.6
+    ],
+    "material": "glass",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Left_Pillar_3",
+    "center": [
+      -6.2,
+      0.9999999999999982,
+      2.06
+    ],
+    "size": [
+      0.53,
+      0.55,
+      4.11
+    ],
+    "material": "concrete",
+    "triangles": 12
+  },
+  {
+    "id": "SM_High_Window_Frame_3",
+    "center": [
+      -6.06,
+      0.9999999999999982,
+      3.35
+    ],
+    "size": [
+      0.12,
+      1.1,
+      0.9
+    ],
+    "material": "dark",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Window_Glass_3",
+    "center": [
+      -6.015,
+      0.9999999999999982,
+      3.35
+    ],
+    "size": [
+      0.02,
+      0.9,
+      0.6
+    ],
+    "material": "glass",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Left_Pillar_4",
+    "center": [
+      -6.2,
+      3.799999999999999,
+      2.06
+    ],
+    "size": [
+      0.53,
+      0.55,
+      4.11
+    ],
+    "material": "concrete",
+    "triangles": 12
+  },
+  {
+    "id": "SM_High_Window_Frame_4",
+    "center": [
+      -6.06,
+      3.799999999999999,
+      3.35
+    ],
+    "size": [
+      0.12,
+      1.1,
+      0.9
+    ],
+    "material": "dark",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Window_Glass_4",
+    "center": [
+      -6.015,
+      3.799999999999999,
+      3.35
+    ],
+    "size": [
+      0.02,
+      0.9,
+      0.6
+    ],
+    "material": "glass",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Left_Pillar_5",
+    "center": [
+      -6.2,
+      6.6,
+      2.06
+    ],
+    "size": [
+      0.53,
+      0.55,
+      4.11
+    ],
+    "material": "concrete",
+    "triangles": 12
+  },
+  {
+    "id": "SM_High_Window_Frame_5",
+    "center": [
+      -6.06,
+      6.6,
+      3.35
+    ],
+    "size": [
+      0.12,
+      1.1,
+      0.9
+    ],
+    "material": "dark",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Window_Glass_5",
+    "center": [
+      -6.015,
+      6.6,
+      3.35
+    ],
+    "size": [
+      0.02,
+      0.9,
+      0.6
+    ],
+    "material": "glass",
+    "triangles": 12
+  },
+  {
+    "id": "SM_LampHousing_0",
+    "center": [
+      -0.8,
+      -5.9,
+      4.09
+    ],
+    "size": [
+      1.2,
+      0.32,
+      0.14
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_LampDiffuser_0",
+    "center": [
+      -0.8,
+      -5.9,
+      4.01
+    ],
+    "size": [
+      1.05,
+      0.22,
+      0.025
+    ],
+    "material": "light",
+    "triangles": 12
+  },
+  {
+    "id": "SM_LampHousing_1",
+    "center": [
+      -0.8,
+      -2.6000000000000005,
+      4.09
+    ],
+    "size": [
+      1.2,
+      0.32,
+      0.14
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_LampDiffuser_1",
+    "center": [
+      -0.8,
+      -2.6000000000000005,
+      4.01
+    ],
+    "size": [
+      1.05,
+      0.22,
+      0.025
+    ],
+    "material": "light",
+    "triangles": 12
+  },
+  {
+    "id": "SM_LampHousing_2",
+    "center": [
+      -0.8,
+      0.6999999999999993,
+      4.09
+    ],
+    "size": [
+      1.2,
+      0.32,
+      0.14
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_LampDiffuser_2",
+    "center": [
+      -0.8,
+      0.6999999999999993,
+      4.01
+    ],
+    "size": [
+      1.05,
+      0.22,
+      0.025
+    ],
+    "material": "light",
+    "triangles": 12
+  },
+  {
+    "id": "SM_LampHousing_3",
+    "center": [
+      -0.8,
+      3.9999999999999982,
+      4.09
+    ],
+    "size": [
+      1.2,
+      0.32,
+      0.14
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_LampDiffuser_3",
+    "center": [
+      -0.8,
+      3.9999999999999982,
+      4.01
+    ],
+    "size": [
+      1.05,
+      0.22,
+      0.025
+    ],
+    "material": "light",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Desk_Clock",
+    "center": [
+      -2.5,
+      -0.5,
+      1.29
+    ],
+    "size": [
+      0.34,
+      0.23,
+      0.35
+    ],
+    "material": "dark",
+    "triangles": 12
+  },
+  {
+    "id": "SM_Wall_Clock",
+    "center": [
+      1.5,
+      9.18,
+      3.2
+    ],
+    "size": [
+      0.62,
+      0.12,
+      0.62
+    ],
+    "material": "brass",
+    "triangles": 12
+  },
+  {
+    "id": "SM_LetterTray_0",
+    "center": [
+      -4.75,
+      0.04,
+      1.22
+    ],
+    "size": [
+      0.6,
+      0.55,
+      0.11
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_LetterTray_1",
+    "center": [
+      -4.75,
+      0.04,
+      1.38
+    ],
+    "size": [
+      0.6,
+      0.55,
+      0.11
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_LetterTray_2",
+    "center": [
+      -4.75,
+      0.04,
+      1.54
+    ],
+    "size": [
+      0.6,
+      0.55,
+      0.11
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_NoticePanel",
+    "center": [
+      3.4,
+      9.18,
+      1.9
+    ],
+    "size": [
+      1.55,
+      0.08,
+      0.9
+    ],
+    "material": "paper",
+    "triangles": 12
+  },
+  {
+    "id": "SM_EmptyFrame_Backing",
+    "center": [
+      6.3,
+      1.0,
+      1.95
+    ],
+    "size": [
+      0.07,
+      1.35,
+      1.7
+    ],
+    "material": "dark",
+    "triangles": 12
+  },
+  {
+    "id": "SM_EmptyFrame_H_-1",
+    "center": [
+      6.22,
+      1.0,
+      1.12
+    ],
+    "size": [
+      0.13,
+      1.4,
+      0.06
+    ],
+    "material": "brass",
+    "triangles": 12
+  },
+  {
+    "id": "SM_EmptyFrame_V_-1",
+    "center": [
+      6.22,
+      0.31000000000000005,
+      1.95
+    ],
+    "size": [
+      0.13,
+      0.07,
+      1.65
+    ],
+    "material": "brass",
+    "triangles": 12
+  },
+  {
+    "id": "SM_EmptyFrame_H_1",
+    "center": [
+      6.22,
+      1.0,
+      2.78
+    ],
+    "size": [
+      0.13,
+      1.4,
+      0.06
+    ],
+    "material": "brass",
+    "triangles": 12
+  },
+  {
+    "id": "SM_EmptyFrame_V_1",
+    "center": [
+      6.22,
+      1.69,
+      1.95
+    ],
+    "size": [
+      0.13,
+      0.07,
+      1.65
+    ],
+    "material": "brass",
+    "triangles": 12
+  },
+  {
+    "id": "SM_CableTrunk_0",
+    "center": [
+      2.2,
+      -7.2,
+      4.03
+    ],
+    "size": [
+      0.12,
+      2.72,
+      0.12
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_CableTrunk_1",
+    "center": [
+      2.2,
+      -4.2,
+      4.03
+    ],
+    "size": [
+      0.12,
+      2.72,
+      0.12
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_CableTrunk_2",
+    "center": [
+      2.2,
+      -1.2000000000000002,
+      4.03
+    ],
+    "size": [
+      0.12,
+      2.72,
+      0.12
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_CableTrunk_3",
+    "center": [
+      2.2,
+      1.7999999999999998,
+      4.03
+    ],
+    "size": [
+      0.12,
+      2.72,
+      0.12
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_CableTrunk_4",
+    "center": [
+      2.2,
+      4.8,
+      4.03
+    ],
+    "size": [
+      0.12,
+      2.72,
+      0.12
+    ],
+    "material": "iron",
+    "triangles": 12
+  },
+  {
+    "id": "SM_CableTrunk_5",
+    "center": [
+      2.2,
+      7.8,
+      4.03
+    ],
+    "size": [
+      0.12,
+      2.72,
+      0.12
+    ],
+    "material": "iron",
+    "triangles": 12
+  }
+]

@@ -1,0 +1,35 @@
+id: L0_B01
+name_cn: 回执局门厅
+world: 临汐市政回执局
+stage: blockout
+project_version: 0.2
+world_units: centimetres
+blender_units: metres
+size_m: {width: 13.0, length: 19.0, height: 4.2}
+start: {x: 0.0, y: -8.0, facing: north}
+exit: {x: 3.7, y: 8.4, door_id: Door_Basement_01}
+human_scale: {eye_height_cm: 165, door_clear_width_cm: 115, hall_clearance_cm: 150}
+story_logic: '旧市政回执局的前台，曾为市民收存未领取照片、通知和录音。'
+visual_intent:
+  palette: ['wet-concrete-grey', 'aged-paper', 'oxidized-brass', 'weak-dawn-amber']
+  key_light: 'low angle sun shaft from east high windows; counter silhouette left'
+  focal_anchor: Door_Basement_01
+  reference_type: 'architectural spatial logic + real documentary materials, not a copied location'
+key_props:
+  - {id: Counter_01, kind: original, interact: false, size_m: [4.2, 1.1, 0.95]}
+  - {id: CardSlot_01, kind: original, interact: true, puzzle_role: get_access_card}
+  - {id: Clock_Wall_01, kind: original, interact: false, dramatic_role: stopped_at_0417}
+  - {id: Clock_Desk_01, kind: original, interact: false, dramatic_role: ticking_out_of_sync}
+  - {id: Frame_Empty_01, kind: original, interact: true, dramatic_role: delayed_displacement_8cm}
+  - {id: Door_Basement_01, kind: original, interact: true, puzzle_role: locked_until_card}
+  - {id: Shelf_Archive_01, kind: original, interact: false}
+performance_budget_provisional:
+  texture_res_main: '2048 (hero props up to 4096 with justification)'
+  count_dynamic_shadowed_key_lights: 3
+  max_unique_materials_goal: 15
+  expected_playtime_minutes: [3, 5]
+shots:
+  - {id: shot_entrance, camera_m: [0, -7.1, 1.65], aim_m: [3.5, 6.8, 1.7], intent: 'see task destination but not access route'}
+  - {id: shot_counter, camera_m: [-2.8, -1.5, 1.65], aim_m: [-3.4, 2.4, 1.2], intent: 'card and signs visible'}
+  - {id: shot_return, camera_m: [2.9, 5.4, 1.65], aim_m: [-4.3, -0.5, 1.65], intent: 'unsettling changed empty frame'}
+qa_gates: [references_checked, physical_layout_verified, blender_mesh_audit, three_actual_renders, unreal_import, playable_target, performance_profile]
