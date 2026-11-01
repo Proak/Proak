@@ -1,0 +1,5196 @@
+{
+ "kind": "BLENDER_REAL_RUN",
+ "tool": "tools/blender_l0_b01_audit.py",
+ "blend": {
+  "path": "production/blender/L0_B01/L0_B01_greybox.blend",
+  "bytes": 188513,
+  "blender_version": "5.2.3 LTS"
+ },
+ "layout": "ue58/Content/Confession/Data/L0_B01_layout.json",
+ "layout_version": "0.5.0",
+ "overall": "PASS",
+ "checks": {
+  "scale_applied": {
+   "result": "PASS",
+   "failing_objects": []
+  },
+  "dims_match_layout": {
+   "result": "PASS",
+   "failing_objects": []
+  },
+  "location_match_layout": {
+   "result": "PASS",
+   "failing_objects": []
+  },
+  "uv_layer_present": {
+   "result": "PASS",
+   "failing_objects": []
+  },
+  "material_assigned": {
+   "result": "PASS",
+   "failing_objects": []
+  },
+  "non_manifold_edges": {
+   "result": "PASS",
+   "failing_objects": []
+  },
+  "flipped_faces": {
+   "result": "PASS",
+   "failing_objects": []
+  },
+  "zero_area_faces": {
+   "result": "PASS",
+   "failing_objects": []
+  },
+  "layout_ids_one_to_one": {
+   "result": "PASS",
+   "missing": [],
+   "extra": [],
+   "duplicate_ids_in_layout": []
+  }
+ },
+ "totals": {
+  "mesh_objects": 130,
+  "render_visible_meshes": 124,
+  "render_hidden_helpers": 6,
+  "triangles_total": 1560,
+  "triangles_render_visible": 1488,
+  "non_manifold_edges_total": 0,
+  "flipped_faces_total": 0,
+  "zero_area_faces_total": 0,
+  "objects_without_uv": 0,
+  "objects_scale_not_applied": 0,
+  "materials": 18,
+  "lights": 7,
+  "cameras": 5,
+  "plan_label_objects_excluded": 24
+ },
+ "exports": {
+  "fbx_file": {
+   "bytes": 501196,
+   "header": {
+    "status": "OK",
+    "fbx_version": 7400,
+    "UpAxis": 1,
+    "UpAxisSign": 1,
+    "FrontAxis": 2,
+    "FrontAxisSign": 1,
+    "CoordAxis": 0,
+    "CoordAxisSign": 1,
+    "UnitScaleFactor": 100.0,
+    "OriginalUnitScaleFactor": 100.0,
+    "models": 130,
+    "geometries": 130,
+    "SM_Lobby_Floor_Lcl_Translation": [
+     0.0,
+     -0.11,
+     0.0
+    ],
+    "SM_Lobby_Floor_Lcl_Rotation": [
+     -90.0,
+     0.0,
+     0.0
+    ],
+    "ME_SM_Lobby_Floor_extent_file_units": [
+     13.0,
+     19.0,
+     0.22
+    ]
+   }
+  },
+  "fbx_reimport_blender": {
+   "status": "OK",
+   "meshes": 130,
+   "lights": 0,
+   "cameras": 0,
+   "scene_unit_scale": 1.0,
+   "SM_Lobby_Floor_world_size_m": [
+    13.0,
+    19.0,
+    0.22
+   ],
+   "SM_Lobby_Floor_world_center": [
+    0.0,
+    0.0,
+    -0.11
+   ],
+   "SM_Lobby_Floor_object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "glb_file": {
+   "bytes": 246640
+  },
+  "glb_reimport_blender": {
+   "status": "OK",
+   "meshes": 124,
+   "lights": 5,
+   "cameras": 4,
+   "scene_unit_scale": 1.0,
+   "SM_Lobby_Floor_world_size_m": [
+    13.0,
+    19.0,
+    0.22
+   ],
+   "SM_Lobby_Floor_world_center": [
+    0.0,
+    0.0,
+    -0.11
+   ],
+   "SM_Lobby_Floor_object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ },
+ "layout_analysis": {
+  "note": "informational, not part of PASS/FAIL; AABB based (all boxes axis-aligned in closed pose)",
+  "coplanar_same_facing_faces": [
+   {
+    "a": "Door_Entrance_01",
+    "b": "SM_Entrance_Mullion_E",
+    "plane": "zmin=0.0000",
+    "overlap_m2": 0.0003,
+    "hidden_by": [
+     "SM_Arcade_Floor"
+    ]
+   },
+   {
+    "a": "Door_Entrance_01",
+    "b": "SM_Entrance_Mullion_W",
+    "plane": "zmin=0.0000",
+    "overlap_m2": 0.0003,
+    "hidden_by": [
+     "SM_Arcade_Floor"
+    ]
+   },
+   {
+    "a": "Door_Entrance_01",
+    "b": "SM_MaintLine_Arcade",
+    "plane": "zmin=0.0000",
+    "overlap_m2": 0.004,
+    "hidden_by": [
+     "SM_Arcade_Floor"
+    ]
+   },
+   {
+    "a": "Readable_Notice_01",
+    "b": "SM_NoticeBoard",
+    "plane": "xmin=2.6250",
+    "overlap_m2": 0.009,
+    "hidden_by": []
+   },
+   {
+    "a": "Readable_Notice_01",
+    "b": "SM_NoticeBoard",
+    "plane": "xmax=4.1750",
+    "overlap_m2": 0.009,
+    "hidden_by": []
+   },
+   {
+    "a": "Readable_Notice_01",
+    "b": "SM_NoticeBoard",
+    "plane": "zmin=1.3000",
+    "overlap_m2": 0.0155,
+    "hidden_by": []
+   },
+   {
+    "a": "Readable_Notice_01",
+    "b": "SM_NoticeBoard",
+    "plane": "zmax=2.2000",
+    "overlap_m2": 0.0155,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Arcade_Canopy",
+    "b": "SM_Arcade_Wall_W",
+    "plane": "ymin=-17.3000",
+    "overlap_m2": 0.04,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Arcade_Canopy",
+    "b": "SM_Arcade_Wall_W",
+    "plane": "ymax=-9.5000",
+    "overlap_m2": 0.04,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Arcade_Canopy",
+    "b": "SM_Lobby_Wall_S_E",
+    "plane": "ymax=-9.5000",
+    "overlap_m2": 0.485,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Arcade_Canopy",
+    "b": "SM_Lobby_Wall_S_Header",
+    "plane": "ymax=-9.5000",
+    "overlap_m2": 0.4725,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Arcade_Canopy",
+    "b": "SM_Lobby_Wall_S_W",
+    "plane": "ymax=-9.5000",
+    "overlap_m2": 0.365,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Arcade_Column_0",
+    "b": "SM_Arcade_Parapet_E",
+    "plane": "zmin=0.0000",
+    "overlap_m2": 0.08,
+    "hidden_by": [
+     "SM_Arcade_Floor"
+    ]
+   },
+   {
+    "a": "SM_Arcade_Column_1",
+    "b": "SM_Arcade_Parapet_E",
+    "plane": "zmin=0.0000",
+    "overlap_m2": 0.08,
+    "hidden_by": [
+     "SM_Arcade_Floor"
+    ]
+   },
+   {
+    "a": "SM_Arcade_Column_2",
+    "b": "SM_Arcade_Parapet_E",
+    "plane": "zmin=0.0000",
+    "overlap_m2": 0.08,
+    "hidden_by": [
+     "SM_Arcade_Floor"
+    ]
+   },
+   {
+    "a": "SM_Arcade_Column_3",
+    "b": "SM_Arcade_Parapet_E",
+    "plane": "zmin=0.0000",
+    "overlap_m2": 0.08,
+    "hidden_by": [
+     "SM_Arcade_Floor"
+    ]
+   },
+   {
+    "a": "SM_Arcade_Gate_S",
+    "b": "SM_Arcade_Parapet_E",
+    "plane": "zmin=0.0000",
+    "overlap_m2": 0.0245,
+    "hidden_by": [
+     "SM_Arcade_Floor"
+    ]
+   },
+   {
+    "a": "SM_Arcade_Parapet_E",
+    "b": "SM_Arcade_Rail_E",
+    "plane": "ymin=-17.3000",
+    "overlap_m2": 0.0003,
+    "hidden_by": [
+     "SM_Arcade_Gate_S"
+    ]
+   },
+   {
+    "a": "SM_Arcade_Parapet_E",
+    "b": "SM_Arcade_Rail_E",
+    "plane": "ymax=-9.5000",
+    "overlap_m2": 0.0003,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Arcade_Parapet_E",
+    "b": "SM_Lobby_Wall_S_E",
+    "plane": "ymax=-9.5000",
+    "overlap_m2": 0.275,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Arcade_Parapet_E",
+    "b": "SM_Lobby_Wall_S_E",
+    "plane": "zmin=0.0000",
+    "overlap_m2": 0.06,
+    "hidden_by": [
+     "SM_Arcade_Floor"
+    ]
+   },
+   {
+    "a": "SM_Arcade_Rail_E",
+    "b": "SM_Lobby_Wall_S_E",
+    "plane": "ymax=-9.5000",
+    "overlap_m2": 0.003,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Arcade_Wall_W",
+    "b": "SM_Lobby_Wall_S_W",
+    "plane": "ymax=-9.5000",
+    "overlap_m2": 1.008,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Arcade_Wall_W",
+    "b": "SM_Lobby_Wall_S_W",
+    "plane": "zmin=0.0000",
+    "overlap_m2": 0.0576,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Arcade_Wall_W",
+    "b": "SM_Lobby_Wall_S_W",
+    "plane": "zmax=4.2000",
+    "overlap_m2": 0.0576,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Counter_Screen_Post_E",
+    "b": "SM_Counter_Top",
+    "plane": "zmin=1.0000",
+    "overlap_m2": 0.006,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Counter_Screen_Post_W",
+    "b": "SM_Counter_Top",
+    "plane": "zmin=1.0000",
+    "overlap_m2": 0.0042,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_DoorFrame_Basement_E",
+    "b": "SM_Lobby_Wall_N_E",
+    "plane": "xmin=0.6500",
+    "overlap_m2": 0.33,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_DoorFrame_Basement_E",
+    "b": "SM_Lobby_Wall_N_E",
+    "plane": "zmin=0.0000",
+    "overlap_m2": 0.0075,
+    "hidden_by": [
+     "SM_Landing_Floor"
+    ]
+   },
+   {
+    "a": "SM_DoorFrame_Basement_W",
+    "b": "SM_Lobby_Wall_N_W",
+    "plane": "xmax=-0.6500",
+    "overlap_m2": 0.33,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_DoorFrame_Basement_W",
+    "b": "SM_Lobby_Wall_N_W",
+    "plane": "zmin=0.0000",
+    "overlap_m2": 0.0075,
+    "hidden_by": [
+     "SM_Landing_Floor"
+    ]
+   },
+   {
+    "a": "SM_Entrance_Mullion_E",
+    "b": "SM_Entrance_SideLight_E",
+    "plane": "zmin=0.0000",
+    "overlap_m2": 0.0036,
+    "hidden_by": [
+     "SM_Arcade_Floor"
+    ]
+   },
+   {
+    "a": "SM_Entrance_Mullion_E",
+    "b": "SM_Entrance_SideLight_E",
+    "plane": "zmax=3.3000",
+    "overlap_m2": 0.0036,
+    "hidden_by": [
+     "SM_Lobby_Wall_S_Header",
+     "SM_Arcade_Canopy"
+    ]
+   },
+   {
+    "a": "SM_Entrance_Mullion_E",
+    "b": "SM_Entrance_Transom",
+    "plane": "zmax=3.3000",
+    "overlap_m2": 0.0004,
+    "hidden_by": [
+     "SM_Lobby_Wall_S_Header",
+     "SM_Arcade_Canopy"
+    ]
+   },
+   {
+    "a": "SM_Entrance_Mullion_W",
+    "b": "SM_Entrance_SideLight_W",
+    "plane": "zmin=0.0000",
+    "overlap_m2": 0.0036,
+    "hidden_by": [
+     "SM_Arcade_Floor"
+    ]
+   },
+   {
+    "a": "SM_Entrance_Mullion_W",
+    "b": "SM_Entrance_SideLight_W",
+    "plane": "zmax=3.3000",
+    "overlap_m2": 0.0036,
+    "hidden_by": [
+     "SM_Lobby_Wall_S_Header",
+     "SM_Arcade_Canopy"
+    ]
+   },
+   {
+    "a": "SM_Entrance_Mullion_W",
+    "b": "SM_Entrance_Transom",
+    "plane": "zmax=3.3000",
+    "overlap_m2": 0.0004,
+    "hidden_by": [
+     "SM_Lobby_Wall_S_Header",
+     "SM_Arcade_Canopy"
+    ]
+   },
+   {
+    "a": "SM_Landing_Ceiling",
+    "b": "SM_Lobby_Wall_N_E",
+    "plane": "ymin=9.5000",
+    "overlap_m2": 0.13,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Landing_Ceiling",
+    "b": "SM_Lobby_Wall_N_Header",
+    "plane": "ymin=9.5000",
+    "overlap_m2": 0.26,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Landing_Ceiling",
+    "b": "SM_Lobby_Wall_N_W",
+    "plane": "ymin=9.5000",
+    "overlap_m2": 0.13,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Landing_Wall_E",
+    "b": "SM_Lobby_Wall_N_E",
+    "plane": "zmin=0.0000",
+    "overlap_m2": 0.0336,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Landing_Wall_W",
+    "b": "SM_Lobby_Wall_N_W",
+    "plane": "zmin=0.0000",
+    "overlap_m2": 0.0336,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Lobby_Ceiling",
+    "b": "SM_Pillar_W_1",
+    "plane": "xmin=-6.5000",
+    "overlap_m2": 0.0055,
+    "hidden_by": [
+     "SM_Lobby_Wall_W"
+    ]
+   },
+   {
+    "a": "SM_Lobby_Ceiling",
+    "b": "SM_Pillar_W_2",
+    "plane": "xmin=-6.5000",
+    "overlap_m2": 0.0055,
+    "hidden_by": [
+     "SM_Lobby_Wall_W"
+    ]
+   },
+   {
+    "a": "SM_Lobby_Ceiling",
+    "b": "SM_Pillar_W_3",
+    "plane": "xmin=-6.5000",
+    "overlap_m2": 0.0055,
+    "hidden_by": [
+     "SM_Lobby_Wall_W"
+    ]
+   },
+   {
+    "a": "SM_Lobby_Ceiling",
+    "b": "SM_Pillar_W_4",
+    "plane": "xmin=-6.5000",
+    "overlap_m2": 0.0055,
+    "hidden_by": [
+     "SM_Lobby_Wall_W"
+    ]
+   },
+   {
+    "a": "SM_Lobby_Ceiling",
+    "b": "SM_Pillar_W_5",
+    "plane": "xmin=-6.5000",
+    "overlap_m2": 0.0055,
+    "hidden_by": [
+     "SM_Lobby_Wall_W"
+    ]
+   },
+   {
+    "a": "SM_Lobby_Wall_E",
+    "b": "SM_Lobby_Wall_N_E",
+    "plane": "zmin=0.0000",
+    "overlap_m2": 0.0144,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Lobby_Wall_E",
+    "b": "SM_Lobby_Wall_N_E",
+    "plane": "zmax=4.2000",
+    "overlap_m2": 0.0144,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Lobby_Wall_E",
+    "b": "SM_Lobby_Wall_S_E",
+    "plane": "zmin=0.0000",
+    "overlap_m2": 0.015,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Lobby_Wall_E",
+    "b": "SM_Lobby_Wall_S_E",
+    "plane": "zmax=4.2000",
+    "overlap_m2": 0.015,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Lobby_Wall_N_W",
+    "b": "SM_Lobby_Wall_W",
+    "plane": "zmin=0.0000",
+    "overlap_m2": 0.0144,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Lobby_Wall_N_W",
+    "b": "SM_Lobby_Wall_W",
+    "plane": "zmax=4.2000",
+    "overlap_m2": 0.0144,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Lobby_Wall_S_W",
+    "b": "SM_Lobby_Wall_W",
+    "plane": "zmin=0.0000",
+    "overlap_m2": 0.015,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Lobby_Wall_S_W",
+    "b": "SM_Lobby_Wall_W",
+    "plane": "zmax=4.2000",
+    "overlap_m2": 0.015,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_ServiceWindow_Frame",
+    "b": "SM_ServiceWindow_Ledge",
+    "plane": "ymin=-13.6500",
+    "overlap_m2": 0.0042,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_ServiceWindow_Frame",
+    "b": "SM_ServiceWindow_Ledge",
+    "plane": "ymax=-11.9500",
+    "overlap_m2": 0.0042,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_ServiceWindow_Frame",
+    "b": "SM_ServiceWindow_Shutter",
+    "plane": "xmax=-3.1100",
+    "overlap_m2": 1.575,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_0_Back",
+    "b": "SM_Shelf_0_Board_114",
+    "plane": "ymin=-6.4100",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_0_Back",
+    "b": "SM_Shelf_0_Board_114",
+    "plane": "ymax=-4.5900",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_0_Back",
+    "b": "SM_Shelf_0_Board_180",
+    "plane": "ymin=-6.4100",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_0_Back",
+    "b": "SM_Shelf_0_Board_180",
+    "plane": "ymax=-4.5900",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_0_Back",
+    "b": "SM_Shelf_0_Board_245",
+    "plane": "ymin=-6.4100",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_0_Back",
+    "b": "SM_Shelf_0_Board_245",
+    "plane": "ymax=-4.5900",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_0_Back",
+    "b": "SM_Shelf_0_Board_315",
+    "plane": "ymin=-6.4100",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_0_Back",
+    "b": "SM_Shelf_0_Board_315",
+    "plane": "ymax=-4.5900",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_0_Back",
+    "b": "SM_Shelf_0_Board_55",
+    "plane": "ymin=-6.4100",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_0_Back",
+    "b": "SM_Shelf_0_Board_55",
+    "plane": "ymax=-4.5900",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_1_Back",
+    "b": "SM_Shelf_1_Board_114",
+    "plane": "ymin=-4.2100",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_1_Back",
+    "b": "SM_Shelf_1_Board_114",
+    "plane": "ymax=-2.3900",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_1_Back",
+    "b": "SM_Shelf_1_Board_180",
+    "plane": "ymin=-4.2100",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_1_Back",
+    "b": "SM_Shelf_1_Board_180",
+    "plane": "ymax=-2.3900",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_1_Back",
+    "b": "SM_Shelf_1_Board_245",
+    "plane": "ymin=-4.2100",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_1_Back",
+    "b": "SM_Shelf_1_Board_245",
+    "plane": "ymax=-2.3900",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_1_Back",
+    "b": "SM_Shelf_1_Board_315",
+    "plane": "ymin=-4.2100",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_1_Back",
+    "b": "SM_Shelf_1_Board_315",
+    "plane": "ymax=-2.3900",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_1_Back",
+    "b": "SM_Shelf_1_Board_55",
+    "plane": "ymin=-4.2100",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_1_Back",
+    "b": "SM_Shelf_1_Board_55",
+    "plane": "ymax=-2.3900",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_2_Back",
+    "b": "SM_Shelf_2_Board_114",
+    "plane": "ymin=-2.0100",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_2_Back",
+    "b": "SM_Shelf_2_Board_114",
+    "plane": "ymax=-0.1900",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_2_Back",
+    "b": "SM_Shelf_2_Board_180",
+    "plane": "ymin=-2.0100",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_2_Back",
+    "b": "SM_Shelf_2_Board_180",
+    "plane": "ymax=-0.1900",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_2_Back",
+    "b": "SM_Shelf_2_Board_245",
+    "plane": "ymin=-2.0100",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_2_Back",
+    "b": "SM_Shelf_2_Board_245",
+    "plane": "ymax=-0.1900",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_2_Back",
+    "b": "SM_Shelf_2_Board_315",
+    "plane": "ymin=-2.0100",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_2_Back",
+    "b": "SM_Shelf_2_Board_315",
+    "plane": "ymax=-0.1900",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_2_Back",
+    "b": "SM_Shelf_2_Board_55",
+    "plane": "ymin=-2.0100",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_2_Back",
+    "b": "SM_Shelf_2_Board_55",
+    "plane": "ymax=-0.1900",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_3_Back",
+    "b": "SM_Shelf_3_Board_114",
+    "plane": "ymin=3.4900",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_3_Back",
+    "b": "SM_Shelf_3_Board_114",
+    "plane": "ymax=5.3100",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_3_Back",
+    "b": "SM_Shelf_3_Board_180",
+    "plane": "ymin=3.4900",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_3_Back",
+    "b": "SM_Shelf_3_Board_180",
+    "plane": "ymax=5.3100",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_3_Back",
+    "b": "SM_Shelf_3_Board_245",
+    "plane": "ymin=3.4900",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_3_Back",
+    "b": "SM_Shelf_3_Board_245",
+    "plane": "ymax=5.3100",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_3_Back",
+    "b": "SM_Shelf_3_Board_315",
+    "plane": "ymin=3.4900",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_3_Back",
+    "b": "SM_Shelf_3_Board_315",
+    "plane": "ymax=5.3100",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_3_Back",
+    "b": "SM_Shelf_3_Board_55",
+    "plane": "ymin=3.4900",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   },
+   {
+    "a": "SM_Shelf_3_Back",
+    "b": "SM_Shelf_3_Board_55",
+    "plane": "ymax=5.3100",
+    "overlap_m2": 0.0035,
+    "hidden_by": []
+   }
+  ],
+  "floating_components": [
+   {
+    "members": [
+     "SM_DoorPlate_Basement"
+    ],
+    "lowest_z_m": 2.31,
+    "gap_to_nearest_m": 0.005,
+    "nearest": "SM_Lobby_Wall_N_Header"
+   },
+   {
+    "members": [
+     "SM_EmptyFrame_Wall_Backing"
+    ],
+    "lowest_z_m": 1.025,
+    "gap_to_nearest_m": 0.005,
+    "nearest": "SM_Lobby_Wall_E"
+   },
+   {
+    "members": [
+     "SM_LampHousing_0"
+    ],
+    "lowest_z_m": 4.02,
+    "gap_to_nearest_m": 0.03,
+    "nearest": "SM_Lobby_Ceiling"
+   },
+   {
+    "members": [
+     "SM_LampHousing_1"
+    ],
+    "lowest_z_m": 4.02,
+    "gap_to_nearest_m": 0.03,
+    "nearest": "SM_Lobby_Ceiling"
+   },
+   {
+    "members": [
+     "SM_LampHousing_2"
+    ],
+    "lowest_z_m": 4.02,
+    "gap_to_nearest_m": 0.03,
+    "nearest": "SM_Lobby_Ceiling"
+   },
+   {
+    "members": [
+     "SM_LampHousing_3"
+    ],
+    "lowest_z_m": 4.02,
+    "gap_to_nearest_m": 0.03,
+    "nearest": "SM_Lobby_Ceiling"
+   },
+   {
+    "members": [
+     "SM_CableTrunk_0"
+    ],
+    "lowest_z_m": 3.97,
+    "gap_to_nearest_m": 0.1,
+    "nearest": "SM_Lobby_Ceiling"
+   },
+   {
+    "members": [
+     "SM_CableTrunk_1"
+    ],
+    "lowest_z_m": 3.97,
+    "gap_to_nearest_m": 0.1,
+    "nearest": "SM_Lobby_Ceiling"
+   },
+   {
+    "members": [
+     "SM_CableTrunk_2"
+    ],
+    "lowest_z_m": 3.97,
+    "gap_to_nearest_m": 0.1,
+    "nearest": "SM_Lobby_Ceiling"
+   },
+   {
+    "members": [
+     "SM_CableTrunk_3"
+    ],
+    "lowest_z_m": 3.97,
+    "gap_to_nearest_m": 0.1,
+    "nearest": "SM_Lobby_Ceiling"
+   },
+   {
+    "members": [
+     "SM_CableTrunk_4"
+    ],
+    "lowest_z_m": 3.97,
+    "gap_to_nearest_m": 0.1,
+    "nearest": "SM_Lobby_Ceiling"
+   },
+   {
+    "members": [
+     "SM_CableTrunk_5"
+    ],
+    "lowest_z_m": 3.97,
+    "gap_to_nearest_m": 0.1,
+    "nearest": "SM_Lobby_Ceiling"
+   },
+   {
+    "members": [
+     "Readable_Notice_01",
+     "SM_NoticeBoard"
+    ],
+    "lowest_z_m": 1.3,
+    "gap_to_nearest_m": 0.005,
+    "nearest": "SM_Lobby_Wall_N_E"
+   },
+   {
+    "members": [
+     "SM_ServiceWindow_Lamp"
+    ],
+    "lowest_z_m": 2.29,
+    "gap_to_nearest_m": 0.01,
+    "nearest": "SM_Arcade_Wall_W"
+   },
+   {
+    "members": [
+     "SM_Counter_PassSlot"
+    ],
+    "lowest_z_m": 1.15,
+    "gap_to_nearest_m": 0.06,
+    "nearest": "SM_Counter_Top"
+   },
+   {
+    "members": [
+     "SM_Counter_LetterTray_1"
+    ],
+    "lowest_z_m": 1.245,
+    "gap_to_nearest_m": 0.05,
+    "nearest": "SM_Counter_LetterTray_0"
+   },
+   {
+    "members": [
+     "SM_Shelf_0_Back",
+     "SM_Shelf_0_Board_114",
+     "SM_Shelf_0_Board_180",
+     "SM_Shelf_0_Board_245",
+     "SM_Shelf_0_Board_315",
+     "SM_Shelf_0_Board_55",
+     "SM_Shelf_0_FileBox_0",
+     "SM_Shelf_0_FileBox_1",
+     "SM_Shelf_0_FileBox_2",
+     "SM_Shelf_0_FileBox_3"
+    ],
+    "lowest_z_m": 0.125,
+    "gap_to_nearest_m": 0.125,
+    "nearest": "SM_Lobby_Floor"
+   },
+   {
+    "members": [
+     "SM_Shelf_1_Back",
+     "SM_Shelf_1_Board_114",
+     "SM_Shelf_1_Board_180",
+     "SM_Shelf_1_Board_245",
+     "SM_Shelf_1_Board_315",
+     "SM_Shelf_1_Board_55",
+     "SM_Shelf_1_FileBox_0",
+     "SM_Shelf_1_FileBox_1",
+     "SM_Shelf_1_FileBox_2",
+     "SM_Shelf_1_FileBox_3"
+    ],
+    "lowest_z_m": 0.125,
+    "gap_to_nearest_m": 0.125,
+    "nearest": "SM_Lobby_Floor"
+   },
+   {
+    "members": [
+     "SM_Shelf_2_Back",
+     "SM_Shelf_2_Board_114",
+     "SM_Shelf_2_Board_180",
+     "SM_Shelf_2_Board_245",
+     "SM_Shelf_2_Board_315",
+     "SM_Shelf_2_Board_55",
+     "SM_Shelf_2_FileBox_0",
+     "SM_Shelf_2_FileBox_1",
+     "SM_Shelf_2_FileBox_2",
+     "SM_Shelf_2_FileBox_3"
+    ],
+    "lowest_z_m": 0.125,
+    "gap_to_nearest_m": 0.125,
+    "nearest": "SM_Lobby_Floor"
+   },
+   {
+    "members": [
+     "SM_Shelf_3_Back",
+     "SM_Shelf_3_Board_114",
+     "SM_Shelf_3_Board_180",
+     "SM_Shelf_3_Board_245",
+     "SM_Shelf_3_Board_315",
+     "SM_Shelf_3_Board_55",
+     "SM_Shelf_3_FileBox_0",
+     "SM_Shelf_3_FileBox_1",
+     "SM_Shelf_3_FileBox_2",
+     "SM_Shelf_3_FileBox_3"
+    ],
+    "lowest_z_m": 0.125,
+    "gap_to_nearest_m": 0.125,
+    "nearest": "SM_Lobby_Floor"
+   },
+   {
+    "members": [
+     "SM_StreetLamp_Pole"
+    ],
+    "lowest_z_m": 0.0,
+    "gap_to_nearest_m": 0.2,
+    "nearest": "SM_Street"
+   },
+   {
+    "members": [
+     "Pickup_AccessCard_21"
+    ],
+    "lowest_z_m": 1.205,
+    "gap_to_nearest_m": 0.115,
+    "nearest": "SM_Counter_Top"
+   },
+   {
+    "members": [
+     "Anomaly_EmptyFrame_01"
+    ],
+    "lowest_z_m": 1.1,
+    "gap_to_nearest_m": 0.01,
+    "nearest": "SM_EmptyFrame_Wall_Backing"
+   }
+  ],
+  "door_swing_interference": [
+   {
+    "door": "Door_Entrance_01",
+    "closed_yaw": 0.0,
+    "open_yaw": 95.0,
+    "interference": {
+     "SM_Entrance_Mullion_W": {
+      "max_penetration_m": 0.0402,
+      "yaw_range_deg": [
+       0.0,
+       95.0
+      ]
+     },
+     "SM_Entrance_Mullion_E": {
+      "max_penetration_m": 0.005,
+      "yaw_range_deg": [
+       0.0,
+       0.0
+      ]
+     },
+     "SM_MaintLine_Arcade": {
+      "max_penetration_m": 0.05,
+      "yaw_range_deg": [
+       0.0,
+       0.0
+      ]
+     },
+     "SM_Entrance_SideLight_W": {
+      "max_penetration_m": 0.0335,
+      "yaw_range_deg": [
+       4.8,
+       95.0
+      ]
+     },
+     "SM_MaintLine_Lobby": {
+      "max_penetration_m": 0.06,
+      "yaw_range_deg": [
+       9.5,
+       42.8
+      ]
+     }
+    }
+   },
+   {
+    "door": "Door_Basement_01",
+    "closed_yaw": 0.0,
+    "open_yaw": 92.0,
+    "interference": {}
+   }
+  ],
+  "lights": [
+   {
+    "light": "L_ServiceWindow",
+    "inside": [],
+    "nearest": [
+     {
+      "object": "SM_ServiceWindow_Lamp",
+      "distance_m": 0.2631
+     },
+     {
+      "object": "SM_ServiceWindow_Frame",
+      "distance_m": 0.3811
+     }
+    ]
+   },
+   {
+    "light": "L_StreetLamp",
+    "inside": [],
+    "nearest": [
+     {
+      "object": "SM_StreetLamp_Pole",
+      "distance_m": 0.02
+     },
+     {
+      "object": "SM_Lobby_Wall_S_E",
+      "distance_m": 3.6957
+     }
+    ]
+   },
+   {
+    "light": "L_Hall_A",
+    "inside": [],
+    "nearest": [
+     {
+      "object": "SM_LampHousing_0",
+      "distance_m": 0.04
+     },
+     {
+      "object": "SM_Lobby_Ceiling",
+      "distance_m": 0.21
+     }
+    ]
+   },
+   {
+    "light": "L_Hall_C",
+    "inside": [],
+    "nearest": [
+     {
+      "object": "SM_LampHousing_2",
+      "distance_m": 0.04
+     },
+     {
+      "object": "SM_Lobby_Ceiling",
+      "distance_m": 0.21
+     }
+    ]
+   },
+   {
+    "light": "L_BasementDoor",
+    "inside": [],
+    "nearest": [
+     {
+      "object": "SM_DoorPlate_Basement",
+      "distance_m": 0.3717
+     },
+     {
+      "object": "SM_Lobby_Wall_N_Header",
+      "distance_m": 0.4
+     }
+    ]
+   },
+   {
+    "light": "L_CardSlotPilot",
+    "inside": [],
+    "nearest": [
+     {
+      "object": "Pickup_AccessCard_21",
+      "distance_m": 0.145
+     },
+     {
+      "object": "SM_Counter_Top",
+      "distance_m": 0.4118
+     }
+    ]
+   },
+   {
+    "light": "L_Landing",
+    "inside": [],
+    "nearest": [
+     {
+      "object": "SM_Landing_Ceiling",
+      "distance_m": 0.15
+     },
+     {
+      "object": "SM_Landing_Wall_N",
+      "distance_m": 1.0
+     }
+    ]
+   }
+  ],
+  "shots": [
+   {
+    "shot": "shot_arcade",
+    "aim_distance_m": 5.248,
+    "first_hit": "SM_ServiceWindow_Frame",
+    "first_hit_distance_m": 5.766,
+    "aim_occluded": false
+   },
+   {
+    "shot": "shot_entrance",
+    "aim_distance_m": 18.02,
+    "first_hit": "Door_Basement_01",
+    "first_hit_distance_m": 18.21,
+    "aim_occluded": false
+   },
+   {
+    "shot": "shot_counter",
+    "aim_distance_m": 2.851,
+    "first_hit": "Pickup_AccessCard_21",
+    "first_hit_distance_m": 2.774,
+    "aim_occluded": false
+   },
+   {
+    "shot": "shot_return",
+    "aim_distance_m": 5.286,
+    "first_hit": "Anomaly_EmptyFrame_01",
+    "first_hit_distance_m": 5.242,
+    "aim_occluded": false
+   }
+  ]
+ },
+ "objects": [
+  {
+   "name": "Anomaly_EmptyFrame_01",
+   "collection": "interactables",
+   "role": "interactable_displacement_anomaly",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.07,
+    1.4,
+    1.7
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "brass_aged",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.1666
+  },
+  {
+   "name": "Checkpoint_Lobby",
+   "collection": "interactables",
+   "role": "trigger_volume",
+   "render_visible": false,
+   "triangles": 12,
+   "dimensions_m": [
+    3.0,
+    1.4,
+    2.4
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "helper_trigger",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 10.08
+  },
+  {
+   "name": "Checkpoint_ServiceDoor",
+   "collection": "interactables",
+   "role": "trigger_volume",
+   "render_visible": false,
+   "triangles": 12,
+   "dimensions_m": [
+    2.2,
+    1.2,
+    2.4
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "helper_trigger",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 6.336001
+  },
+  {
+   "name": "Door_Basement_01",
+   "collection": "interactables",
+   "role": "door_leaf_pivot_at_hinge",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    1.2,
+    0.06,
+    2.15
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "paint_green",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.1548
+  },
+  {
+   "name": "Door_Entrance_01",
+   "collection": "interactables",
+   "role": "door_leaf_pivot_at_hinge",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    1.2,
+    0.06,
+    2.3
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.1656
+  },
+  {
+   "name": "Phone_Counter_01",
+   "collection": "interactables",
+   "role": "interactable_phone",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.24,
+    0.2,
+    0.1
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "rubber_black",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.0048
+  },
+  {
+   "name": "Phone_Wall_01",
+   "collection": "interactables",
+   "role": "interactable_phone",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.2,
+    0.1,
+    0.3
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "rubber_black",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.006
+  },
+  {
+   "name": "Pickup_AccessCard_21",
+   "collection": "interactables",
+   "role": "interactable_pickup",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.45,
+    0.1,
+    0.29
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "brass_aged",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.01305
+  },
+  {
+   "name": "Pickup_JobOrder_2147",
+   "collection": "interactables",
+   "role": "interactable_pickup",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.21,
+    0.297,
+    0.008
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "paper_aged",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.000499
+  },
+  {
+   "name": "Readable_Notice_01",
+   "collection": "interactables",
+   "role": "interactable_readable",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    1.55,
+    0.03,
+    0.9
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "paper_aged",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.04185
+  },
+  {
+   "name": "SM_Arcade_Canopy",
+   "collection": "arcade",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    7.4,
+    7.8,
+    0.2
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "concrete_wall",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 11.544001
+  },
+  {
+   "name": "SM_Arcade_Column_0",
+   "collection": "arcade",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.32,
+    0.32,
+    3.3
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "concrete_wall",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.33792
+  },
+  {
+   "name": "SM_Arcade_Column_1",
+   "collection": "arcade",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.32,
+    0.32,
+    3.3
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "concrete_wall",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.33792
+  },
+  {
+   "name": "SM_Arcade_Column_2",
+   "collection": "arcade",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.32,
+    0.32,
+    3.3
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "concrete_wall",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.33792
+  },
+  {
+   "name": "SM_Arcade_Column_3",
+   "collection": "arcade",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.32,
+    0.32,
+    3.3
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "concrete_wall",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.33792
+  },
+  {
+   "name": "SM_Arcade_Floor",
+   "collection": "arcade",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    6.8,
+    7.8,
+    0.22
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "concrete_wet",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 11.668801
+  },
+  {
+   "name": "SM_Arcade_Gate_S",
+   "collection": "arcade",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    6.8,
+    0.24,
+    3.2
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 5.2224
+  },
+  {
+   "name": "SM_Arcade_Parapet_E",
+   "collection": "arcade",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.25,
+    7.8,
+    1.1
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "concrete_wall",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 2.145
+  },
+  {
+   "name": "SM_Arcade_Rail_E",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.06,
+    7.8,
+    0.05
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.0234
+  },
+  {
+   "name": "SM_Arcade_Wall_W",
+   "collection": "arcade",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.24,
+    7.8,
+    4.2
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "concrete_wall",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 7.8624
+  },
+  {
+   "name": "SM_CableTrunk_0",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.12,
+    2.72,
+    0.12
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.039168
+  },
+  {
+   "name": "SM_CableTrunk_1",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.12,
+    2.72,
+    0.12
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.039168
+  },
+  {
+   "name": "SM_CableTrunk_2",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.12,
+    2.72,
+    0.12
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.039168
+  },
+  {
+   "name": "SM_CableTrunk_3",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.12,
+    2.72,
+    0.12
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.039168
+  },
+  {
+   "name": "SM_CableTrunk_4",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.12,
+    2.72,
+    0.12
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.039168
+  },
+  {
+   "name": "SM_CableTrunk_5",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.12,
+    2.72,
+    0.12
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.039168
+  },
+  {
+   "name": "SM_Counter_Base",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    4.25,
+    1.05,
+    1.0
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "paint_green",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 4.4625
+  },
+  {
+   "name": "SM_Counter_LetterTray_0",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.6,
+    0.55,
+    0.11
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.0363
+  },
+  {
+   "name": "SM_Counter_LetterTray_1",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.6,
+    0.55,
+    0.11
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.0363
+  },
+  {
+   "name": "SM_Counter_PassSlot",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.65,
+    0.11,
+    0.1
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "paper_aged",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.00715
+  },
+  {
+   "name": "SM_Counter_Screen_Glass",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    4.26,
+    0.03,
+    1.9
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "glass_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.24282
+  },
+  {
+   "name": "SM_Counter_Screen_Post_E",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.1,
+    0.12,
+    2.9
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.0348
+  },
+  {
+   "name": "SM_Counter_Screen_Post_W",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.1,
+    0.12,
+    2.9
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.0348
+  },
+  {
+   "name": "SM_Counter_Screen_Rail",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    4.45,
+    0.13,
+    0.11
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.063635
+  },
+  {
+   "name": "SM_Counter_Top",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    4.5,
+    1.2,
+    0.09
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "brass_aged",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.486
+  },
+  {
+   "name": "SM_Desk_Clock",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.34,
+    0.23,
+    0.35
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.02737
+  },
+  {
+   "name": "SM_DoorFrame_Basement_E",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.05,
+    0.3,
+    2.2
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "paint_green",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.033
+  },
+  {
+   "name": "SM_DoorFrame_Basement_W",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.05,
+    0.3,
+    2.2
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "paint_green",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.033
+  },
+  {
+   "name": "SM_DoorPlate_Basement",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.62,
+    0.03,
+    0.22
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "brass_aged",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.004092
+  },
+  {
+   "name": "SM_EmptyFrame_Wall_Backing",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.05,
+    1.5,
+    1.85
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "plaster_civic",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.13875
+  },
+  {
+   "name": "SM_Entrance_Mullion_E",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.05,
+    0.12,
+    3.3
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.0198
+  },
+  {
+   "name": "SM_Entrance_Mullion_W",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.05,
+    0.12,
+    3.3
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.0198
+  },
+  {
+   "name": "SM_Entrance_SideLight_E",
+   "collection": "shell",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.975,
+    0.08,
+    3.3
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "glass_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.2574
+  },
+  {
+   "name": "SM_Entrance_SideLight_W",
+   "collection": "shell",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.975,
+    0.08,
+    3.3
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "glass_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.2574
+  },
+  {
+   "name": "SM_Entrance_Transom",
+   "collection": "shell",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    1.2,
+    0.08,
+    1.0
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "glass_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.096
+  },
+  {
+   "name": "SM_HighWindow_Frame_1",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.08,
+    1.2,
+    0.9
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.0864
+  },
+  {
+   "name": "SM_HighWindow_Frame_2",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.08,
+    1.2,
+    0.9
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.0864
+  },
+  {
+   "name": "SM_HighWindow_Frame_3",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.08,
+    1.2,
+    0.9
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.0864
+  },
+  {
+   "name": "SM_HighWindow_Frame_4",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.08,
+    1.2,
+    0.9
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.0864
+  },
+  {
+   "name": "SM_HighWindow_Frame_5",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.08,
+    1.2,
+    0.9
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.0864
+  },
+  {
+   "name": "SM_LampHousing_0",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    1.2,
+    0.32,
+    0.14
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.05376
+  },
+  {
+   "name": "SM_LampHousing_1",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    1.2,
+    0.32,
+    0.14
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.05376
+  },
+  {
+   "name": "SM_LampHousing_2",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    1.2,
+    0.32,
+    0.14
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.05376
+  },
+  {
+   "name": "SM_LampHousing_3",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    1.2,
+    0.32,
+    0.14
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.05376
+  },
+  {
+   "name": "SM_Landing_Ceiling",
+   "collection": "landing",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    2.6,
+    3.7,
+    0.2
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "concrete_wall",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 1.924
+  },
+  {
+   "name": "SM_Landing_Floor",
+   "collection": "landing",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    2.6,
+    3.7,
+    0.22
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "concrete_wet",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 2.1164
+  },
+  {
+   "name": "SM_Landing_StairGate",
+   "collection": "landing",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    2.4,
+    0.05,
+    1.1
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.132
+  },
+  {
+   "name": "SM_Landing_Wall_E",
+   "collection": "landing",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.24,
+    3.6,
+    2.7
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "concrete_wall",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 2.3328
+  },
+  {
+   "name": "SM_Landing_Wall_N",
+   "collection": "landing",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    3.08,
+    0.24,
+    2.7
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "concrete_wall",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 1.99584
+  },
+  {
+   "name": "SM_Landing_Wall_W",
+   "collection": "landing",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.24,
+    3.6,
+    2.7
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "concrete_wall",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 2.3328
+  },
+  {
+   "name": "SM_Lobby_Ceiling",
+   "collection": "shell",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    13.0,
+    19.0,
+    0.22
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "plaster_civic",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 54.34
+  },
+  {
+   "name": "SM_Lobby_Floor",
+   "collection": "shell",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    13.0,
+    19.0,
+    0.22
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "terrazzo_wet",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 54.34
+  },
+  {
+   "name": "SM_Lobby_Wall_E",
+   "collection": "shell",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.24,
+    19.24,
+    4.2
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "plaster_civic",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 19.393918
+  },
+  {
+   "name": "SM_Lobby_Wall_N_E",
+   "collection": "shell",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    5.97,
+    0.24,
+    4.2
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "plaster_civic",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 6.017759
+  },
+  {
+   "name": "SM_Lobby_Wall_N_Header",
+   "collection": "shell",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    1.3,
+    0.24,
+    2.0
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "plaster_civic",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.624
+  },
+  {
+   "name": "SM_Lobby_Wall_N_W",
+   "collection": "shell",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    5.97,
+    0.24,
+    4.2
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "plaster_civic",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 6.017759
+  },
+  {
+   "name": "SM_Lobby_Wall_S_E",
+   "collection": "shell",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    5.05,
+    0.24,
+    4.2
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "concrete_wall",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 5.0904
+  },
+  {
+   "name": "SM_Lobby_Wall_S_Header",
+   "collection": "shell",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    3.15,
+    0.24,
+    0.9
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "concrete_wall",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.6804
+  },
+  {
+   "name": "SM_Lobby_Wall_S_W",
+   "collection": "shell",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    5.05,
+    0.24,
+    4.2
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "concrete_wall",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 5.0904
+  },
+  {
+   "name": "SM_Lobby_Wall_W",
+   "collection": "shell",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.24,
+    19.24,
+    4.2
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "plaster_civic",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 19.393918
+  },
+  {
+   "name": "SM_MaintLine_Arcade",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.08,
+    7.5,
+    0.006
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "line_ochre",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.0036
+  },
+  {
+   "name": "SM_MaintLine_Lobby",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.08,
+    18.9,
+    0.006
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "line_ochre",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.009072
+  },
+  {
+   "name": "SM_NoticeBoard",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    1.55,
+    0.05,
+    0.9
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "paper_aged",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.06975
+  },
+  {
+   "name": "SM_Pillar_W_1",
+   "collection": "shell",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.5,
+    0.55,
+    4.2
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "concrete_wall",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 1.155
+  },
+  {
+   "name": "SM_Pillar_W_2",
+   "collection": "shell",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.5,
+    0.55,
+    4.2
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "concrete_wall",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 1.155
+  },
+  {
+   "name": "SM_Pillar_W_3",
+   "collection": "shell",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.5,
+    0.55,
+    4.2
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "concrete_wall",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 1.155
+  },
+  {
+   "name": "SM_Pillar_W_4",
+   "collection": "shell",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.5,
+    0.55,
+    4.2
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "concrete_wall",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 1.155
+  },
+  {
+   "name": "SM_Pillar_W_5",
+   "collection": "shell",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.5,
+    0.55,
+    4.2
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "concrete_wall",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 1.155
+  },
+  {
+   "name": "SM_ServiceWindow_Frame",
+   "collection": "arcade",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.1,
+    1.7,
+    1.25
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.2125
+  },
+  {
+   "name": "SM_ServiceWindow_Lamp",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.18,
+    0.3,
+    0.12
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "emissive_warm",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.00648
+  },
+  {
+   "name": "SM_ServiceWindow_Ledge",
+   "collection": "arcade",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.36,
+    1.7,
+    0.06
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "brass_aged",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.03672
+  },
+  {
+   "name": "SM_ServiceWindow_Shutter",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.04,
+    1.5,
+    1.05
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "paint_green",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.063
+  },
+  {
+   "name": "SM_Shelf_0_Back",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.1,
+    1.82,
+    3.45
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.6279
+  },
+  {
+   "name": "SM_Shelf_0_Board_114",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.84,
+    1.82,
+    0.05
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.07644
+  },
+  {
+   "name": "SM_Shelf_0_Board_180",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.84,
+    1.82,
+    0.05
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.07644
+  },
+  {
+   "name": "SM_Shelf_0_Board_245",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.84,
+    1.82,
+    0.05
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.07644
+  },
+  {
+   "name": "SM_Shelf_0_Board_315",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.84,
+    1.82,
+    0.05
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.07644
+  },
+  {
+   "name": "SM_Shelf_0_Board_55",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.84,
+    1.82,
+    0.05
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.07644
+  },
+  {
+   "name": "SM_Shelf_0_Collision",
+   "collection": "collision",
+   "role": "collision_blocker",
+   "render_visible": false,
+   "triangles": 12,
+   "dimensions_m": [
+    0.9,
+    1.82,
+    3.5
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 5.733
+  },
+  {
+   "name": "SM_Shelf_0_FileBox_0",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.35,
+    0.29,
+    0.42
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "cardboard",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.04263
+  },
+  {
+   "name": "SM_Shelf_0_FileBox_1",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.35,
+    0.29,
+    0.42
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "cardboard",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.04263
+  },
+  {
+   "name": "SM_Shelf_0_FileBox_2",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.35,
+    0.29,
+    0.42
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "cardboard",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.04263
+  },
+  {
+   "name": "SM_Shelf_0_FileBox_3",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.35,
+    0.29,
+    0.42
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "cardboard",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.04263
+  },
+  {
+   "name": "SM_Shelf_1_Back",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.1,
+    1.82,
+    3.45
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.6279
+  },
+  {
+   "name": "SM_Shelf_1_Board_114",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.84,
+    1.82,
+    0.05
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.07644
+  },
+  {
+   "name": "SM_Shelf_1_Board_180",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.84,
+    1.82,
+    0.05
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.07644
+  },
+  {
+   "name": "SM_Shelf_1_Board_245",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.84,
+    1.82,
+    0.05
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.07644
+  },
+  {
+   "name": "SM_Shelf_1_Board_315",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.84,
+    1.82,
+    0.05
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.07644
+  },
+  {
+   "name": "SM_Shelf_1_Board_55",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.84,
+    1.82,
+    0.05
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.07644
+  },
+  {
+   "name": "SM_Shelf_1_Collision",
+   "collection": "collision",
+   "role": "collision_blocker",
+   "render_visible": false,
+   "triangles": 12,
+   "dimensions_m": [
+    0.9,
+    1.82,
+    3.5
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 5.733
+  },
+  {
+   "name": "SM_Shelf_1_FileBox_0",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.35,
+    0.29,
+    0.42
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "cardboard",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.04263
+  },
+  {
+   "name": "SM_Shelf_1_FileBox_1",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.35,
+    0.29,
+    0.42
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "cardboard",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.04263
+  },
+  {
+   "name": "SM_Shelf_1_FileBox_2",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.35,
+    0.29,
+    0.42
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "cardboard",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.04263
+  },
+  {
+   "name": "SM_Shelf_1_FileBox_3",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.35,
+    0.29,
+    0.42
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "cardboard",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.04263
+  },
+  {
+   "name": "SM_Shelf_2_Back",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.1,
+    1.82,
+    3.45
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.6279
+  },
+  {
+   "name": "SM_Shelf_2_Board_114",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.84,
+    1.82,
+    0.05
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.07644
+  },
+  {
+   "name": "SM_Shelf_2_Board_180",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.84,
+    1.82,
+    0.05
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.07644
+  },
+  {
+   "name": "SM_Shelf_2_Board_245",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.84,
+    1.82,
+    0.05
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.07644
+  },
+  {
+   "name": "SM_Shelf_2_Board_315",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.84,
+    1.82,
+    0.05
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.07644
+  },
+  {
+   "name": "SM_Shelf_2_Board_55",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.84,
+    1.82,
+    0.05
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.07644
+  },
+  {
+   "name": "SM_Shelf_2_Collision",
+   "collection": "collision",
+   "role": "collision_blocker",
+   "render_visible": false,
+   "triangles": 12,
+   "dimensions_m": [
+    0.9,
+    1.82,
+    3.5
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 5.733
+  },
+  {
+   "name": "SM_Shelf_2_FileBox_0",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.35,
+    0.29,
+    0.42
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "cardboard",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.04263
+  },
+  {
+   "name": "SM_Shelf_2_FileBox_1",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.35,
+    0.29,
+    0.42
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "cardboard",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.04263
+  },
+  {
+   "name": "SM_Shelf_2_FileBox_2",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.35,
+    0.29,
+    0.42
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "cardboard",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.04263
+  },
+  {
+   "name": "SM_Shelf_2_FileBox_3",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.35,
+    0.29,
+    0.42
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "cardboard",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.04263
+  },
+  {
+   "name": "SM_Shelf_3_Back",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.1,
+    1.82,
+    3.45
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.6279
+  },
+  {
+   "name": "SM_Shelf_3_Board_114",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.84,
+    1.82,
+    0.05
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.07644
+  },
+  {
+   "name": "SM_Shelf_3_Board_180",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.84,
+    1.82,
+    0.05
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.07644
+  },
+  {
+   "name": "SM_Shelf_3_Board_245",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.84,
+    1.82,
+    0.05
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.07644
+  },
+  {
+   "name": "SM_Shelf_3_Board_315",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.84,
+    1.82,
+    0.05
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.07644
+  },
+  {
+   "name": "SM_Shelf_3_Board_55",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.84,
+    1.82,
+    0.05
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.07644
+  },
+  {
+   "name": "SM_Shelf_3_Collision",
+   "collection": "collision",
+   "role": "collision_blocker",
+   "render_visible": false,
+   "triangles": 12,
+   "dimensions_m": [
+    0.9,
+    1.82,
+    3.5
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 5.733
+  },
+  {
+   "name": "SM_Shelf_3_FileBox_0",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.35,
+    0.29,
+    0.42
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "cardboard",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.04263
+  },
+  {
+   "name": "SM_Shelf_3_FileBox_1",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.35,
+    0.29,
+    0.42
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "cardboard",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.04263
+  },
+  {
+   "name": "SM_Shelf_3_FileBox_2",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.35,
+    0.29,
+    0.42
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "cardboard",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.04263
+  },
+  {
+   "name": "SM_Shelf_3_FileBox_3",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.35,
+    0.29,
+    0.42
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "cardboard",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.04263
+  },
+  {
+   "name": "SM_Street",
+   "collection": "exterior",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    11.0,
+    22.0,
+    0.2
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "asphalt_wet",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 48.400001
+  },
+  {
+   "name": "SM_StreetLamp_Pole",
+   "collection": "exterior",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.16,
+    0.16,
+    6.0
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.1536
+  },
+  {
+   "name": "SM_Wall_Clock",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.62,
+    0.06,
+    0.62
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "brass_aged",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.023064
+  },
+  {
+   "name": "SM_Wall_Phone_Bracket",
+   "collection": "detail",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.25,
+    0.06,
+    0.32
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.0048
+  }
+ ],
+ "scope_note": "Technical geometry audit only. Says nothing about art quality, UV unwrap quality, UE import, UE collision or runtime performance."
+}
