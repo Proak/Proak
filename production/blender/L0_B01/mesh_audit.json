@@ -3,11 +3,11 @@
  "tool": "tools/blender_l0_b01_audit.py",
  "blend": {
   "path": "production/blender/L0_B01/L0_B01_greybox.blend",
-  "bytes": 188513,
+  "bytes": 193284,
   "blender_version": "5.2.3 LTS"
  },
  "layout": "ue58/Content/Confession/Data/L0_B01_layout.json",
- "layout_version": "0.5.0",
+ "layout_version": "0.5.1",
  "overall": "PASS",
  "checks": {
   "scale_applied": {
@@ -50,11 +50,11 @@
   }
  },
  "totals": {
-  "mesh_objects": 130,
-  "render_visible_meshes": 124,
+  "mesh_objects": 139,
+  "render_visible_meshes": 133,
   "render_hidden_helpers": 6,
-  "triangles_total": 1560,
-  "triangles_render_visible": 1488,
+  "triangles_total": 1668,
+  "triangles_render_visible": 1596,
   "non_manifold_edges_total": 0,
   "flipped_faces_total": 0,
   "zero_area_faces_total": 0,
@@ -67,7 +67,7 @@
  },
  "exports": {
   "fbx_file": {
-   "bytes": 501196,
+   "bytes": 533500,
    "header": {
     "status": "OK",
     "fbx_version": 7400,
@@ -79,8 +79,8 @@
     "CoordAxisSign": 1,
     "UnitScaleFactor": 100.0,
     "OriginalUnitScaleFactor": 100.0,
-    "models": 130,
-    "geometries": 130,
+    "models": 139,
+    "geometries": 139,
     "SM_Lobby_Floor_Lcl_Translation": [
      0.0,
      -0.11,
@@ -100,7 +100,7 @@
   },
   "fbx_reimport_blender": {
    "status": "OK",
-   "meshes": 130,
+   "meshes": 139,
    "lights": 0,
    "cameras": 0,
    "scene_unit_scale": 1.0,
@@ -121,11 +121,11 @@
    ]
   },
   "glb_file": {
-   "bytes": 246640
+   "bytes": 263940
   },
   "glb_reimport_blender": {
    "status": "OK",
-   "meshes": 124,
+   "meshes": 133,
    "lights": 5,
    "cameras": 4,
    "scene_unit_scale": 1.0,
@@ -150,61 +150,6 @@
   "note": "informational, not part of PASS/FAIL; AABB based (all boxes axis-aligned in closed pose)",
   "coplanar_same_facing_faces": [
    {
-    "a": "Door_Entrance_01",
-    "b": "SM_Entrance_Mullion_E",
-    "plane": "zmin=0.0000",
-    "overlap_m2": 0.0003,
-    "hidden_by": [
-     "SM_Arcade_Floor"
-    ]
-   },
-   {
-    "a": "Door_Entrance_01",
-    "b": "SM_Entrance_Mullion_W",
-    "plane": "zmin=0.0000",
-    "overlap_m2": 0.0003,
-    "hidden_by": [
-     "SM_Arcade_Floor"
-    ]
-   },
-   {
-    "a": "Door_Entrance_01",
-    "b": "SM_MaintLine_Arcade",
-    "plane": "zmin=0.0000",
-    "overlap_m2": 0.004,
-    "hidden_by": [
-     "SM_Arcade_Floor"
-    ]
-   },
-   {
-    "a": "Readable_Notice_01",
-    "b": "SM_NoticeBoard",
-    "plane": "xmin=2.6250",
-    "overlap_m2": 0.009,
-    "hidden_by": []
-   },
-   {
-    "a": "Readable_Notice_01",
-    "b": "SM_NoticeBoard",
-    "plane": "xmax=4.1750",
-    "overlap_m2": 0.009,
-    "hidden_by": []
-   },
-   {
-    "a": "Readable_Notice_01",
-    "b": "SM_NoticeBoard",
-    "plane": "zmin=1.3000",
-    "overlap_m2": 0.0155,
-    "hidden_by": []
-   },
-   {
-    "a": "Readable_Notice_01",
-    "b": "SM_NoticeBoard",
-    "plane": "zmax=2.2000",
-    "overlap_m2": 0.0155,
-    "hidden_by": []
-   },
-   {
     "a": "SM_Arcade_Canopy",
     "b": "SM_Arcade_Wall_W",
     "plane": "ymin=-17.3000",
@@ -214,30 +159,11 @@
    {
     "a": "SM_Arcade_Canopy",
     "b": "SM_Arcade_Wall_W",
-    "plane": "ymax=-9.5000",
+    "plane": "ymax=-9.6200",
     "overlap_m2": 0.04,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Arcade_Canopy",
-    "b": "SM_Lobby_Wall_S_E",
-    "plane": "ymax=-9.5000",
-    "overlap_m2": 0.485,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Arcade_Canopy",
-    "b": "SM_Lobby_Wall_S_Header",
-    "plane": "ymax=-9.5000",
-    "overlap_m2": 0.4725,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Arcade_Canopy",
-    "b": "SM_Lobby_Wall_S_W",
-    "plane": "ymax=-9.5000",
-    "overlap_m2": 0.365,
-    "hidden_by": []
+    "hidden_by": [
+     "SM_Lobby_Wall_S_W"
+    ]
    },
    {
     "a": "SM_Arcade_Column_0",
@@ -296,52 +222,33 @@
    {
     "a": "SM_Arcade_Parapet_E",
     "b": "SM_Arcade_Rail_E",
-    "plane": "ymax=-9.5000",
+    "plane": "ymax=-9.6200",
     "overlap_m2": 0.0003,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Arcade_Parapet_E",
-    "b": "SM_Lobby_Wall_S_E",
-    "plane": "ymax=-9.5000",
-    "overlap_m2": 0.275,
-    "hidden_by": []
+    "hidden_by": [
+     "SM_Lobby_Wall_S_E"
+    ]
    },
    {
     "a": "SM_Arcade_Parapet_E",
     "b": "SM_Lobby_Wall_S_E",
     "plane": "zmin=0.0000",
-    "overlap_m2": 0.06,
+    "overlap_m2": 0.03,
     "hidden_by": [
      "SM_Arcade_Floor"
     ]
    },
    {
-    "a": "SM_Arcade_Rail_E",
-    "b": "SM_Lobby_Wall_S_E",
-    "plane": "ymax=-9.5000",
-    "overlap_m2": 0.003,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Arcade_Wall_W",
-    "b": "SM_Lobby_Wall_S_W",
-    "plane": "ymax=-9.5000",
-    "overlap_m2": 1.008,
-    "hidden_by": []
-   },
-   {
     "a": "SM_Arcade_Wall_W",
     "b": "SM_Lobby_Wall_S_W",
     "plane": "zmin=0.0000",
-    "overlap_m2": 0.0576,
+    "overlap_m2": 0.0288,
     "hidden_by": []
    },
    {
     "a": "SM_Arcade_Wall_W",
     "b": "SM_Lobby_Wall_S_W",
     "plane": "zmax=4.2000",
-    "overlap_m2": 0.0576,
+    "overlap_m2": 0.0288,
     "hidden_by": []
    },
    {
@@ -361,15 +268,8 @@
    {
     "a": "SM_DoorFrame_Basement_E",
     "b": "SM_Lobby_Wall_N_E",
-    "plane": "xmin=0.6500",
-    "overlap_m2": 0.33,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_DoorFrame_Basement_E",
-    "b": "SM_Lobby_Wall_N_E",
     "plane": "zmin=0.0000",
-    "overlap_m2": 0.0075,
+    "overlap_m2": 0.0045,
     "hidden_by": [
      "SM_Landing_Floor"
     ]
@@ -377,15 +277,8 @@
    {
     "a": "SM_DoorFrame_Basement_W",
     "b": "SM_Lobby_Wall_N_W",
-    "plane": "xmax=-0.6500",
-    "overlap_m2": 0.33,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_DoorFrame_Basement_W",
-    "b": "SM_Lobby_Wall_N_W",
     "plane": "zmin=0.0000",
-    "overlap_m2": 0.0075,
+    "overlap_m2": 0.0045,
     "hidden_by": [
      "SM_Landing_Floor"
     ]
@@ -405,8 +298,7 @@
     "plane": "zmax=3.3000",
     "overlap_m2": 0.0036,
     "hidden_by": [
-     "SM_Lobby_Wall_S_Header",
-     "SM_Arcade_Canopy"
+     "SM_Lobby_Wall_S_Header"
     ]
    },
    {
@@ -415,8 +307,7 @@
     "plane": "zmax=3.3000",
     "overlap_m2": 0.0004,
     "hidden_by": [
-     "SM_Lobby_Wall_S_Header",
-     "SM_Arcade_Canopy"
+     "SM_Lobby_Wall_S_Header"
     ]
    },
    {
@@ -434,8 +325,7 @@
     "plane": "zmax=3.3000",
     "overlap_m2": 0.0036,
     "hidden_by": [
-     "SM_Lobby_Wall_S_Header",
-     "SM_Arcade_Canopy"
+     "SM_Lobby_Wall_S_Header"
     ]
    },
    {
@@ -444,30 +334,8 @@
     "plane": "zmax=3.3000",
     "overlap_m2": 0.0004,
     "hidden_by": [
-     "SM_Lobby_Wall_S_Header",
-     "SM_Arcade_Canopy"
+     "SM_Lobby_Wall_S_Header"
     ]
-   },
-   {
-    "a": "SM_Landing_Ceiling",
-    "b": "SM_Lobby_Wall_N_E",
-    "plane": "ymin=9.5000",
-    "overlap_m2": 0.13,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Landing_Ceiling",
-    "b": "SM_Lobby_Wall_N_Header",
-    "plane": "ymin=9.5000",
-    "overlap_m2": 0.26,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Landing_Ceiling",
-    "b": "SM_Lobby_Wall_N_W",
-    "plane": "ymin=9.5000",
-    "overlap_m2": 0.13,
-    "hidden_by": []
    },
    {
     "a": "SM_Landing_Wall_E",
@@ -597,293 +465,6 @@
     "plane": "ymax=-11.9500",
     "overlap_m2": 0.0042,
     "hidden_by": []
-   },
-   {
-    "a": "SM_ServiceWindow_Frame",
-    "b": "SM_ServiceWindow_Shutter",
-    "plane": "xmax=-3.1100",
-    "overlap_m2": 1.575,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_0_Back",
-    "b": "SM_Shelf_0_Board_114",
-    "plane": "ymin=-6.4100",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_0_Back",
-    "b": "SM_Shelf_0_Board_114",
-    "plane": "ymax=-4.5900",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_0_Back",
-    "b": "SM_Shelf_0_Board_180",
-    "plane": "ymin=-6.4100",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_0_Back",
-    "b": "SM_Shelf_0_Board_180",
-    "plane": "ymax=-4.5900",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_0_Back",
-    "b": "SM_Shelf_0_Board_245",
-    "plane": "ymin=-6.4100",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_0_Back",
-    "b": "SM_Shelf_0_Board_245",
-    "plane": "ymax=-4.5900",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_0_Back",
-    "b": "SM_Shelf_0_Board_315",
-    "plane": "ymin=-6.4100",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_0_Back",
-    "b": "SM_Shelf_0_Board_315",
-    "plane": "ymax=-4.5900",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_0_Back",
-    "b": "SM_Shelf_0_Board_55",
-    "plane": "ymin=-6.4100",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_0_Back",
-    "b": "SM_Shelf_0_Board_55",
-    "plane": "ymax=-4.5900",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_1_Back",
-    "b": "SM_Shelf_1_Board_114",
-    "plane": "ymin=-4.2100",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_1_Back",
-    "b": "SM_Shelf_1_Board_114",
-    "plane": "ymax=-2.3900",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_1_Back",
-    "b": "SM_Shelf_1_Board_180",
-    "plane": "ymin=-4.2100",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_1_Back",
-    "b": "SM_Shelf_1_Board_180",
-    "plane": "ymax=-2.3900",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_1_Back",
-    "b": "SM_Shelf_1_Board_245",
-    "plane": "ymin=-4.2100",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_1_Back",
-    "b": "SM_Shelf_1_Board_245",
-    "plane": "ymax=-2.3900",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_1_Back",
-    "b": "SM_Shelf_1_Board_315",
-    "plane": "ymin=-4.2100",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_1_Back",
-    "b": "SM_Shelf_1_Board_315",
-    "plane": "ymax=-2.3900",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_1_Back",
-    "b": "SM_Shelf_1_Board_55",
-    "plane": "ymin=-4.2100",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_1_Back",
-    "b": "SM_Shelf_1_Board_55",
-    "plane": "ymax=-2.3900",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_2_Back",
-    "b": "SM_Shelf_2_Board_114",
-    "plane": "ymin=-2.0100",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_2_Back",
-    "b": "SM_Shelf_2_Board_114",
-    "plane": "ymax=-0.1900",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_2_Back",
-    "b": "SM_Shelf_2_Board_180",
-    "plane": "ymin=-2.0100",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_2_Back",
-    "b": "SM_Shelf_2_Board_180",
-    "plane": "ymax=-0.1900",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_2_Back",
-    "b": "SM_Shelf_2_Board_245",
-    "plane": "ymin=-2.0100",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_2_Back",
-    "b": "SM_Shelf_2_Board_245",
-    "plane": "ymax=-0.1900",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_2_Back",
-    "b": "SM_Shelf_2_Board_315",
-    "plane": "ymin=-2.0100",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_2_Back",
-    "b": "SM_Shelf_2_Board_315",
-    "plane": "ymax=-0.1900",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_2_Back",
-    "b": "SM_Shelf_2_Board_55",
-    "plane": "ymin=-2.0100",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_2_Back",
-    "b": "SM_Shelf_2_Board_55",
-    "plane": "ymax=-0.1900",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_3_Back",
-    "b": "SM_Shelf_3_Board_114",
-    "plane": "ymin=3.4900",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_3_Back",
-    "b": "SM_Shelf_3_Board_114",
-    "plane": "ymax=5.3100",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_3_Back",
-    "b": "SM_Shelf_3_Board_180",
-    "plane": "ymin=3.4900",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_3_Back",
-    "b": "SM_Shelf_3_Board_180",
-    "plane": "ymax=5.3100",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_3_Back",
-    "b": "SM_Shelf_3_Board_245",
-    "plane": "ymin=3.4900",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_3_Back",
-    "b": "SM_Shelf_3_Board_245",
-    "plane": "ymax=5.3100",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_3_Back",
-    "b": "SM_Shelf_3_Board_315",
-    "plane": "ymin=3.4900",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_3_Back",
-    "b": "SM_Shelf_3_Board_315",
-    "plane": "ymax=5.3100",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_3_Back",
-    "b": "SM_Shelf_3_Board_55",
-    "plane": "ymin=3.4900",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
-   },
-   {
-    "a": "SM_Shelf_3_Back",
-    "b": "SM_Shelf_3_Board_55",
-    "plane": "ymax=5.3100",
-    "overlap_m2": 0.0035,
-    "hidden_by": []
    }
   ],
   "floating_components": [
@@ -905,90 +486,10 @@
    },
    {
     "members": [
-     "SM_LampHousing_0"
-    ],
-    "lowest_z_m": 4.02,
-    "gap_to_nearest_m": 0.03,
-    "nearest": "SM_Lobby_Ceiling"
-   },
-   {
-    "members": [
-     "SM_LampHousing_1"
-    ],
-    "lowest_z_m": 4.02,
-    "gap_to_nearest_m": 0.03,
-    "nearest": "SM_Lobby_Ceiling"
-   },
-   {
-    "members": [
-     "SM_LampHousing_2"
-    ],
-    "lowest_z_m": 4.02,
-    "gap_to_nearest_m": 0.03,
-    "nearest": "SM_Lobby_Ceiling"
-   },
-   {
-    "members": [
-     "SM_LampHousing_3"
-    ],
-    "lowest_z_m": 4.02,
-    "gap_to_nearest_m": 0.03,
-    "nearest": "SM_Lobby_Ceiling"
-   },
-   {
-    "members": [
-     "SM_CableTrunk_0"
-    ],
-    "lowest_z_m": 3.97,
-    "gap_to_nearest_m": 0.1,
-    "nearest": "SM_Lobby_Ceiling"
-   },
-   {
-    "members": [
-     "SM_CableTrunk_1"
-    ],
-    "lowest_z_m": 3.97,
-    "gap_to_nearest_m": 0.1,
-    "nearest": "SM_Lobby_Ceiling"
-   },
-   {
-    "members": [
-     "SM_CableTrunk_2"
-    ],
-    "lowest_z_m": 3.97,
-    "gap_to_nearest_m": 0.1,
-    "nearest": "SM_Lobby_Ceiling"
-   },
-   {
-    "members": [
-     "SM_CableTrunk_3"
-    ],
-    "lowest_z_m": 3.97,
-    "gap_to_nearest_m": 0.1,
-    "nearest": "SM_Lobby_Ceiling"
-   },
-   {
-    "members": [
-     "SM_CableTrunk_4"
-    ],
-    "lowest_z_m": 3.97,
-    "gap_to_nearest_m": 0.1,
-    "nearest": "SM_Lobby_Ceiling"
-   },
-   {
-    "members": [
-     "SM_CableTrunk_5"
-    ],
-    "lowest_z_m": 3.97,
-    "gap_to_nearest_m": 0.1,
-    "nearest": "SM_Lobby_Ceiling"
-   },
-   {
-    "members": [
      "Readable_Notice_01",
      "SM_NoticeBoard"
     ],
-    "lowest_z_m": 1.3,
+    "lowest_z_m": 1.25,
     "gap_to_nearest_m": 0.005,
     "nearest": "SM_Lobby_Wall_N_E"
    },
@@ -1002,102 +503,11 @@
    },
    {
     "members": [
-     "SM_Counter_PassSlot"
+     "Pickup_AccessCard_21",
+     "SM_CardSlot_Housing"
     ],
-    "lowest_z_m": 1.15,
-    "gap_to_nearest_m": 0.06,
-    "nearest": "SM_Counter_Top"
-   },
-   {
-    "members": [
-     "SM_Counter_LetterTray_1"
-    ],
-    "lowest_z_m": 1.245,
+    "lowest_z_m": 1.14,
     "gap_to_nearest_m": 0.05,
-    "nearest": "SM_Counter_LetterTray_0"
-   },
-   {
-    "members": [
-     "SM_Shelf_0_Back",
-     "SM_Shelf_0_Board_114",
-     "SM_Shelf_0_Board_180",
-     "SM_Shelf_0_Board_245",
-     "SM_Shelf_0_Board_315",
-     "SM_Shelf_0_Board_55",
-     "SM_Shelf_0_FileBox_0",
-     "SM_Shelf_0_FileBox_1",
-     "SM_Shelf_0_FileBox_2",
-     "SM_Shelf_0_FileBox_3"
-    ],
-    "lowest_z_m": 0.125,
-    "gap_to_nearest_m": 0.125,
-    "nearest": "SM_Lobby_Floor"
-   },
-   {
-    "members": [
-     "SM_Shelf_1_Back",
-     "SM_Shelf_1_Board_114",
-     "SM_Shelf_1_Board_180",
-     "SM_Shelf_1_Board_245",
-     "SM_Shelf_1_Board_315",
-     "SM_Shelf_1_Board_55",
-     "SM_Shelf_1_FileBox_0",
-     "SM_Shelf_1_FileBox_1",
-     "SM_Shelf_1_FileBox_2",
-     "SM_Shelf_1_FileBox_3"
-    ],
-    "lowest_z_m": 0.125,
-    "gap_to_nearest_m": 0.125,
-    "nearest": "SM_Lobby_Floor"
-   },
-   {
-    "members": [
-     "SM_Shelf_2_Back",
-     "SM_Shelf_2_Board_114",
-     "SM_Shelf_2_Board_180",
-     "SM_Shelf_2_Board_245",
-     "SM_Shelf_2_Board_315",
-     "SM_Shelf_2_Board_55",
-     "SM_Shelf_2_FileBox_0",
-     "SM_Shelf_2_FileBox_1",
-     "SM_Shelf_2_FileBox_2",
-     "SM_Shelf_2_FileBox_3"
-    ],
-    "lowest_z_m": 0.125,
-    "gap_to_nearest_m": 0.125,
-    "nearest": "SM_Lobby_Floor"
-   },
-   {
-    "members": [
-     "SM_Shelf_3_Back",
-     "SM_Shelf_3_Board_114",
-     "SM_Shelf_3_Board_180",
-     "SM_Shelf_3_Board_245",
-     "SM_Shelf_3_Board_315",
-     "SM_Shelf_3_Board_55",
-     "SM_Shelf_3_FileBox_0",
-     "SM_Shelf_3_FileBox_1",
-     "SM_Shelf_3_FileBox_2",
-     "SM_Shelf_3_FileBox_3"
-    ],
-    "lowest_z_m": 0.125,
-    "gap_to_nearest_m": 0.125,
-    "nearest": "SM_Lobby_Floor"
-   },
-   {
-    "members": [
-     "SM_StreetLamp_Pole"
-    ],
-    "lowest_z_m": 0.0,
-    "gap_to_nearest_m": 0.2,
-    "nearest": "SM_Street"
-   },
-   {
-    "members": [
-     "Pickup_AccessCard_21"
-    ],
-    "lowest_z_m": 1.205,
-    "gap_to_nearest_m": 0.115,
     "nearest": "SM_Counter_Top"
    },
    {
@@ -1115,38 +525,10 @@
     "closed_yaw": 0.0,
     "open_yaw": 95.0,
     "interference": {
-     "SM_Entrance_Mullion_W": {
-      "max_penetration_m": 0.0402,
-      "yaw_range_deg": [
-       0.0,
-       95.0
-      ]
-     },
-     "SM_Entrance_Mullion_E": {
-      "max_penetration_m": 0.005,
-      "yaw_range_deg": [
-       0.0,
-       0.0
-      ]
-     },
-     "SM_MaintLine_Arcade": {
-      "max_penetration_m": 0.05,
-      "yaw_range_deg": [
-       0.0,
-       0.0
-      ]
-     },
-     "SM_Entrance_SideLight_W": {
-      "max_penetration_m": 0.0335,
-      "yaw_range_deg": [
-       4.8,
-       95.0
-      ]
-     },
      "SM_MaintLine_Lobby": {
       "max_penetration_m": 0.06,
       "yaw_range_deg": [
-       9.5,
+       4.8,
        42.8
       ]
      }
@@ -1194,7 +576,7 @@
     "nearest": [
      {
       "object": "SM_LampHousing_0",
-      "distance_m": 0.04
+      "distance_m": 0.07
      },
      {
       "object": "SM_Lobby_Ceiling",
@@ -1208,7 +590,7 @@
     "nearest": [
      {
       "object": "SM_LampHousing_2",
-      "distance_m": 0.04
+      "distance_m": 0.07
      },
      {
       "object": "SM_Lobby_Ceiling",
@@ -1236,11 +618,11 @@
     "nearest": [
      {
       "object": "Pickup_AccessCard_21",
-      "distance_m": 0.145
+      "distance_m": 0.1061
      },
      {
-      "object": "SM_Counter_Top",
-      "distance_m": 0.4118
+      "object": "SM_CardSlot_Housing",
+      "distance_m": 0.1218
      }
     ]
    },
@@ -1263,8 +645,8 @@
    {
     "shot": "shot_arcade",
     "aim_distance_m": 5.248,
-    "first_hit": "SM_ServiceWindow_Frame",
-    "first_hit_distance_m": 5.766,
+    "first_hit": "SM_ServiceWindow_Shutter",
+    "first_hit_distance_m": 5.737,
     "aim_occluded": false
    },
    {
@@ -1278,7 +660,7 @@
     "shot": "shot_counter",
     "aim_distance_m": 2.851,
     "first_hit": "Pickup_AccessCard_21",
-    "first_hit_distance_m": 2.774,
+    "first_hit_distance_m": 2.816,
     "aim_occluded": false
    },
    {
@@ -1418,7 +800,7 @@
    "render_visible": true,
    "triangles": 12,
    "dimensions_m": [
-    1.2,
+    1.18,
     0.06,
     2.3
    ],
@@ -1439,7 +821,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.1656
+   "signed_volume_m3": 0.16284
   },
   {
    "name": "Phone_Counter_01",
@@ -1508,9 +890,9 @@
    "render_visible": true,
    "triangles": 12,
    "dimensions_m": [
-    0.45,
     0.1,
-    0.29
+    0.04,
+    0.07
    ],
    "object_scale": [
     1.0,
@@ -1524,12 +906,12 @@
     "UVMap"
    ],
    "uv_layer_present": true,
-   "material": "brass_aged",
+   "material": "paper_aged",
    "non_manifold_edges": 0,
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.01305
+   "signed_volume_m3": 0.00028
   },
   {
    "name": "Pickup_JobOrder_2147",
@@ -1599,7 +981,7 @@
    "triangles": 12,
    "dimensions_m": [
     7.4,
-    7.8,
+    7.68,
     0.2
    ],
    "object_scale": [
@@ -1619,7 +1001,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 11.544001
+   "signed_volume_m3": 11.3664
   },
   {
    "name": "SM_Arcade_Column_0",
@@ -1809,7 +1191,7 @@
    "triangles": 12,
    "dimensions_m": [
     0.25,
-    7.8,
+    7.68,
     1.1
    ],
    "object_scale": [
@@ -1829,7 +1211,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 2.145
+   "signed_volume_m3": 2.112
   },
   {
    "name": "SM_Arcade_Rail_E",
@@ -1839,7 +1221,7 @@
    "triangles": 12,
    "dimensions_m": [
     0.06,
-    7.8,
+    7.68,
     0.05
    ],
    "object_scale": [
@@ -1859,7 +1241,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.0234
+   "signed_volume_m3": 0.02304
   },
   {
    "name": "SM_Arcade_Wall_W",
@@ -1869,7 +1251,7 @@
    "triangles": 12,
    "dimensions_m": [
     0.24,
-    7.8,
+    7.68,
     4.2
    ],
    "object_scale": [
@@ -1889,7 +1271,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 7.8624
+   "signed_volume_m3": 7.741439
   },
   {
    "name": "SM_CableTrunk_0",
@@ -2070,6 +1452,36 @@
    "flipped_faces": 0,
    "zero_area_faces": 0,
    "signed_volume_m3": 0.039168
+  },
+  {
+   "name": "SM_CardSlot_Housing",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.3,
+    0.06,
+    0.2
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.0036
   },
   {
    "name": "SM_Counter_Base",
@@ -2378,7 +1790,7 @@
    "render_visible": true,
    "triangles": 12,
    "dimensions_m": [
-    0.05,
+    0.04,
     0.3,
     2.2
    ],
@@ -2399,7 +1811,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.033
+   "signed_volume_m3": 0.0264
   },
   {
    "name": "SM_DoorFrame_Basement_W",
@@ -2408,7 +1820,7 @@
    "render_visible": true,
    "triangles": 12,
    "dimensions_m": [
-    0.05,
+    0.04,
     0.3,
     2.2
    ],
@@ -2429,7 +1841,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.033
+   "signed_volume_m3": 0.0264
   },
   {
    "name": "SM_DoorPlate_Basement",
@@ -2919,7 +2331,7 @@
    "triangles": 12,
    "dimensions_m": [
     2.6,
-    3.7,
+    3.46,
     0.2
    ],
    "object_scale": [
@@ -2939,7 +2351,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 1.924
+   "signed_volume_m3": 1.7992
   },
   {
    "name": "SM_Landing_Floor",
@@ -3458,9 +2870,9 @@
    "render_visible": true,
    "triangles": 12,
    "dimensions_m": [
-    1.55,
+    1.65,
     0.05,
-    0.9
+    1.0
    ],
    "object_scale": [
     1.0,
@@ -3479,7 +2891,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.06975
+   "signed_volume_m3": 0.0825
   },
   {
    "name": "SM_Pillar_W_1",
@@ -3728,7 +3140,7 @@
    "render_visible": true,
    "triangles": 12,
    "dimensions_m": [
-    0.04,
+    0.02,
     1.5,
     1.05
    ],
@@ -3749,7 +3161,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.063
+   "signed_volume_m3": 0.0315
   },
   {
    "name": "SM_Shelf_0_Back",
@@ -3760,7 +3172,7 @@
    "dimensions_m": [
     0.1,
     1.82,
-    3.45
+    3.6
    ],
    "object_scale": [
     1.0,
@@ -3779,7 +3191,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.6279
+   "signed_volume_m3": 0.6552
   },
   {
    "name": "SM_Shelf_0_Board_114",
@@ -3789,7 +3201,7 @@
    "triangles": 12,
    "dimensions_m": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "object_scale": [
@@ -3809,7 +3221,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.07644
+   "signed_volume_m3": 0.07392
   },
   {
    "name": "SM_Shelf_0_Board_180",
@@ -3819,7 +3231,7 @@
    "triangles": 12,
    "dimensions_m": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "object_scale": [
@@ -3839,7 +3251,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.07644
+   "signed_volume_m3": 0.07392
   },
   {
    "name": "SM_Shelf_0_Board_245",
@@ -3849,7 +3261,7 @@
    "triangles": 12,
    "dimensions_m": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "object_scale": [
@@ -3869,7 +3281,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.07644
+   "signed_volume_m3": 0.07392
   },
   {
    "name": "SM_Shelf_0_Board_315",
@@ -3879,7 +3291,7 @@
    "triangles": 12,
    "dimensions_m": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "object_scale": [
@@ -3899,7 +3311,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.07644
+   "signed_volume_m3": 0.07392
   },
   {
    "name": "SM_Shelf_0_Board_55",
@@ -3909,7 +3321,7 @@
    "triangles": 12,
    "dimensions_m": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "object_scale": [
@@ -3929,7 +3341,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.07644
+   "signed_volume_m3": 0.07392
   },
   {
    "name": "SM_Shelf_0_Collision",
@@ -4082,15 +3494,15 @@
    "signed_volume_m3": 0.04263
   },
   {
-   "name": "SM_Shelf_1_Back",
+   "name": "SM_Shelf_0_Upright_N",
    "collection": "prop",
    "role": "render_mesh",
    "render_visible": true,
    "triangles": 12,
    "dimensions_m": [
-    0.1,
-    1.82,
-    3.45
+    0.04,
+    0.04,
+    3.6
    ],
    "object_scale": [
     1.0,
@@ -4109,7 +3521,67 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.6279
+   "signed_volume_m3": 0.00576
+  },
+  {
+   "name": "SM_Shelf_0_Upright_S",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.04,
+    0.04,
+    3.6
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.00576
+  },
+  {
+   "name": "SM_Shelf_1_Back",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.1,
+    1.82,
+    3.6
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.6552
   },
   {
    "name": "SM_Shelf_1_Board_114",
@@ -4119,7 +3591,7 @@
    "triangles": 12,
    "dimensions_m": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "object_scale": [
@@ -4139,7 +3611,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.07644
+   "signed_volume_m3": 0.07392
   },
   {
    "name": "SM_Shelf_1_Board_180",
@@ -4149,7 +3621,7 @@
    "triangles": 12,
    "dimensions_m": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "object_scale": [
@@ -4169,7 +3641,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.07644
+   "signed_volume_m3": 0.07392
   },
   {
    "name": "SM_Shelf_1_Board_245",
@@ -4179,7 +3651,7 @@
    "triangles": 12,
    "dimensions_m": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "object_scale": [
@@ -4199,7 +3671,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.07644
+   "signed_volume_m3": 0.07392
   },
   {
    "name": "SM_Shelf_1_Board_315",
@@ -4209,7 +3681,7 @@
    "triangles": 12,
    "dimensions_m": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "object_scale": [
@@ -4229,7 +3701,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.07644
+   "signed_volume_m3": 0.07392
   },
   {
    "name": "SM_Shelf_1_Board_55",
@@ -4239,7 +3711,7 @@
    "triangles": 12,
    "dimensions_m": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "object_scale": [
@@ -4259,7 +3731,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.07644
+   "signed_volume_m3": 0.07392
   },
   {
    "name": "SM_Shelf_1_Collision",
@@ -4412,15 +3884,15 @@
    "signed_volume_m3": 0.04263
   },
   {
-   "name": "SM_Shelf_2_Back",
+   "name": "SM_Shelf_1_Upright_N",
    "collection": "prop",
    "role": "render_mesh",
    "render_visible": true,
    "triangles": 12,
    "dimensions_m": [
-    0.1,
-    1.82,
-    3.45
+    0.04,
+    0.04,
+    3.6
    ],
    "object_scale": [
     1.0,
@@ -4439,7 +3911,67 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.6279
+   "signed_volume_m3": 0.00576
+  },
+  {
+   "name": "SM_Shelf_1_Upright_S",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.04,
+    0.04,
+    3.6
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.00576
+  },
+  {
+   "name": "SM_Shelf_2_Back",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.1,
+    1.82,
+    3.6
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.6552
   },
   {
    "name": "SM_Shelf_2_Board_114",
@@ -4449,7 +3981,7 @@
    "triangles": 12,
    "dimensions_m": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "object_scale": [
@@ -4469,7 +4001,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.07644
+   "signed_volume_m3": 0.07392
   },
   {
    "name": "SM_Shelf_2_Board_180",
@@ -4479,7 +4011,7 @@
    "triangles": 12,
    "dimensions_m": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "object_scale": [
@@ -4499,7 +4031,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.07644
+   "signed_volume_m3": 0.07392
   },
   {
    "name": "SM_Shelf_2_Board_245",
@@ -4509,7 +4041,7 @@
    "triangles": 12,
    "dimensions_m": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "object_scale": [
@@ -4529,7 +4061,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.07644
+   "signed_volume_m3": 0.07392
   },
   {
    "name": "SM_Shelf_2_Board_315",
@@ -4539,7 +4071,7 @@
    "triangles": 12,
    "dimensions_m": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "object_scale": [
@@ -4559,7 +4091,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.07644
+   "signed_volume_m3": 0.07392
   },
   {
    "name": "SM_Shelf_2_Board_55",
@@ -4569,7 +4101,7 @@
    "triangles": 12,
    "dimensions_m": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "object_scale": [
@@ -4589,7 +4121,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.07644
+   "signed_volume_m3": 0.07392
   },
   {
    "name": "SM_Shelf_2_Collision",
@@ -4742,15 +4274,15 @@
    "signed_volume_m3": 0.04263
   },
   {
-   "name": "SM_Shelf_3_Back",
+   "name": "SM_Shelf_2_Upright_N",
    "collection": "prop",
    "role": "render_mesh",
    "render_visible": true,
    "triangles": 12,
    "dimensions_m": [
-    0.1,
-    1.82,
-    3.45
+    0.04,
+    0.04,
+    3.6
    ],
    "object_scale": [
     1.0,
@@ -4769,7 +4301,67 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.6279
+   "signed_volume_m3": 0.00576
+  },
+  {
+   "name": "SM_Shelf_2_Upright_S",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.04,
+    0.04,
+    3.6
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.00576
+  },
+  {
+   "name": "SM_Shelf_3_Back",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.1,
+    1.82,
+    3.6
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.6552
   },
   {
    "name": "SM_Shelf_3_Board_114",
@@ -4779,7 +4371,7 @@
    "triangles": 12,
    "dimensions_m": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "object_scale": [
@@ -4799,7 +4391,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.07644
+   "signed_volume_m3": 0.07392
   },
   {
    "name": "SM_Shelf_3_Board_180",
@@ -4809,7 +4401,7 @@
    "triangles": 12,
    "dimensions_m": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "object_scale": [
@@ -4829,7 +4421,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.07644
+   "signed_volume_m3": 0.07392
   },
   {
    "name": "SM_Shelf_3_Board_245",
@@ -4839,7 +4431,7 @@
    "triangles": 12,
    "dimensions_m": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "object_scale": [
@@ -4859,7 +4451,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.07644
+   "signed_volume_m3": 0.07392
   },
   {
    "name": "SM_Shelf_3_Board_315",
@@ -4869,7 +4461,7 @@
    "triangles": 12,
    "dimensions_m": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "object_scale": [
@@ -4889,7 +4481,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.07644
+   "signed_volume_m3": 0.07392
   },
   {
    "name": "SM_Shelf_3_Board_55",
@@ -4899,7 +4491,7 @@
    "triangles": 12,
    "dimensions_m": [
     0.84,
-    1.82,
+    1.76,
     0.05
    ],
    "object_scale": [
@@ -4919,7 +4511,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.07644
+   "signed_volume_m3": 0.07392
   },
   {
    "name": "SM_Shelf_3_Collision",
@@ -5072,6 +4664,66 @@
    "signed_volume_m3": 0.04263
   },
   {
+   "name": "SM_Shelf_3_Upright_N",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.04,
+    0.04,
+    3.6
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.00576
+  },
+  {
+   "name": "SM_Shelf_3_Upright_S",
+   "collection": "prop",
+   "role": "render_mesh",
+   "render_visible": true,
+   "triangles": 12,
+   "dimensions_m": [
+    0.04,
+    0.04,
+    3.6
+   ],
+   "object_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "scale_applied": true,
+   "dims_match_layout": true,
+   "location_match_layout": true,
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv_layer_present": true,
+   "material": "iron_dark",
+   "non_manifold_edges": 0,
+   "boundary_edges": 0,
+   "flipped_faces": 0,
+   "zero_area_faces": 0,
+   "signed_volume_m3": 0.00576
+  },
+  {
    "name": "SM_Street",
    "collection": "exterior",
    "role": "render_mesh",
@@ -5110,7 +4762,7 @@
    "dimensions_m": [
     0.16,
     0.16,
-    6.0
+    6.2
    ],
    "object_scale": [
     1.0,
@@ -5129,7 +4781,7 @@
    "boundary_edges": 0,
    "flipped_faces": 0,
    "zero_area_faces": 0,
-   "signed_volume_m3": 0.1536
+   "signed_volume_m3": 0.15872
   },
   {
    "name": "SM_Wall_Clock",

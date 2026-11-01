@@ -1,11 +1,11 @@
 {
   "blender_version": "5.2.3 LTS",
   "python": "3.13.18",
-  "layout_version": "0.5.0",
+  "layout_version": "0.5.1",
   "stats": {
-    "geometry": 120,
+    "geometry": 129,
     "collision_blockers": 4,
-    "no_collision": 43,
+    "no_collision": 51,
     "interactables": 10,
     "triggers": 2,
     "lights": 7,
@@ -21,28 +21,28 @@
   "lights_w": {
     "L_ServiceWindow": 1.3177159590043923,
     "L_StreetLamp": 7.320644216691069,
-    "L_Hall_A": 2.1961932650073206,
-    "L_Hall_C": 1.610541727672035,
-    "L_BasementDoor": 1.0980966325036603,
+    "L_Hall_A": 1.3177159590043923,
+    "L_Hall_C": 1.0248901903367496,
+    "L_BasementDoor": 2.342606149341142,
     "L_CardSlotPilot": 0.05124450951683748,
     "L_Landing": 0.3806734992679356
   },
   "timings_s": {
-    "build": 0.08,
-    "save": 0.17,
-    "export": 0.5,
-    "total": 331.53
+    "build": 0.09,
+    "save": 0.19,
+    "export": 0.58,
+    "total": 324.71
   },
   "exports": {
     "glb": {
       "status": "OK",
-      "objects": 135,
-      "path": "/home/user/Proak/.claude/worktrees/agent-af429550c0648e364/production/blender/L0_B01/L0_B01_greybox.glb"
+      "objects": 144,
+      "path": "/home/user/Proak/production/blender/L0_B01/L0_B01_greybox.glb"
     },
     "fbx": {
       "status": "OK",
-      "objects": 130,
-      "path": "/home/user/Proak/.claude/worktrees/agent-af429550c0648e364/production/blender/L0_B01/L0_B01_greybox.fbx",
+      "objects": 139,
+      "path": "/home/user/Proak/production/blender/L0_B01/L0_B01_greybox.fbx",
       "settings": {
         "use_selection": true,
         "object_types": [
@@ -68,52 +68,52 @@
   },
   "renders": {
     "shot_arcade": {
-      "seconds": 64.5,
-      "bytes": 601506,
+      "seconds": 64.0,
+      "bytes": 598149,
       "exposure": {
-        "metered_avg_cd_m2": 0.3634,
-        "ev100_unclamped": 1.54,
-        "ev100_used": 1.54,
-        "blender_exposure_stops": 7.613,
+        "metered_avg_cd_m2": 0.3977,
+        "ev100_unclamped": 1.67,
+        "ev100_used": 1.67,
+        "blender_exposure_stops": 6.483,
         "seconds": 0.3
       }
     },
     "shot_entrance": {
-      "seconds": 70.9,
-      "bytes": 630564,
+      "seconds": 70.5,
+      "bytes": 630461,
       "exposure": {
-        "metered_avg_cd_m2": 0.3657,
-        "ev100_unclamped": 1.549,
-        "ev100_used": 1.549,
-        "blender_exposure_stops": 7.604,
+        "metered_avg_cd_m2": 0.3079,
+        "ev100_unclamped": 1.301,
+        "ev100_used": 1.301,
+        "blender_exposure_stops": 6.852,
         "seconds": 0.3
       }
     },
     "shot_counter": {
-      "seconds": 72.5,
-      "bytes": 607808,
+      "seconds": 73.7,
+      "bytes": 595170,
       "exposure": {
-        "metered_avg_cd_m2": 0.2874,
-        "ev100_unclamped": 1.201,
-        "ev100_used": 1.201,
-        "blender_exposure_stops": 7.952,
+        "metered_avg_cd_m2": 0.2095,
+        "ev100_unclamped": 0.745,
+        "ev100_used": 0.745,
+        "blender_exposure_stops": 7.407,
         "seconds": 0.3
       }
     },
     "shot_return": {
-      "seconds": 71.5,
-      "bytes": 629159,
+      "seconds": 70.8,
+      "bytes": 644042,
       "exposure": {
-        "metered_avg_cd_m2": 0.1357,
-        "ev100_unclamped": 0.118,
-        "ev100_used": 0.118,
-        "blender_exposure_stops": 9.034,
+        "metered_avg_cd_m2": 0.1142,
+        "ev100_unclamped": -0.13,
+        "ev100_used": -0.13,
+        "blender_exposure_stops": 8.283,
         "seconds": 0.3
       }
     },
     "plan_top": {
-      "seconds": 50.4,
-      "bytes": 934018,
+      "seconds": 43.9,
+      "bytes": 935592,
       "resolution": [
         1064,
         1800
