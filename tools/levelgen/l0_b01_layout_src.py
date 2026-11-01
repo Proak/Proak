@@ -262,6 +262,8 @@ MESSAGES = {
     "msg_phone_dialtone": {"zh": "听筒里只有拨号音。", "en": "Only a dial tone."},
     "msg_phone_wall": {"zh": "没有人说话。", "en": "Nobody speaks."},
     "msg_checkpoint": {"zh": "已记录", "en": "Logged"},
+    "ui_doc_close": {"zh": "[E] 放下", "en": "[E] Close"},
+    "ui_current": {"zh": "当前：", "en": "Current: "},
     "msg_slice_end": {"zh": "灰盒段落结束（L0_B01 门厅）。楼梯门暂未开放。", "en": "End of greybox section (L0_B01 lobby). The stair gate is not built yet."},
 }
 

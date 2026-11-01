@@ -19,3 +19,4 @@ __pycache__/
 # Secrets / private raw user materials
 .env
 private_raw/
+.claude/worktrees/
