@@ -1,0 +1,281 @@
+{
+  "schema": "confession.sound_manifest/1",
+  "format_contract": "RIFF WAV, PCM s16le, mono, 48000 Hz, 44-byte header",
+  "generator": "tools/audio/gen_sfx.py",
+  "generator_commit": "312cc636310c40547d0f22d38efd8ade5c6efa08",
+  "generator_blob_sha1": "e7f66a66935046358e026d98764f2e0b7506e76f",
+  "base_seed": 20261101,
+  "categories": {
+    "ambience_bed": {
+      "lufs_range": [
+        -30.0,
+        -26.0
+      ],
+      "true_peak_max_dbtp": -1.0
+    },
+    "one_shot": {
+      "lufs_range": [
+        -24.0,
+        -18.0
+      ],
+      "true_peak_max_dbtp": -1.0
+    },
+    "footstep": {
+      "lufs_range": [
+        -28.0,
+        -22.0
+      ],
+      "true_peak_max_dbtp": -1.0
+    }
+  },
+  "licence": "original, procedurally generated for this project",
+  "sounds": [
+    {
+      "id": "rain_loop",
+      "file": "ue58/Content/Confession/Audio/rain_loop.wav",
+      "category": "ambience_bed",
+      "loop": true,
+      "duration_s": 16.0,
+      "samples": 768000,
+      "target_lufs": -27.0,
+      "peak_limited_by_generator": false,
+      "intended_use": "audio_emitters A_Rain_Arcade, A_Rain_Lobby (L0_B01_layout.json)",
+      "licence": "original, procedurally generated for this project",
+      "sha256": "ae0bbf7832b283dae7c38403e39925c9deb39bdefc8ead5d260a15bf9541d822"
+    },
+    {
+      "id": "hum_electrical",
+      "file": "ue58/Content/Confession/Audio/hum_electrical.wav",
+      "category": "ambience_bed",
+      "loop": true,
+      "duration_s": 8.0,
+      "samples": 384000,
+      "target_lufs": -29.0,
+      "peak_limited_by_generator": false,
+      "intended_use": "audio_emitters A_Hum_Cable (L0_B01_layout.json)",
+      "licence": "original, procedurally generated for this project",
+      "sha256": "7bc6158f629993bdaf31ed7db7ccfaf2c8db281fd9c120b4cda45323f19f52dc"
+    },
+    {
+      "id": "clock_tick",
+      "file": "ue58/Content/Confession/Audio/clock_tick.wav",
+      "category": "ambience_bed",
+      "loop": true,
+      "duration_s": 8.0,
+      "samples": 384000,
+      "target_lufs": -28.0,
+      "peak_limited_by_generator": true,
+      "intended_use": "audio_emitters A_Clock_Desk (L0_B01_layout.json)",
+      "licence": "original, procedurally generated for this project",
+      "sha256": "6fdc0937d22f82a65dc557c77b9b4685bf60219e4c2093b265bd13e9db31848d"
+    },
+    {
+      "id": "queue_chime",
+      "file": "ue58/Content/Confession/Audio/queue_chime.wav",
+      "category": "one_shot",
+      "loop": false,
+      "duration_s": 3.0,
+      "samples": 144000,
+      "target_lufs": -22.0,
+      "peak_limited_by_generator": false,
+      "intended_use": "audio_emitters A_QueueChime, interval 22-38 s (L0_B01_layout.json)",
+      "licence": "original, procedurally generated for this project",
+      "sha256": "be9be7ef0572961537fb3ba807e6a6f0e167b2f05208fa0ebb1296f277014474"
+    },
+    {
+      "id": "paper_pickup",
+      "file": "ue58/Content/Confession/Audio/paper_pickup.wav",
+      "category": "one_shot",
+      "loop": false,
+      "duration_s": 0.7,
+      "samples": 33600,
+      "target_lufs": -21.0,
+      "peak_limited_by_generator": false,
+      "intended_use": "interactables Pickup_JobOrder_2147.sound (L0_B01_layout.json)",
+      "licence": "original, procedurally generated for this project",
+      "sha256": "4d6c958edb14db23f560140e0d37965b7e1c1a477ddba039fd7e1293c1a310ee"
+    },
+    {
+      "id": "card_slot",
+      "file": "ue58/Content/Confession/Audio/card_slot.wav",
+      "category": "one_shot",
+      "loop": false,
+      "duration_s": 0.6,
+      "samples": 28800,
+      "target_lufs": -21.0,
+      "peak_limited_by_generator": false,
+      "intended_use": "interactables Pickup_AccessCard_21.sound (L0_B01_layout.json)",
+      "licence": "original, procedurally generated for this project",
+      "sha256": "05953f0cb84a0ea5379c7e4d88066f9646b370370418d3a5d6dc393c74257adc"
+    },
+    {
+      "id": "door_reject",
+      "file": "ue58/Content/Confession/Audio/door_reject.wav",
+      "category": "one_shot",
+      "loop": false,
+      "duration_s": 0.6,
+      "samples": 28800,
+      "target_lufs": -20.0,
+      "peak_limited_by_generator": false,
+      "intended_use": "suggested: Door_Entrance_01 reject step (msg_entrance_reject) and Door_Basement_01 no-card; not yet bound by a 'sound' field in layout",
+      "licence": "original, procedurally generated for this project",
+      "sha256": "a285379d2f4e48131ed03c23485d431e8565b7c3e3ce92bdb6f09a2deb78bdc5"
+    },
+    {
+      "id": "door_release",
+      "file": "ue58/Content/Confession/Audio/door_release.wav",
+      "category": "one_shot",
+      "loop": false,
+      "duration_s": 0.8,
+      "samples": 38400,
+      "target_lufs": -20.0,
+      "peak_limited_by_generator": false,
+      "intended_use": "suggested: Door_Entrance_01 release after release_delay_s (msg_entrance_release); not yet bound by a 'sound' field in layout",
+      "licence": "original, procedurally generated for this project",
+      "sha256": "aaeebcdd4156d1a2aec17462d6047a4b6ed24b46c82ef4b4dbbcc852fc447ad0"
+    },
+    {
+      "id": "door_open",
+      "file": "ue58/Content/Confession/Audio/door_open.wav",
+      "category": "one_shot",
+      "loop": false,
+      "duration_s": 2.0,
+      "samples": 96000,
+      "target_lufs": -21.0,
+      "peak_limited_by_generator": false,
+      "intended_use": "suggested: Door_Entrance_01 / Door_Basement_01 swing open; not yet bound by a 'sound' field in layout",
+      "licence": "original, procedurally generated for this project",
+      "sha256": "14a6b7bf89bc322b31b4f81704a76dccd9501e6d258afab13226c3a3a80ccf18"
+    },
+    {
+      "id": "phone_ring",
+      "file": "ue58/Content/Confession/Audio/phone_ring.wav",
+      "category": "one_shot",
+      "loop": false,
+      "duration_s": 2.5,
+      "samples": 120000,
+      "target_lufs": -20.0,
+      "peak_limited_by_generator": false,
+      "intended_use": "suggested: Phone_Counter_01 ring_event phone_ring_once (fired by Pickup_AccessCard_21.on_pickup_event) and relay to Phone_Wall_01",
+      "licence": "original, procedurally generated for this project",
+      "sha256": "ae69fb549b18d9a1ad750f5d26578c35208188f25b55bb6b7bab819170c44c90"
+    },
+    {
+      "id": "phone_pickup",
+      "file": "ue58/Content/Confession/Audio/phone_pickup.wav",
+      "category": "one_shot",
+      "loop": false,
+      "duration_s": 0.5,
+      "samples": 24000,
+      "target_lufs": -22.0,
+      "peak_limited_by_generator": false,
+      "intended_use": "suggested: Phone_Counter_01 / Phone_Wall_01 on answer",
+      "licence": "original, procedurally generated for this project",
+      "sha256": "8837d060ec1c8473aebb07c0be2ab46b3f133de2d4fa6ecbe7459454945cb2dd"
+    },
+    {
+      "id": "dial_tone",
+      "file": "ue58/Content/Confession/Audio/dial_tone.wav",
+      "category": "one_shot",
+      "loop": false,
+      "duration_s": 3.0,
+      "samples": 144000,
+      "target_lufs": -23.0,
+      "peak_limited_by_generator": false,
+      "intended_use": "suggested: Phone_Counter_01 on_answer_msg msg_phone_dialtone",
+      "licence": "original, procedurally generated for this project",
+      "sha256": "16fc0c0023c24fb60b502fd11b12586e4899fb95e954473a0eff917ba298bb0a"
+    },
+    {
+      "id": "checkpoint_soft",
+      "file": "ue58/Content/Confession/Audio/checkpoint_soft.wav",
+      "category": "one_shot",
+      "loop": false,
+      "duration_s": 1.0,
+      "samples": 48000,
+      "target_lufs": -23.5,
+      "peak_limited_by_generator": false,
+      "intended_use": "suggested: Checkpoint_Lobby, Checkpoint_ServiceDoor (msg_checkpoint)",
+      "licence": "original, procedurally generated for this project",
+      "sha256": "463c1456ac236cac7b62ad0b15db9a12aed9433ddcc8eb6b2e56c2084c13b4fb"
+    },
+    {
+      "id": "footstep_concrete_01",
+      "file": "ue58/Content/Confession/Audio/footstep_concrete_01.wav",
+      "category": "footstep",
+      "loop": false,
+      "duration_s": 0.306396,
+      "samples": 14707,
+      "target_lufs": -25.0,
+      "peak_limited_by_generator": true,
+      "intended_use": "player locomotion on terrazzo_wet / concrete_wet, random rotation of 6",
+      "licence": "original, procedurally generated for this project",
+      "sha256": "79228b5bad45d6bae38b58841c14be14dd11392a2c6f781b5ecc530b9bba545c"
+    },
+    {
+      "id": "footstep_concrete_02",
+      "file": "ue58/Content/Confession/Audio/footstep_concrete_02.wav",
+      "category": "footstep",
+      "loop": false,
+      "duration_s": 0.265562,
+      "samples": 12747,
+      "target_lufs": -24.5,
+      "peak_limited_by_generator": false,
+      "intended_use": "player locomotion on terrazzo_wet / concrete_wet, random rotation of 6",
+      "licence": "original, procedurally generated for this project",
+      "sha256": "4aa654ca0cca9a679d8a1995525a6958dab62eedb291a6e09f146571a06d7fa8"
+    },
+    {
+      "id": "footstep_concrete_03",
+      "file": "ue58/Content/Confession/Audio/footstep_concrete_03.wav",
+      "category": "footstep",
+      "loop": false,
+      "duration_s": 0.223896,
+      "samples": 10747,
+      "target_lufs": -25.5,
+      "peak_limited_by_generator": false,
+      "intended_use": "player locomotion on terrazzo_wet / concrete_wet, random rotation of 6",
+      "licence": "original, procedurally generated for this project",
+      "sha256": "161ca33221d4d76bd3dfecb2531f32243b75346bcf2d2e69b4b008ac1f0b66d5"
+    },
+    {
+      "id": "footstep_concrete_04",
+      "file": "ue58/Content/Confession/Audio/footstep_concrete_04.wav",
+      "category": "footstep",
+      "loop": false,
+      "duration_s": 0.272146,
+      "samples": 13063,
+      "target_lufs": -24.8,
+      "peak_limited_by_generator": false,
+      "intended_use": "player locomotion on terrazzo_wet / concrete_wet, random rotation of 6",
+      "licence": "original, procedurally generated for this project",
+      "sha256": "2a895bb18cbacffd8e9e1989dfea13fa74621a7c5ce5b00e49ae81344865f09e"
+    },
+    {
+      "id": "footstep_concrete_05",
+      "file": "ue58/Content/Confession/Audio/footstep_concrete_05.wav",
+      "category": "footstep",
+      "loop": false,
+      "duration_s": 0.283917,
+      "samples": 13628,
+      "target_lufs": -25.2,
+      "peak_limited_by_generator": true,
+      "intended_use": "player locomotion on terrazzo_wet / concrete_wet, random rotation of 6",
+      "licence": "original, procedurally generated for this project",
+      "sha256": "a2acf17fa90b7c33589c0a8501fdc16e4cd570477e76ba31b21d3cc84f41f601"
+    },
+    {
+      "id": "footstep_concrete_06",
+      "file": "ue58/Content/Confession/Audio/footstep_concrete_06.wav",
+      "category": "footstep",
+      "loop": false,
+      "duration_s": 0.252063,
+      "samples": 12099,
+      "target_lufs": -24.6,
+      "peak_limited_by_generator": false,
+      "intended_use": "player locomotion on terrazzo_wet / concrete_wet, random rotation of 6",
+      "licence": "original, procedurally generated for this project",
+      "sha256": "23b8204e2a0f182509dc92ac7ecb3711a7a08abd82228897a7d60fe17d6cfdfb"
+    }
+  ]
+}
