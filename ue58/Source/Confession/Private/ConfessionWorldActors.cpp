@@ -32,9 +32,6 @@ void AConfessionCheckpoint::InitFromLayout(const TSharedPtr<FJsonObject>& Data)
 	const FVector2D Facing = ConfessionData::GetVec2(Data, TEXT("respawn_facing"), FVector2D(0.0, 1.0));
 	Respawn = FTransform(FRotator(0.0f, ConfessionData::YawFromFacing(Facing.X, Facing.Y), 0.0f),
 		ConfessionData::ToUE(ConfessionData::GetVec3(Data, TEXT("respawn"))));
-#if WITH_EDITOR
-	SetActorLabel(LayoutId);
-#endif
 }
 
 void AConfessionCheckpoint::NotifyActorBeginOverlap(AActor* OtherActor)
@@ -91,7 +88,7 @@ void AConfessionPhone::StartRinging()
 	{
 		Audio->PlayAt(TEXT("phone_ring"), GetAimPoint(), 0.9f, 2600.0f);
 	}
-	RingWindow = RingLength + 3.0f;
+	RingWindow = RingLength + 6.0f;
 	UE_LOG(LogConfession, Log, TEXT("[Phone] %s rings"), *LayoutId);
 }
 
@@ -101,10 +98,6 @@ void AConfessionPhone::HandleUse(AConfessionCharacter* By)
 	if (UConfessionAudioSubsystem* Audio = GetWorld()->GetSubsystem<UConfessionAudioSubsystem>())
 	{
 		Audio->PlayAt(TEXT("phone_pickup"), GetAimPoint(), 0.7f, 600.0f);
-		if (!RelayTo.IsEmpty())
-		{
-			Audio->PlayAt(TEXT("dial_tone"), GetAimPoint(), 0.45f, 300.0f);
-		}
 	}
 	if (AConfessionGameMode* GM = GetConfessionGameMode())
 	{
@@ -115,6 +108,12 @@ void AConfessionPhone::HandleUse(AConfessionCharacter* By)
 	{
 		RelayTimer = RelayDelay; // "after hanging up, the ringing starts at the other end of the hall"
 	}
+}
+
+void AConfessionPhone::RestoreFromProgress(const ConfessionRules::ProgressState& State)
+{
+	RingWindow = 0.0f;
+	RelayTimer = -1.0f;
 }
 
 void AConfessionPhone::Tick(float DeltaSeconds)

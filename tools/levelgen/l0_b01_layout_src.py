@@ -29,6 +29,7 @@ FIXES = [
     "Spec scene_01_entrance.yaml lists exit at x=3.7 but blockout mesh places the basement door at x=0: geometry (x=0) kept, spec flagged in production/change_requests/CR-0001.",
     "Added the canonical rain arcade (L0_B01 '雨廊入口') south of the lobby; v0.4 blockout had only the lobby.",
     "v0.5.1 (Blender review LAYOUT_ISSUES.md): shutter moved in front of frame; landing ceiling end hidden in wall; shelves grounded with uprights; hanging details touch ceiling; counter props rest on top; real card-slot housing; entrance hinge moved off mullion; coplanar faces offset; door lamp made brightest cue; exposure bias -1 EV (lighting proposal).",
+    "v0.5.2 (independent review R1): previous-number line held + release appended; 'reading' prompt during release; duplicate card-slot lamp removed; frame seen range 8 m; first queue chime 5-9 s; phone text back to canon '拨号静音', no invented line on the second phone.",
     "Added service landing behind Door_Basement_01 so the second checkpoint is reachable and the door is not a wall texture.",
 ]
 
@@ -175,7 +176,7 @@ INTERACTABLES = [
      "panel": [1.02, -9.70, 1.30], "previous_number": "21-46",
      "label_locked": {"zh": "刷工单", "en": "Present work order"}, "label_open": {"zh": "推门", "en": "Push door"},
      "msg_no_item": "msg_entrance_no_order", "msg_reject": "msg_entrance_reject", "msg_release": "msg_entrance_release",
-     "release_delay_s": 1.4, "sets_flag_on_open": "entrance_open"},
+     "release_delay_s": 2.6, "label_wait": {"zh": "读卡中……", "en": "Reading..."}, "sets_flag_on_open": "entrance_open"},
     {"id": "Checkpoint_Lobby", "type": "checkpoint", "center": [0.0, -8.3, 1.2], "size": [3.0, 1.4, 2.4],
      "respawn": [0.0, -8.0, 0.0], "respawn_facing": [0.0, 1.0], "sets_flag": "cp_lobby"},
     {"id": "Pickup_AccessCard_21", "type": "pickup", "item": "access_card_21",
@@ -188,7 +189,8 @@ INTERACTABLES = [
      "ring_event": "phone_ring_once", "on_answer_msg": "msg_phone_dialtone",
      "relay_to": "Phone_Wall_01", "relay_delay_s": 2.5},
     {"id": "Phone_Wall_01", "type": "phone", "center": [-2.4, 9.42, 1.45], "size": [0.2, 0.1, 0.3],
-     "material": "rubber_black", "label": {"zh": "接听", "en": "Answer"}, "on_answer_msg": "msg_phone_wall"},
+     "material": "rubber_black", "label": {"zh": "接听", "en": "Answer"}, "on_answer_msg": "",
+     "note": "canon gives no line for answering the second phone; intentionally silent"},
     {"id": "Door_Basement_01", "type": "door", "hinge": [-0.6, 9.62, 0.0], "leaf_size": [1.2, 0.06, 2.15],
      "closed_yaw_deg": 0.0, "open_yaw_deg": 92.0, "swing": "north", "material": "paint_green",
      "requires_item": "access_card_21", "lock_mode": "item",
@@ -199,7 +201,7 @@ INTERACTABLES = [
      "respawn": [0.0, 10.8, 0.0], "respawn_facing": [0.0, 1.0], "sets_flag": "cp_service"},
     {"id": "Anomaly_EmptyFrame_01", "type": "displacement_anomaly", "center": [6.40, 1.6, 1.95],
      "size": [0.07, 1.4, 1.7], "material": "brass_aged", "displace": [0.0, -0.08, 0.0],
-     "seen_within_m": 4.5, "label": {"zh": "查看相框", "en": "Inspect frame"}, "document": "doc_empty_frame",
+     "seen_within_m": 8.0, "label": {"zh": "查看相框", "en": "Inspect frame"}, "document": "doc_empty_frame",
      "note": "DIRECTOR_BEAT_SHEET 关键演出01: moves 8 cm once, only after it was seen and is then out of view"},
     {"id": "Readable_Notice_01", "type": "readable", "center": [3.4, 9.44, 1.75], "size": [1.55, 0.03, 0.9],
      "material": "paper_aged", "label": {"zh": "阅读告示", "en": "Read notice"}, "document": "doc_notice"},
@@ -217,8 +219,6 @@ LIGHTS = [
      "lumens": 700, "size_m": [1.05, 0.22], "radius_m": 10.0, "shadows": True},
     {"id": "L_BasementDoor", "type": "point", "pos": [0.0, 9.1, 2.6], "color": [1.0, 0.86, 0.66], "lumens": 1600,
      "radius_m": 6.0, "shadows": True, "intent": "focal anchor: brightest navigation cue in the lobby"},
-    {"id": "L_CardSlotPilot", "type": "point", "pos": [-4.35, -1.05, 1.38], "color": [1.0, 0.55, 0.2], "lumens": 35,
-     "radius_m": 1.6, "shadows": False, "intent": "pilot lamp on the card slot (non-text hint)"},
     {"id": "L_Landing", "type": "point", "pos": [0.0, 12.2, 2.5], "color": [0.85, 0.9, 1.0], "lumens": 260,
      "radius_m": 4.0, "shadows": True},
 ]
@@ -235,7 +235,7 @@ AUDIO_EMITTERS = [
     {"id": "A_Hum_Cable", "sound": "hum_electrical", "pos": [2.2, 0.0, 4.0], "loop": True, "volume": 0.35, "radius_m": 9},
     {"id": "A_Clock_Desk", "sound": "clock_tick", "pos": [-2.5, -0.5, 1.3], "loop": True, "volume": 0.5, "radius_m": 5},
     {"id": "A_QueueChime", "sound": "queue_chime", "pos": [-3.6, 2.5, 2.6], "loop": False, "volume": 0.45,
-     "radius_m": 30, "interval_s": [22, 38],
+     "radius_m": 30, "interval_s": [22, 38], "first_delay_s": [5, 9],
      "intent": "canon foreshadow '远处重复的电子叫号'; audible from the arcade through the entrance"},
 ]
 
@@ -261,11 +261,11 @@ DOCUMENTS = {
 }
 MESSAGES = {
     "msg_entrance_no_order": {"zh": "门禁亮红灯。需要工单。", "en": "The reader blinks red. It wants a work order."},
-    "msg_entrance_reject": {"zh": "门禁显示上一个号码：21-46。", "en": "The reader shows the previous number: 21-46."},
+    "msg_entrance_reject": {"zh": "门禁显示上一个号码：{number}。", "en": "The reader shows the previous number: {number}."},
     "msg_entrance_release": {"zh": "锁舌咔哒一声松开了。", "en": "The latch clicks loose."},
     "msg_basement_no_card": {"zh": "读卡器没有反应。需要工号卡。", "en": "The card reader does nothing. It needs a staff card."},
-    "msg_phone_dialtone": {"zh": "听筒里只有拨号音。", "en": "Only a dial tone."},
-    "msg_phone_wall": {"zh": "没有人说话。", "en": "Nobody speaks."},
+    "msg_phone_dialtone": {"zh": "只听到拨号静音。", "en": "Only dial silence."},
+    
     "msg_checkpoint": {"zh": "已记录", "en": "Logged"},
     "ui_doc_close": {"zh": "[E] 放下", "en": "[E] Close"},
     "ui_current": {"zh": "当前：", "en": "Current: "},
@@ -288,7 +288,7 @@ AUTOPILOT = [
     {"op": "screenshot", "shot": "shot_arcade"},
     {"op": "goto", "to": [0.0, -10.9]},
     {"op": "use", "target": "Door_Entrance_01", "expect_flag": ""},
-    {"op": "wait", "seconds": 2.2},
+    {"op": "wait", "seconds": 3.2},
     {"op": "use", "target": "Door_Entrance_01", "expect_flag": "entrance_open"},
     {"op": "wait", "seconds": 1.6},
     {"op": "goto", "to": [0.0, -8.0], "expect_flag": "cp_lobby"},
@@ -324,7 +324,7 @@ def build() -> dict:
         assert min(g["size"]) > 0, g
     return {
         "id": "L0_B01", "name": {"zh": "雨廊入口 / 回执局门厅", "en": "Rain Arcade / Receipt Office Lobby"},
-        "schema": 1, "layout_version": "0.5.1", "units": "metres",
+        "schema": 1, "layout_version": "0.5.2", "units": "metres",
         "axes": "Blender: +X east, +Y north (toward Door_Basement_01), +Z up. UE: X=x*100, Y=-y*100, Z=z*100.",
         "canon_sources": ["docs/WORLD_BIBLE_AND_SCRIPT.md", "docs/SCENE_OUTLINE_24_BEATS.md#L0_B01",
                           "production/vertical_slice_plan.json#VS01-VS02", "docs/DIRECTOR_BEAT_SHEET.md"],

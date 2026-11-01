@@ -8,6 +8,7 @@
 class UPointLightComponent;
 class UStaticMeshComponent;
 class USceneComponent;
+class AConfessionGameMode;
 
 UCLASS()
 class CONFESSION_API AConfessionDoor : public AConfessionInteractable
@@ -47,6 +48,7 @@ private:
 	void ApplyPose();
 	void SetLamp(const FLinearColor& Color, float Lumens);
 	bool PlayerHasItem() const;
+	FText RejectText(const AConfessionGameMode& GM) const;
 
 	ConfessionRules::DoorLock Lock;
 	float ClosedYaw = 0.0f;
@@ -54,6 +56,7 @@ private:
 	float LampFlashTimer = 0.0f;
 	FText LabelLocked;
 	FText LabelOpen;
+	FText LabelWait;
 	FString MsgNoItem;
 	FString MsgReject;
 	FString MsgRelease;

@@ -8,6 +8,7 @@
 #include "ConfessionHUD.h"
 #include "ConfessionInteractable.h"
 #include "EngineUtils.h"
+#include "Engine/Engine.h"
 #include "Engine/World.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/PlayerController.h"
@@ -72,6 +73,10 @@ void AConfessionGameMode::InitGame(const FString& MapName, const FString& Option
 	if (!Layout.LoadFromFile(Path, Error))
 	{
 		UE_LOG(LogConfession, Error, TEXT("Layout load failed: %s"), *Error);
+		if (GEngine)
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 60.0f, FColor::Red, FString::Printf(TEXT("Confession: layout load failed (%s). Expected %s"), *Error, *Path));
+		}
 		return;
 	}
 	UE_LOG(LogConfession, Display, TEXT("Layout %s v%s: %d boxes, %d interactables, %d flow steps (%s)"), *Layout.Id,
@@ -152,6 +157,33 @@ void AConfessionGameMode::FireEvent(const FString& EventId)
 	}
 }
 
+void AConfessionGameMode::FireEventAfterDocument(const FString& EventId)
+{
+	if (EventId.IsEmpty()) { return; }
+	PendingEvents.Add(EventId);
+	PendingEventDelay = 0.0f;
+	if (!GetWorldTimerManager().IsTimerActive(PendingEventTimer))
+	{
+		GetWorldTimerManager().SetTimer(PendingEventTimer, this, &AConfessionGameMode::PumpPendingEvents, 0.1f, true);
+	}
+}
+
+void AConfessionGameMode::PumpPendingEvents()
+{
+	const AConfessionHUD* HUD = GetConfessionHUD();
+	if (HUD && HUD->IsDocumentOpen())
+	{
+		PendingEventDelay = 0.0f;
+		return;
+	}
+	PendingEventDelay += 0.1f;
+	if (PendingEventDelay < 0.8f) { return; }
+	TArray<FString> Events = MoveTemp(PendingEvents);
+	PendingEvents.Reset();
+	GetWorldTimerManager().ClearTimer(PendingEventTimer);
+	for (const FString& E : Events) { FireEvent(E); }
+}
+
 AConfessionHUD* AConfessionGameMode::GetConfessionHUD() const
 {
 	const APlayerController* PC = UGameplayStatics::GetPlayerController(this, 0);
@@ -221,10 +253,11 @@ void AConfessionGameMode::OnProgressChanged()
 void AConfessionGameMode::ReachCheckpoint(const FString& CheckpointId, const FTransform& Respawn, const FString& Flag)
 {
 	const std::string Id = ConfessionData::ToStd(CheckpointId);
-	if (LastCheckpoint.bValid && LastCheckpoint.Id == Id)
+	if (ReachedCheckpoints.Contains(CheckpointId))
 	{
-		return;
+		return; // checkpoints only move forward: walking back never regresses the respawn point
 	}
+	ReachedCheckpoints.Add(CheckpointId);
 	SetFlag(Flag); // before the snapshot so the respawned state includes it
 	LastCheckpoint.Id = Id;
 	LastCheckpoint.State = Progress;

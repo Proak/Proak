@@ -29,9 +29,12 @@ class CONFESSION_API UConfessionAudioSubsystem : public UWorldSubsystem
 public:
 	/** Fire-and-forget positional one-shot. Returns nullptr if the sound file is missing. */
 	UAudioComponent* PlayAt(const FString& SoundId, const FVector& Location, float Volume = 1.0f, float RadiusCm = 1500.0f,
-		float Pitch = 1.0f);
+		float Pitch = 1.0f, bool bOcclusion = false);
 	/** Looping (or one-shot) sound attached to a component; the caller owns the component. */
-	UAudioComponent* CreateAttached(const FString& SoundId, USceneComponent* AttachTo, bool bLoop, float Volume, float RadiusCm);
+	/** bOcclusion: only for ambient emitters placed in open air; feedback sounds start inside their own prop
+	 *  and would be muffled by it. */
+	UAudioComponent* CreateAttached(const FString& SoundId, USceneComponent* AttachTo, bool bLoop, float Volume, float RadiusCm,
+		bool bOcclusion = false);
 
 	/** True if Content/Confession/Audio/<id>.wav exists and parses. */
 	bool HasSound(const FString& SoundId);
@@ -41,7 +44,7 @@ public:
 private:
 	TSharedPtr<FConfessionPcm, ESPMode::ThreadSafe> Load(const FString& SoundId);
 	USoundWaveProcedural* MakeWave(const TSharedPtr<FConfessionPcm, ESPMode::ThreadSafe>& Pcm, bool bLoop);
-	USoundAttenuation* AttenuationFor(float RadiusCm);
+	USoundAttenuation* AttenuationFor(float RadiusCm, bool bOcclusion);
 
 	TMap<FString, TSharedPtr<FConfessionPcm, ESPMode::ThreadSafe>> Cache;
 	TSet<FString> Missing;

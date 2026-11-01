@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Engine/TimerHandle.h"
 #include "ConfessionGreyboxBuilder.generated.h"
 
 class UStaticMeshComponent;
@@ -42,6 +43,8 @@ private:
 		float Volume = 1.0f;
 		float RadiusCm = 1500.0f;
 		FVector2D IntervalSeconds = FVector2D(20.0, 40.0);
+		FVector2D FirstDelaySeconds = FVector2D(-1.0, -1.0);
+		bool bFirstDone = false;
 	};
 	TArray<FIntervalEmitter> IntervalEmitters;
 	TArray<FTimerHandle> IntervalTimers;

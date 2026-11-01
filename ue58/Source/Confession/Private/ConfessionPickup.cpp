@@ -7,6 +7,7 @@
 #include "ConfessionTypes.h"
 #include "Components/PointLightComponent.h"
 #include "Components/StaticMeshComponent.h"
+#include "Engine/World.h"
 
 AConfessionPickup::AConfessionPickup()
 {
@@ -80,7 +81,7 @@ void AConfessionPickup::HandleUse(AConfessionCharacter* By)
 	}
 	if (!EventOnUse.IsEmpty())
 	{
-		GM->FireEvent(EventOnUse);
+		GM->FireEventAfterDocument(EventOnUse); // e.g. the phone rings once the player has put the card text away
 	}
 	UE_LOG(LogConfession, Log, TEXT("[Pickup] %s used (item=%s flag=%s)"), *LayoutId, *ItemId, *FlagOnUse);
 }

@@ -5,7 +5,7 @@
   "en": "Rain Arcade / Receipt Office Lobby"
  },
  "schema": 1,
- "layout_version": "0.5.1",
+ "layout_version": "0.5.2",
  "units": "metres",
  "axes": "Blender: +X east, +Y north (toward Door_Basement_01), +Z up. UE: X=x*100, Y=-y*100, Z=z*100.",
  "canon_sources": [
@@ -21,6 +21,7 @@
   "Spec scene_01_entrance.yaml lists exit at x=3.7 but blockout mesh places the basement door at x=0: geometry (x=0) kept, spec flagged in production/change_requests/CR-0001.",
   "Added the canonical rain arcade (L0_B01 '雨廊入口') south of the lobby; v0.4 blockout had only the lobby.",
   "v0.5.1 (Blender review LAYOUT_ISSUES.md): shutter moved in front of frame; landing ceiling end hidden in wall; shelves grounded with uprights; hanging details touch ceiling; counter props rest on top; real card-slot housing; entrance hinge moved off mullion; coplanar faces offset; door lamp made brightest cue; exposure bias -1 EV (lighting proposal).",
+  "v0.5.2 (independent review R1): previous-number line held + release appended; 'reading' prompt during release; duplicate card-slot lamp removed; frame seen range 8 m; first queue chime 5-9 s; phone text back to canon '拨号静音', no invented line on the second phone.",
   "Added service landing behind Door_Basement_01 so the second checkpoint is reachable and the door is not a wall texture."
  ],
  "player": {
@@ -2452,7 +2453,11 @@
    "msg_no_item": "msg_entrance_no_order",
    "msg_reject": "msg_entrance_reject",
    "msg_release": "msg_entrance_release",
-   "release_delay_s": 1.4,
+   "release_delay_s": 2.6,
+   "label_wait": {
+    "zh": "读卡中……",
+    "en": "Reading..."
+   },
    "sets_flag_on_open": "entrance_open"
   },
   {
@@ -2549,7 +2554,8 @@
     "zh": "接听",
     "en": "Answer"
    },
-   "on_answer_msg": "msg_phone_wall"
+   "on_answer_msg": "",
+   "note": "canon gives no line for answering the second phone; intentionally silent"
   },
   {
    "id": "Door_Basement_01",
@@ -2629,7 +2635,7 @@
     -0.08,
     0.0
    ],
-   "seen_within_m": 4.5,
+   "seen_within_m": 8.0,
    "label": {
     "zh": "查看相框",
     "en": "Inspect frame"
@@ -2773,24 +2779,6 @@
    "intent": "focal anchor: brightest navigation cue in the lobby"
   },
   {
-   "id": "L_CardSlotPilot",
-   "type": "point",
-   "pos": [
-    -4.35,
-    -1.05,
-    1.38
-   ],
-   "color": [
-    1.0,
-    0.55,
-    0.2
-   ],
-   "lumens": 35,
-   "radius_m": 1.6,
-   "shadows": false,
-   "intent": "pilot lamp on the card slot (non-text hint)"
-  },
-  {
    "id": "L_Landing",
    "type": "point",
    "pos": [
@@ -2872,6 +2860,10 @@
     22,
     38
    ],
+   "first_delay_s": [
+    5,
+    9
+   ],
    "intent": "canon foreshadow '远处重复的电子叫号'; audible from the arcade through the entrance"
   }
  ],
@@ -2927,8 +2919,8 @@
    "en": "The reader blinks red. It wants a work order."
   },
   "msg_entrance_reject": {
-   "zh": "门禁显示上一个号码：21-46。",
-   "en": "The reader shows the previous number: 21-46."
+   "zh": "门禁显示上一个号码：{number}。",
+   "en": "The reader shows the previous number: {number}."
   },
   "msg_entrance_release": {
    "zh": "锁舌咔哒一声松开了。",
@@ -2939,12 +2931,8 @@
    "en": "The card reader does nothing. It needs a staff card."
   },
   "msg_phone_dialtone": {
-   "zh": "听筒里只有拨号音。",
-   "en": "Only a dial tone."
-  },
-  "msg_phone_wall": {
-   "zh": "没有人说话。",
-   "en": "Nobody speaks."
+   "zh": "只听到拨号静音。",
+   "en": "Only dial silence."
   },
   "msg_checkpoint": {
    "zh": "已记录",
@@ -3043,7 +3031,7 @@
   },
   {
    "op": "wait",
-   "seconds": 2.2
+   "seconds": 3.2
   },
   {
    "op": "use",

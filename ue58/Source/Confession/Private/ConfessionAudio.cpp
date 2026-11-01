@@ -131,9 +131,9 @@ USoundWaveProcedural* UConfessionAudioSubsystem::MakeWave(const TSharedPtr<FConf
 	return Wave;
 }
 
-USoundAttenuation* UConfessionAudioSubsystem::AttenuationFor(float RadiusCm)
+USoundAttenuation* UConfessionAudioSubsystem::AttenuationFor(float RadiusCm, bool bOcclusion)
 {
-	const int32 Key = FMath::RoundToInt(RadiusCm / 50.0f);
+	const int32 Key = FMath::RoundToInt(RadiusCm / 50.0f) * 2 + (bOcclusion ? 1 : 0);
 	if (TObjectPtr<USoundAttenuation>* Found = AttenuationByRadius.Find(Key))
 	{
 		return Found->Get();
@@ -147,7 +147,7 @@ USoundAttenuation* UConfessionAudioSubsystem::AttenuationFor(float RadiusCm)
 	S.FalloffDistance = FMath::Max(100.0f, RadiusCm);
 	S.DistanceAlgorithm = EAttenuationDistanceModel::NaturalSound;
 	// Walls and closed doors muffle sources: a cheap, physically motivated cue for "where is it".
-	S.bEnableOcclusion = true;
+	S.bEnableOcclusion = bOcclusion;
 	S.OcclusionTraceChannel = ECC_Visibility;
 	S.OcclusionLowPassFilterFrequency = 1400.0f;
 	S.OcclusionVolumeAttenuation = 0.45f;
@@ -156,7 +156,8 @@ USoundAttenuation* UConfessionAudioSubsystem::AttenuationFor(float RadiusCm)
 	return Att;
 }
 
-UAudioComponent* UConfessionAudioSubsystem::PlayAt(const FString& SoundId, const FVector& Location, float Volume, float RadiusCm, float Pitch)
+UAudioComponent* UConfessionAudioSubsystem::PlayAt(const FString& SoundId, const FVector& Location, float Volume, float RadiusCm, float Pitch,
+	bool bOcclusion)
 {
 	const TSharedPtr<FConfessionPcm, ESPMode::ThreadSafe> Pcm = Load(SoundId);
 	UWorld* World = GetWorld();
@@ -166,7 +167,7 @@ UAudioComponent* UConfessionAudioSubsystem::PlayAt(const FString& SoundId, const
 	}
 	USoundWaveProcedural* Wave = MakeWave(Pcm, false);
 	UAudioComponent* Comp = UGameplayStatics::SpawnSoundAtLocation(World, Wave, Location, FRotator::ZeroRotator, Volume, Pitch,
-		0.0f, AttenuationFor(RadiusCm), nullptr, true);
+		0.0f, AttenuationFor(RadiusCm, bOcclusion), nullptr, true);
 	if (Comp)
 	{
 		// Procedural waves do not always report completion; stop explicitly after the clip length.
@@ -183,7 +184,8 @@ UAudioComponent* UConfessionAudioSubsystem::PlayAt(const FString& SoundId, const
 	return Comp;
 }
 
-UAudioComponent* UConfessionAudioSubsystem::CreateAttached(const FString& SoundId, USceneComponent* AttachTo, bool bLoop, float Volume, float RadiusCm)
+UAudioComponent* UConfessionAudioSubsystem::CreateAttached(const FString& SoundId, USceneComponent* AttachTo, bool bLoop, float Volume, float RadiusCm,
+	bool bOcclusion)
 {
 	const TSharedPtr<FConfessionPcm, ESPMode::ThreadSafe> Pcm = Load(SoundId);
 	if (!Pcm.IsValid() || !AttachTo)
@@ -196,6 +198,6 @@ UAudioComponent* UConfessionAudioSubsystem::CreateAttached(const FString& SoundI
 	Comp->RegisterComponent();
 	Comp->SetSound(MakeWave(Pcm, bLoop));
 	Comp->SetVolumeMultiplier(Volume);
-	Comp->AttenuationSettings = AttenuationFor(RadiusCm);
+	Comp->AttenuationSettings = AttenuationFor(RadiusCm, bOcclusion);
 	return Comp;
 }

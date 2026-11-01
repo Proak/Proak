@@ -8,8 +8,8 @@
 #include "Components/PointLightComponent.h"
 #include "Components/SceneComponent.h"
 #include "Components/StaticMeshComponent.h"
-
-using namespace ConfessionRules;
+#include "Engine/World.h"
+#include "Materials/MaterialInstanceDynamic.h"
 
 namespace
 {
@@ -39,9 +39,9 @@ void AConfessionDoor::InitFromLayout(const TSharedPtr<FJsonObject>& Data, const 
 	Super::InitFromLayout(Data, Layout);
 	RequiredItem = ConfessionData::GetString(Data, TEXT("requires_item"));
 	const FString Mode = ConfessionData::GetString(Data, TEXT("lock_mode"), TEXT("item"));
-	const LockMode LM = RequiredItem.IsEmpty() ? LockMode::None
-		: (Mode == TEXT("reject_once_then_release") ? LockMode::RejectOnceThenRelease : LockMode::Item);
-	Lock = DoorLock(LM, ConfessionData::GetNumber(Data, TEXT("release_delay_s"), 1.4), 1.3);
+	const ConfessionRules::LockMode LM = RequiredItem.IsEmpty() ? ConfessionRules::LockMode::None
+		: (Mode == TEXT("reject_once_then_release") ? ConfessionRules::LockMode::RejectOnceThenRelease : ConfessionRules::LockMode::Item);
+	Lock = ConfessionRules::DoorLock(LM, ConfessionData::GetNumber(Data, TEXT("release_delay_s"), 1.4), 1.3);
 
 	// Layout yaw is counter-clockwise from +X (east) toward +Y (north); UE yaw is the mirror.
 	ClosedYaw = -static_cast<float>(ConfessionData::GetNumber(Data, TEXT("closed_yaw_deg"), 0.0));
@@ -49,6 +49,7 @@ void AConfessionDoor::InitFromLayout(const TSharedPtr<FJsonObject>& Data, const 
 
 	LabelLocked = ConfessionData::Localized(Data, TEXT("label_locked"));
 	LabelOpen = ConfessionData::Localized(Data, TEXT("label_open"));
+	LabelWait = ConfessionData::Localized(Data, TEXT("label_wait"));
 	MsgNoItem = ConfessionData::GetString(Data, TEXT("msg_no_item"));
 	MsgReject = ConfessionData::GetString(Data, TEXT("msg_reject"));
 	MsgRelease = ConfessionData::GetString(Data, TEXT("msg_release"));
@@ -74,7 +75,7 @@ void AConfessionDoor::InitFromLayout(const TSharedPtr<FJsonObject>& Data, const 
 		PanelLight->SetIntensityUnits(ELightUnits::Lumens);
 		PanelLight->SetAttenuationRadius(90.0f);
 		PanelLight->SetVisibility(true);
-		SetLamp(LM == LockMode::None ? LampGreen : LampRed, 6.0f);
+		SetLamp(LM == ConfessionRules::LockMode::None ? LampGreen : LampRed, 6.0f);
 	}
 	else
 	{
@@ -99,6 +100,13 @@ void AConfessionDoor::ApplyPose()
 	Hinge->SetRelativeRotation(FRotator(0.0f, FMath::Lerp(ClosedYaw, OpenYaw, Alpha), 0.0f));
 }
 
+FText AConfessionDoor::RejectText(const AConfessionGameMode& GM) const
+{
+	FString Text = GM.GetLayout().Message(MsgReject).ToString();
+	Text.ReplaceInline(TEXT("{number}"), *PreviousNumber);
+	return FText::FromString(Text);
+}
+
 bool AConfessionDoor::PlayerHasItem() const
 {
 	const AConfessionGameMode* GM = GetConfessionGameMode();
@@ -107,13 +115,19 @@ bool AConfessionDoor::PlayerHasItem() const
 
 bool AConfessionDoor::CanUse(const AConfessionCharacter* By) const
 {
-	const DoorState S = Lock.GetState();
-	return S == DoorState::Locked || S == DoorState::Unlocked;
+	const ConfessionRules::DoorState S = Lock.GetState();
+	// Releasing stays "usable" so the prompt does not vanish mid-beat; Use() is a no-op (Busy) then.
+	return S == ConfessionRules::DoorState::Locked || S == ConfessionRules::DoorState::Unlocked || S == ConfessionRules::DoorState::Releasing;
 }
 
 FText AConfessionDoor::GetPrompt(const AConfessionCharacter* By) const
 {
-	return Lock.GetState() == DoorState::Locked ? LabelLocked : LabelOpen;
+	switch (Lock.GetState())
+	{
+	case ConfessionRules::DoorState::Locked: return LabelLocked;
+	case ConfessionRules::DoorState::Releasing: return LabelWait.IsEmpty() ? LabelLocked : LabelWait;
+	default: return LabelOpen;
+	}
 }
 
 FVector AConfessionDoor::GetAimPoint() const
@@ -127,22 +141,22 @@ void AConfessionDoor::HandleUse(AConfessionCharacter* By)
 	AConfessionGameMode* GM = GetConfessionGameMode();
 	UConfessionAudioSubsystem* Audio = GetWorld()->GetSubsystem<UConfessionAudioSubsystem>();
 	const FVector At = Panel && Panel->IsVisible() ? Panel->GetComponentLocation() : GetAimPoint();
-	const UseResult R = Lock.Use(PlayerHasItem());
-	UE_LOG(LogConfession, Log, TEXT("[Door] %s use -> %d (state %s)"), *LayoutId, static_cast<int32>(R), ANSI_TO_TCHAR(ToString(Lock.GetState())));
+	const ConfessionRules::UseResult R = Lock.Use(PlayerHasItem());
+	UE_LOG(LogConfession, Log, TEXT("[Door] %s use -> %d (state %s)"), *LayoutId, static_cast<int32>(R), ANSI_TO_TCHAR(ConfessionRules::ToString(Lock.GetState())));
 	switch (R)
 	{
-	case UseResult::NeedItem:
+	case ConfessionRules::UseResult::NeedItem:
 		if (Audio) { Audio->PlayAt(TEXT("door_reject"), At, 0.8f, 1200.0f); }
 		SetLamp(LampRed, 40.0f);
 		LampFlashTimer = 0.6f;
 		if (GM) { GM->ShowMessageId(MsgNoItem); }
 		break;
-	case UseResult::Rejected:
+	case ConfessionRules::UseResult::Rejected:
 		if (Audio) { Audio->PlayAt(TEXT("door_reject"), At, 0.8f, 1200.0f); }
 		SetLamp(LampAmber, 25.0f);
-		if (GM) { GM->ShowMessageId(MsgReject); }
+		if (GM) { GM->ShowMessage(RejectText(*GM), 6.0f); }
 		break;
-	case UseResult::Opening:
+	case ConfessionRules::UseResult::Opening:
 		if (Audio) { Audio->PlayAt(TEXT("door_open"), GetAimPoint(), 0.9f, 1800.0f); }
 		SetLamp(LampGreen, 12.0f);
 		if (GM)
@@ -151,8 +165,8 @@ void AConfessionDoor::HandleUse(AConfessionCharacter* By)
 			GM->SetFlag(LayoutId + TEXT(".open"));
 		}
 		break;
-	case UseResult::Busy:
-	case UseResult::AlreadyOpen:
+	case ConfessionRules::UseResult::Busy:
+	case ConfessionRules::UseResult::AlreadyOpen:
 		break;
 	}
 }
@@ -170,14 +184,15 @@ void AConfessionDoor::Tick(float DeltaSeconds)
 		SetLamp(LampGreen, 12.0f);
 		if (AConfessionGameMode* GM = GetConfessionGameMode())
 		{
-			GM->ShowMessageId(MsgRelease);
+			// Keep the previous-number line on screen and add the release under it (canon beat stays readable).
+			GM->ShowMessage(FText::FromString(RejectText(*GM).ToString() + TEXT("\n") + GM->GetLayout().Message(MsgRelease).ToString()), 4.0f);
 			GM->SetFlag(LayoutId + TEXT(".released"));
 		}
 	}
 	if (LampFlashTimer > 0.0f)
 	{
 		LampFlashTimer -= DeltaSeconds;
-		if (LampFlashTimer <= 0.0f && Lock.GetState() == DoorState::Locked)
+		if (LampFlashTimer <= 0.0f && Lock.GetState() == ConfessionRules::DoorState::Locked)
 		{
 			SetLamp(LampRed, 6.0f);
 		}
@@ -185,7 +200,7 @@ void AConfessionDoor::Tick(float DeltaSeconds)
 	ApplyPose();
 }
 
-void AConfessionDoor::RestoreFromProgress(const ProgressState& State)
+void AConfessionDoor::RestoreFromProgress(const ConfessionRules::ProgressState& State)
 {
 	const bool bOpen = State.HasFlag(ConfessionData::ToStd(LayoutId + TEXT(".open")));
 	const bool bReleased = State.HasFlag(ConfessionData::ToStd(LayoutId + TEXT(".released")));

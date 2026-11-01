@@ -49,6 +49,7 @@ public:
 	virtual bool CanUse(const AConfessionCharacter* By) const override;
 	virtual void OnLevelEvent(const FString& EventId) override;
 	virtual void Tick(float DeltaSeconds) override;
+	virtual void RestoreFromProgress(const ConfessionRules::ProgressState& State) override;
 
 	void StartRinging();
 	bool IsRinging() const { return RingWindow > 0.0f; }

@@ -18,12 +18,15 @@
 #include "Components/StaticMeshComponent.h"
 #include "Engine/CollisionProfile.h"
 #include "Engine/World.h"
+#include "Materials/MaterialInstanceDynamic.h"
 #include "TimerManager.h"
 
 AConfessionGreyboxBuilder::AConfessionGreyboxBuilder()
 {
 	PrimaryActorTick.bCanEverTick = false;
-	SetRootComponent(CreateDefaultSubobject<USceneComponent>(TEXT("Root")));
+	USceneComponent* Root = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
+	Root->SetMobility(EComponentMobility::Static); // static geometry may only attach to a static parent
+	SetRootComponent(Root);
 }
 
 void AConfessionGreyboxBuilder::BeginPlay()
@@ -160,6 +163,7 @@ void AConfessionGreyboxBuilder::BuildEnvironment(const FConfessionLayout& Layout
 	USkyLightComponent* Sky = NewObject<USkyLightComponent>(this, TEXT("Env_SkyLight"));
 	Sky->SetMobility(EComponentMobility::Movable);
 	Sky->SetupAttachment(GetRootComponent());
+	Sky->SetWorldLocation(FVector(0.0, 1340.0, 250.0)); // capture from the open arcade, not the lobby floor
 	Sky->SourceType = ESkyLightSourceType::SLS_CapturedScene;
 	Sky->SetIntensity(static_cast<float>(ConfessionData::GetNumber(Env, TEXT("skylight_intensity"), 0.25)));
 	Sky->SetLightColor(ConfessionData::GetColor(Env, TEXT("skylight_color"), FLinearColor(0.55f, 0.62f, 0.78f)));
@@ -215,7 +219,7 @@ void AConfessionGreyboxBuilder::BuildAudio(const FConfessionLayout& Layout)
 			Anchor->SetWorldLocation(Pos);
 			Anchor->RegisterComponent();
 			Generated.Add(Anchor);
-			if (UAudioComponent* AC = Audio->CreateAttached(Sound, Anchor, true, Volume, Radius))
+			if (UAudioComponent* AC = Audio->CreateAttached(Sound, Anchor, true, Volume, Radius, true))
 			{
 				AC->Play(FMath::FRandRange(0.0f, 2.0f));
 				Generated.Add(AC);
@@ -229,6 +233,7 @@ void AConfessionGreyboxBuilder::BuildAudio(const FConfessionLayout& Layout)
 			IE.Volume = Volume;
 			IE.RadiusCm = Radius;
 			IE.IntervalSeconds = ConfessionData::GetVec2(E, TEXT("interval_s"), FVector2D(20.0, 40.0));
+			IE.FirstDelaySeconds = ConfessionData::GetVec2(E, TEXT("first_delay_s"), FVector2D(-1.0, -1.0));
 			ScheduleIntervalSound(IntervalEmitters.Add(IE));
 		}
 	}
@@ -240,8 +245,10 @@ void AConfessionGreyboxBuilder::ScheduleIntervalSound(int32 EmitterIndex)
 	{
 		return;
 	}
-	const FIntervalEmitter& IE = IntervalEmitters[EmitterIndex];
-	const float Delay = FMath::FRandRange(static_cast<float>(IE.IntervalSeconds.X), static_cast<float>(IE.IntervalSeconds.Y));
+	FIntervalEmitter& IE = IntervalEmitters[EmitterIndex];
+	const FVector2D Range = (!IE.bFirstDone && IE.FirstDelaySeconds.X >= 0.0) ? IE.FirstDelaySeconds : IE.IntervalSeconds;
+	IE.bFirstDone = true;
+	const float Delay = FMath::FRandRange(static_cast<float>(Range.X), static_cast<float>(Range.Y));
 	if (IntervalTimers.Num() <= EmitterIndex)
 	{
 		IntervalTimers.SetNum(EmitterIndex + 1);
@@ -256,7 +263,7 @@ void AConfessionGreyboxBuilder::ScheduleIntervalSound(int32 EmitterIndex)
 		const FIntervalEmitter& E = Weak->IntervalEmitters[EmitterIndex];
 		if (UConfessionAudioSubsystem* A = Weak->GetWorld()->GetSubsystem<UConfessionAudioSubsystem>())
 		{
-			A->PlayAt(E.SoundId, E.Location, E.Volume, E.RadiusCm);
+			A->PlayAt(E.SoundId, E.Location, E.Volume, E.RadiusCm, 1.0f, true);
 		}
 		Weak->ScheduleIntervalSound(EmitterIndex);
 	}), Delay, false);

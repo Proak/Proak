@@ -19,7 +19,7 @@ class CONFESSION_API AConfessionGameMode : public AGameModeBase
 public:
 	AConfessionGameMode();
 
-	/** Which Content/Confession/Data/<LevelId>_layout.json to build. Override per map in World Settings. */
+	/** Which Content/Confession/Data/<LevelId>_layout.json to build. Override with -ConfessionLevel=<Id> or a GameMode subclass. */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Confession")
 	FString LevelId = TEXT("L0_B01");
 
@@ -39,6 +39,8 @@ public:
 	void GiveItem(const FString& ItemId);
 	void SetFlag(const FString& Flag);
 	void FireEvent(const FString& EventId);
+	/** Fires once no document is open (+0.8 s), so a beat is not hidden behind a reading panel. */
+	void FireEventAfterDocument(const FString& EventId);
 
 	void ShowMessageId(const FString& MessageId);
 	void ShowMessage(const FText& Text, float Seconds = 3.5f);
@@ -67,5 +69,10 @@ private:
 	ConfessionRules::ObjectiveFlow Flow;
 	ConfessionRules::Checkpoint LastCheckpoint;
 	TArray<FString> ReadDocuments;
+	TSet<FString> ReachedCheckpoints;
+	TArray<FString> PendingEvents;
+	float PendingEventDelay = 0.0f;
+	FTimerHandle PendingEventTimer;
+	void PumpPendingEvents();
 	FTransform StartTransform;
 };

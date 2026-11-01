@@ -8,6 +8,7 @@
 #include "Components/StaticMeshComponent.h"
 #include "Engine/CollisionProfile.h"
 #include "Engine/World.h"
+#include "Materials/MaterialInstanceDynamic.h"
 
 AConfessionInteractable::AConfessionInteractable()
 {
@@ -28,9 +29,6 @@ void AConfessionInteractable::InitFromLayout(const TSharedPtr<FJsonObject>& Data
 	{
 		InteractionLabel = Label;
 	}
-#if WITH_EDITOR
-	SetActorLabel(LayoutId);
-#endif
 }
 
 bool AConfessionInteractable::CanUse(const AConfessionCharacter* By) const

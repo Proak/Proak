@@ -1,6 +1,6 @@
 {
  "kind": "OFFLINE_GEOMETRY_CHECK_NOT_ENGINE",
- "layout": "L0_B01 v0.5.1",
+ "layout": "L0_B01 v0.5.2",
  "capsule_radius_m": 0.35,
  "checks_total": 41,
  "failures": [],
